@@ -1,0 +1,1729 @@
+[2024-06-10 22:13:09,736] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:13:20,684] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-06-10 22:13:20,684] [INFO] [runner.py:568:main] cmd = /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None llava/pretrain/train_parallel_deepspeed_mixtral.py --checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint --num_stages=8
+[2024-06-10 22:13:24,321] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:13:25,997] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2024-06-10 22:13:25,997] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=8, node_rank=0
+[2024-06-10 22:13:25,997] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2024-06-10 22:13:25,997] [INFO] [launch.py:163:main] dist_world_size=8
+[2024-06-10 22:13:25,997] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+[2024-06-10 22:13:26,005] [INFO] [launch.py:253:main] process 421347 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:26,013] [INFO] [launch.py:253:main] process 421348 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=1', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:26,021] [INFO] [launch.py:253:main] process 421349 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=2', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:26,031] [INFO] [launch.py:253:main] process 421350 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=3', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:26,041] [INFO] [launch.py:253:main] process 421351 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=4', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:26,050] [INFO] [launch.py:253:main] process 421352 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=5', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:26,059] [INFO] [launch.py:253:main] process 421353 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=6', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:26,070] [INFO] [launch.py:253:main] process 421354 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/pretrain/train_parallel_deepspeed_mixtral.py', '--local_rank=7', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', '--num_stages=8']
+[2024-06-10 22:13:58,409] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:13:58,409] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:13:58,409] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:13:58,409] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:13:58,410] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:13:59,676] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-06-10 22:14:05,921] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-06-10 22:14:05,921] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-06-10 22:14:06,313] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:14:06,637] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:14:06,655] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-10 22:14:06,761] [INFO] [comm.py:637:init_distributed] cdb=None
+Deepspeed initialzing on rank 6 / 8 ... 0
+Deepspeed initialzing on rank 5 / 8 ... 0
+[2024-06-10 22:14:07,074] [INFO] [comm.py:637:init_distributed] cdb=None
+Deepspeed initialzing on rank 7 / 8 ... 0
+[2024-06-10 22:14:07,456] [INFO] [comm.py:637:init_distributed] cdb=None
+Deepspeed initialzing on rank 1 / 8 ... 0
+rank 6 (84601012224, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+rank 5 (84180729856, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+rank 7 (83759005696, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+[2024-06-10 22:14:08,849] [INFO] [comm.py:637:init_distributed] cdb=None
+Deepspeed initialzing on rank 3 / 8 ... 0
+rank 1 (83336691712, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+[2024-06-10 22:14:08,987] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-06-10 22:14:09,119] [INFO] [comm.py:637:init_distributed] cdb=None
+Deepspeed initialzing on rank 2 / 8 ... 0
+Deepspeed initialzing on rank 0 / 8 ... 0
+Deepspeed initialzing on rank 4 / 8 ... 0
+rank 3 (82841829376, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]rank 2 (81931337728, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+rank 4 (81576919040, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+rank 0 (81576919040, 85100068864)
+/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/transformers/models/llava/configuration_llava.py:103: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:00<00:18,  1.01it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:24,  1.29s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  10%|█         | 2/20 [00:02<00:26,  1.47s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:02<00:27,  1.52s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:23,  1.23s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:25,  1.36s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:24,  1.46s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  10%|█         | 2/20 [00:02<00:25,  1.44s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:28,  1.68s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:26,  1.37s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:32,  1.72s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:32,  1.80s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:37,  1.98s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:26,  1.57s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:06<00:27,  1.71s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:02<00:25,  1.42s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:28,  1.56s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:32,  2.04s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:35,  2.06s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:06<00:25,  1.60s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:36,  2.05s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:27,  1.60s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:27,  1.64s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:30,  2.04s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:32,  2.14s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:32,  2.03s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:08<00:26,  1.77s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:06<00:28,  1.75s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:36,  2.13s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:10<00:26,  1.91s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:32,  2.04s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:30,  2.15s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:30,  2.06s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:33,  1.78s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:33,  2.08s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:10<00:27,  1.97s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:29,  1.95s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:30,  2.06s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:13<00:27,  2.15s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:13<00:28,  2.20s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:12<00:29,  2.09s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:38,  2.13s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:12<00:26,  2.01s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:27,  1.96s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:30,  2.18s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:15<00:23,  1.96s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:11<00:35,  2.39s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:27,  2.33s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:14<00:28,  2.22s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:14<00:24,  2.08s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:13<00:25,  1.97s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:13<00:27,  2.11s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:40,  2.36s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:13<00:32,  2.33s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:17<00:22,  2.09s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:18<00:25,  2.36s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:15<00:23,  1.92s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:27,  2.28s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:17<00:23,  2.12s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:09<00:37,  2.37s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:15<00:29,  2.25s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:20<00:21,  2.15s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:20<00:22,  2.22s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:16<00:19,  1.78s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:29,  2.43s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:19<00:24,  2.27s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:19<00:22,  2.20s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:11<00:33,  2.25s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:18<00:17,  1.74s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:18<00:25,  2.32s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:22<00:20,  2.28s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:22<00:20,  2.29s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:18<00:30,  2.56s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:21<00:19,  2.16s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:19<00:15,  1.74s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:21<00:22,  2.29s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:13<00:31,  2.25s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:20<00:22,  2.23s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:22<00:17,  1.98s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:20<00:26,  2.38s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:25<00:18,  2.29s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:25<00:18,  2.33s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:21<00:14,  1.81s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:23<00:17,  2.16s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:15<00:27,  2.10s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:23<00:20,  2.26s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:24<00:16,  2.02s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:23<00:23,  2.34s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:27<00:16,  2.29s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:25<00:14,  2.14s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:24<00:13,  1.93s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:17<00:25,  2.15s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:28<00:17,  2.50s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:25<00:18,  2.31s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:18<00:20,  1.91s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:25<00:11,  1.86s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:27<00:15,  2.20s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:27<00:12,  2.07s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:30<00:14,  2.50s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:30<00:15,  2.60s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:26<00:24,  2.75s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:29<00:12,  2.04s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:27<00:09,  1.88s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:21<00:19,  1.99s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:28<00:16,  2.42s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:30<00:10,  2.16s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:32<00:11,  2.37s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:32<00:12,  2.45s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:28<00:20,  2.55s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:23<00:18,  2.04s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:31<00:10,  2.14s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:30<00:08,  2.02s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:31<00:08,  2.04s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:30<00:14,  2.45s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:34<00:09,  2.30s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:35<00:09,  2.44s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:31<00:18,  2.58s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:33<00:06,  2.02s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:25<00:16,  2.09s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:32<00:06,  2.11s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:36<00:06,  2.26s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:34<00:09,  2.40s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:33<00:12,  2.47s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:37<00:07,  2.39s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:33<00:14,  2.39s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:27<00:14,  2.06s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:34<00:04,  2.13s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:36<00:04,  2.21s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:39<00:04,  2.33s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:37<00:07,  2.42s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:28<00:11,  1.88s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:36<00:10,  2.64s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:35<00:11,  2.39s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:40<00:04,  2.40s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:36<00:02,  2.17s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:41<00:02,  2.23s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:37<00:00,  1.73s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:37<00:00,  1.88s/it]
+Loading checkpoint shards:  95%|█████████▌| 19/20 [00:39<00:02,  2.39s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:41<00:00,  1.69s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:41<00:00,  2.09s/it]
+Loading checkpoint shards:  75%|███████▌  | 15/20 [00:31<00:10,  2.00s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:41<00:02,  2.16s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:39<00:00,  1.80s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:39<00:00,  1.99s/it]
+Loading checkpoint shards:  90%|█████████ | 18/20 [00:39<00:04,  2.45s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:37<00:08,  2.24s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:42<00:00,  1.65s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:42<00:00,  2.11s/it]
+Loading checkpoint shards:  85%|████████▌ | 17/20 [00:38<00:07,  2.58s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:32<00:07,  1.81s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:40<00:02,  2.11s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:39<00:06,  2.05s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:40<00:04,  2.18s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:41<00:00,  1.68s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:41<00:00,  2.08s/it]
+Loading checkpoint shards:  85%|████████▌ | 17/20 [00:33<00:04,  1.51s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:34<00:02,  1.35s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:40<00:03,  1.84s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:41<00:01,  1.90s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:35<00:01,  1.20s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:42<00:00,  1.61s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:42<00:00,  2.11s/it]
+Loading checkpoint shards: 100%|██████████| 20/20 [00:35<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:35<00:00,  1.77s/it]
+Loading checkpoint shards:  95%|█████████▌| 19/20 [00:41<00:01,  1.65s/it]Rank 3 initialized with CUDA_MEM (61300539392, 85100068864)
+Loading checkpoint shards: 100%|██████████| 20/20 [00:42<00:00,  1.24s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:42<00:00,  2.10s/it]
+SEED_LAYERS=False BASE_SEED=1234 SEED_FN=None
+Using topology: {ProcessCoord(pipe=0, data=0): 0, ProcessCoord(pipe=1, data=0): 1, ProcessCoord(pipe=2, data=0): 2, ProcessCoord(pipe=3, data=0): 3, ProcessCoord(pipe=4, data=0): 4, ProcessCoord(pipe=5, data=0): 5, ProcessCoord(pipe=6, data=0): 6, ProcessCoord(pipe=7, data=0): 7}
+[2024-06-10 22:14:57,070] [INFO] [module.py:375:_partition_layers] Partitioning pipeline stages with method type:LanguageModelLayerWrapper
+stage=0 layers=2
+     0: LlavaMultiModalModuleWrapper
+     1: LanguageModelLayerWrapper
+stage=1 layers=1
+     2: LanguageModelLayerWrapper
+stage=2 layers=1
+     3: LanguageModelLayerWrapper
+stage=3 layers=1
+     4: LanguageModelLayerWrapper
+stage=4 layers=1
+     5: LanguageModelLayerWrapper
+stage=5 layers=1
+     6: LanguageModelLayerWrapper
+stage=6 layers=1
+     7: LanguageModelLayerWrapper
+stage=7 layers=2
+     8: LanguageModelLayerWrapper
+     9: LanguageModelFinalWrapper
+  loss: loss_fn
+Rank 5 initialized with CUDA_MEM (61300539392, 85100068864)
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Rank 6 initialized with CUDA_MEM (61300539392, 85100068864)
+Rank 7 initialized with CUDA_MEM (60774154240, 85100068864)
+Rank 2 initialized with CUDA_MEM (61300539392, 85100068864)
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Rank 4 initialized with CUDA_MEM (61300539392, 85100068864)
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Rank 1 initialized with CUDA_MEM (61300539392, 85100068864)
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Rank 0 initialized with CUDA_MEM (56379637760, 85100068864)
+[2024-06-10 22:15:05,677] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.0, git-hash=unknown, git-branch=unknown
+[2024-06-10 22:15:06,091] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+[1/2] /apps/SPACK/0.19.1/opt/linux-almalinux8-zen/gcc-8.5.0/cuda-12.1.1-nekgnnonum23hyldot34gqw76j42mzil/bin/nvcc --generate-dependencies-with-compile --dependency-output multi_tensor_adam.cuda.o.d -DTORCH_EXTENSION_NAME=fused_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/deepspeed/ops/csrc/includes -I/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/deepspeed/ops/csrc/adam -isystem /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/torch/include -isystem /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/torch/include/TH -isystem /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/torch/include/THC -isystem /apps/SPACK/0.19.1/opt/linux-almalinux8-zen/gcc-8.5.0/cuda-12.1.1-nekgnnonum23hyldot34gqw76j42mzil/include -isystem /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_80,code=compute_80 -gencode=arch=compute_80,code=sm_80 --compiler-options '-fPIC' -O3 -DVERSION_GE_1_1 -DVERSION_GE_1_3 -DVERSION_GE_1_5 -lineinfo --use_fast_math -gencode=arch=compute_80,code=sm_80 -gencode=arch=compute_80,code=compute_80 -DBF16_AVAILABLE -U__CUDA_NO_BFLOAT16_OPERATORS__ -U__CUDA_NO_BFLOAT162_OPERATORS__ -std=c++17 -c /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu -o multi_tensor_adam.cuda.o 
+[2/2] c++ fused_adam_frontend.o multi_tensor_adam.cuda.o -shared -L/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/lib/python3.8/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/apps/SPACK/0.19.1/opt/linux-almalinux8-zen/gcc-8.5.0/cuda-12.1.1-nekgnnonum23hyldot34gqw76j42mzil/lib64 -lcudart -o fused_adam.so
+Loading extension module fused_adam...
+Time to load fused_adam op: 38.59635353088379 seconds
+[2024-06-10 22:15:37,114] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 37.17594027519226 seconds
+[2024-06-10 22:15:37,130] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 38.58555555343628 seconds
+[2024-06-10 22:15:37,151] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Loading extension module fused_adam...
+Time to load fused_adam op: 36.66589117050171 seconds
+Time to load fused_adam op: 30.561601877212524 seconds
+[2024-06-10 22:15:37,157] [INFO] [logging.py:96:log_dist] [Rank 0] Using DeepSpeed Optimizer param name adam as basic optimizer
+[2024-06-10 22:15:37,158] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-06-10 22:15:37,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedAdam
+[2024-06-10 22:15:37,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = adam
+[2024-06-10 22:15:37,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = WarmupCosineLR
+[2024-06-10 22:15:37,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.runtime.lr_schedules.WarmupCosineLR object at 0x14d68ffbcbb0>
+[2024-06-10 22:15:37,160] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.001], mom=[(0.9, 0.999)]
+[2024-06-10 22:15:37,160] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2024-06-10 22:15:37,160] [INFO] [config.py:996:print] DeepSpeedEngine configuration:
+[2024-06-10 22:15:37,160] [INFO] [config.py:1000:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-06-10 22:15:37,160] [INFO] [config.py:1000:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-06-10 22:15:37,160] [INFO] [config.py:1000:print]   amp_enabled .................. False
+[2024-06-10 22:15:37,160] [INFO] [config.py:1000:print]   amp_params ................... False
+Loading extension module fused_adam...
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   bfloat16_enabled ............. False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   bfloat16_immediate_grad_update  False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   checkpoint_parallel_write_pipeline  False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   checkpoint_tag_validation_enabled  True
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   checkpoint_tag_validation_fail  False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x14d68ffbc700>
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   communication_data_type ...... None
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   curriculum_enabled_legacy .... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   curriculum_params_legacy ..... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   data_efficiency_enabled ...... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   dataloader_drop_last ......... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   disable_allgather ............ False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   dump_state ................... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   dynamic_loss_scale_args ...... None
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_enabled ........... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_gas_boundary_resolution  1
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_layer_num ......... 0
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_max_iter .......... 100
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_stability ......... 1e-06
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_tol ............... 0.01
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   eigenvalue_verbose ........... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   elasticity_enabled ........... False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   fp16_auto_cast ............... None
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   fp16_enabled ................. False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   fp16_master_weights_and_gradients  False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   global_rank .................. 0
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   grad_accum_dtype ............. None
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   gradient_accumulation_steps .. 128
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   gradient_clipping ............ 0.0
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   gradient_predivide_factor .... 1.0
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   graph_harvesting ............. False
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-06-10 22:15:37,161] [INFO] [config.py:1000:print]   initial_dynamic_scale ........ 65536
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   load_universal_checkpoint .... False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   loss_scale ................... 0
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   memory_breakdown ............. False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   mics_hierarchial_params_gather  False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   mics_shard_size .............. -1
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=True, output_path='/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint', job_name='deepspeed_monitor_logs') enabled=True
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   optimizer_legacy_fusion ...... False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   optimizer_name ............... adam
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   optimizer_params ............. {'lr': 0.001}
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True, 'use_reentrant': False}
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   pld_enabled .................. False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   pld_params ................... False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   prescale_gradients ........... False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   scheduler_name ............... WarmupCosineLR
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   scheduler_params ............. {'total_num_steps': 2181, 'warmup_min_ratio': 0.1, 'warmup_num_steps': 65.42999999999999}
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   seq_parallel_communication_data_type  torch.float32
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   sparse_attention ............. None
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   sparse_gradients_enabled ..... False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   steps_per_print .............. 1
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   train_batch_size ............. 128
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   train_micro_batch_size_per_gpu  1
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   use_data_before_expert_parallel_  False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   use_node_local_storage ....... False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   wall_clock_breakdown ......... False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   weight_quantization_config ... None
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   world_size ................... 1
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   zero_allow_untested_optimizer  False
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   zero_enabled ................. False
+Time to load fused_adam op: 37.27430248260498 seconds
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   zero_force_ds_cpu_optimizer .. True
+[2024-06-10 22:15:37,162] [INFO] [config.py:1000:print]   zero_optimization_stage ...... 0
+[2024-06-10 22:15:37,162] [INFO] [config.py:986:print_user_config]   json = {
+    "train_batch_size": 128, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 128, 
+    "steps_per_print": 1, 
+    "optimizer": {
+        "type": "Adam", 
+        "params": {
+            "lr": 0.001
+        }
+    }, 
+    "scheduler": {
+        "type": "WarmupCosineLR", 
+        "params": {
+            "total_num_steps": 2.181000e+03, 
+            "warmup_min_ratio": 0.1, 
+            "warmup_num_steps": 65.42999999999999
+        }
+    }, 
+    "pipeline": {
+        "use_reentrant": false
+    }, 
+    "csv_monitor": {
+        "enabled": true, 
+        "output_path": "/home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint", 
+        "job_name": "deepspeed_monitor_logs"
+    }
+}
+[2024-06-10 22:15:37,162] [INFO] [engine.py:101:__init__] CONFIG: micro_batches=128 micro_batch_size=1
+[2024-06-10 22:15:37,162] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2024-06-10 22:15:37,164] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Loading extension module fused_adam...
+Time to load fused_adam op: 37.574689626693726 seconds
+Time to load fused_adam op: 36.46925902366638 seconds
+[2024-06-10 22:15:37,186] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2024-06-10 22:15:37,186] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=0 STAGE=0 LAYERS=2 [0, 2) STAGE_PARAMS=20979712 (20.980M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=6 STAGE=6 LAYERS=1 [7, 8) STAGE_PARAMS=0 (0.000M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=1 STAGE=1 LAYERS=1 [2, 3) STAGE_PARAMS=0 (0.000M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=7 STAGE=7 LAYERS=2 [8, 10) STAGE_PARAMS=0 (0.000M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=2 STAGE=2 LAYERS=1 [3, 4) STAGE_PARAMS=0 (0.000M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=5 STAGE=5 LAYERS=1 [6, 7) STAGE_PARAMS=0 (0.000M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=4 STAGE=4 LAYERS=1 [5, 6) STAGE_PARAMS=0 (0.000M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+[2024-06-10 22:15:41,710] [INFO] [engine.py:160:__init__] RANK=3 STAGE=3 LAYERS=1 [4, 5) STAGE_PARAMS=0 (0.000M) TOTAL_PARAMS=20979712 (20.980M) UNIQUE_PARAMS=20979712 (20.980M)
+Deepspeed engine initialized at --- RANK 0 --- hosting 4 of 4 trainable parameters
+  0%|          | 0/437 [00:00<?, ?it/s]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+Deepspeed engine initialized at --- RANK 7 --- hosting 0 of 4 trainable parameters
+  0%|          | 0/437 [00:00<?, ?it/s]Deepspeed engine initialized at --- RANK 2 --- hosting 0 of 4 trainable parameters
+Deepspeed engine initialized at --- RANK 1 --- hosting 0 of 4 trainable parameters
+  0%|          | 0/437 [00:00<?, ?it/s]  0%|          | 0/437 [00:00<?, ?it/s]Deepspeed engine initialized at --- RANK 4 --- hosting 0 of 4 trainable parameters
+Deepspeed engine initialized at --- RANK 3 --- hosting 0 of 4 trainable parameters
+  0%|          | 0/437 [00:00<?, ?it/s]  0%|          | 0/437 [00:00<?, ?it/s]Deepspeed engine initialized at --- RANK 6 --- hosting 0 of 4 trainable parameters
+Deepspeed engine initialized at --- RANK 5 --- hosting 0 of 4 trainable parameters
+  0%|          | 0/437 [00:00<?, ?it/s]  0%|          | 0/437 [00:00<?, ?it/s]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A[2024-06-10 22:17:22,516] [INFO] [logging.py:96:log_dist] [Rank 0] step=1, skipped=0, lr=[0.0001], mom=[(0.9, 0.999)]
+steps: 1 loss: 3.5360 iter time (s): 97.047 samples/sec: 1.319
+
+ 20%|██        | 1/5 [01:37<06:28, 97.17s/it][A
+ 20%|██        | 1/5 [01:37<06:29, 97.37s/it][A
+ 20%|██        | 1/5 [01:37<06:29, 97.46s/it][A
+ 20%|██        | 1/5 [01:37<06:30, 97.53s/it][A
+ 20%|██        | 1/5 [01:37<06:30, 97.70s/it][A
+ 20%|██        | 1/5 [01:37<06:30, 97.70s/it][A
+ 20%|██        | 1/5 [01:38<06:32, 98.01s/it][A
+ 20%|██        | 1/5 [01:38<06:33, 98.38s/it][A
+ 40%|████      | 2/5 [03:03<04:32, 90.75s/it][A[2024-06-10 22:18:55,743] [INFO] [logging.py:96:log_dist] [Rank 0] step=2, skipped=0, lr=[0.0002492072033017499], mom=[(0.9, 0.999)]
+steps: 2 loss: 2.6261 iter time (s): 86.838 samples/sec: 1.474
+
+ 40%|████      | 2/5 [03:05<04:35, 91.96s/it][A
+ 40%|████      | 2/5 [03:05<04:35, 91.99s/it][A
+ 40%|████      | 2/5 [03:05<04:36, 92.02s/it][A
+ 40%|████      | 2/5 [03:05<04:36, 92.05s/it][A
+ 40%|████      | 2/5 [03:05<04:36, 92.10s/it][A
+ 40%|████      | 2/5 [03:05<04:36, 92.01s/it][A
+ 40%|████      | 2/5 [03:05<04:35, 91.97s/it][A
+ 60%|██████    | 3/5 [04:29<02:56, 88.39s/it][A[2024-06-10 22:20:21,334] [INFO] [logging.py:96:log_dist] [Rank 0] step=3, skipped=0, lr=[0.0003364878220707515], mom=[(0.9, 0.999)]
+steps: 3 loss: 2.5851 iter time (s): 85.008 samples/sec: 1.506
+
+ 60%|██████    | 3/5 [04:31<02:58, 89.07s/it][A
+ 60%|██████    | 3/5 [04:31<02:58, 89.11s/it][A
+ 60%|██████    | 3/5 [04:31<02:58, 89.13s/it][A
+ 60%|██████    | 3/5 [04:31<02:58, 89.14s/it][A
+ 60%|██████    | 3/5 [04:31<02:58, 89.14s/it][A
+ 60%|██████    | 3/5 [04:31<02:58, 89.10s/it][A
+ 60%|██████    | 3/5 [04:31<02:58, 89.08s/it][A
+ 80%|████████  | 4/5 [05:54<01:27, 87.10s/it][A[2024-06-10 22:21:46,458] [INFO] [logging.py:96:log_dist] [Rank 0] step=4, skipped=0, lr=[0.0003984144066034997], mom=[(0.9, 0.999)]
+steps: 4 loss: 2.4154 iter time (s): 84.469 samples/sec: 1.515
+
+ 80%|████████  | 4/5 [05:56<01:27, 87.49s/it][A
+ 80%|████████  | 4/5 [05:56<01:27, 87.54s/it][A
+ 80%|████████  | 4/5 [05:56<01:27, 87.55s/it][A
+ 80%|████████  | 4/5 [05:56<01:27, 87.55s/it][A
+ 80%|████████  | 4/5 [05:56<01:27, 87.55s/it][A
+ 80%|████████  | 4/5 [05:56<01:27, 87.52s/it][A
+ 80%|████████  | 4/5 [05:56<01:27, 87.54s/it][A
+100%|██████████| 5/5 [07:19<00:00, 86.34s/it][A100%|██████████| 5/5 [07:19<00:00, 87.83s/it]
+  0%|          | 1/437 [07:24<53:53:24, 444.96s/it][2024-06-10 22:23:11,453] [INFO] [logging.py:96:log_dist] [Rank 0] step=5, skipped=0, lr=[0.00044644839730590335], mom=[(0.9, 0.999)]
+steps: 5 loss: 2.3430 iter time (s): 84.327 samples/sec: 1.518
+
+100%|██████████| 5/5 [07:21<00:00, 86.61s/it][A100%|██████████| 5/5 [07:21<00:00, 88.26s/it]
+  0%|          | 1/437 [07:25<53:55:28, 445.25s/it]
+100%|██████████| 5/5 [07:21<00:00, 86.59s/it][A100%|██████████| 5/5 [07:21<00:00, 88.27s/it]
+  0%|          | 1/437 [07:25<53:56:01, 445.32s/it]
+100%|██████████| 5/5 [07:21<00:00, 86.63s/it][A100%|██████████| 5/5 [07:21<00:00, 88.30s/it]
+  0%|          | 1/437 [07:25<53:58:06, 445.61s/it]
+100%|██████████| 5/5 [07:21<00:00, 86.63s/it][A100%|██████████| 5/5 [07:21<00:00, 88.32s/it]
+  0%|          | 1/437 [07:25<53:58:13, 445.63s/it]
+100%|██████████| 5/5 [07:21<00:00, 86.59s/it][A100%|██████████| 5/5 [07:21<00:00, 88.31s/it]
+  0%|          | 1/437 [07:25<53:59:04, 445.74s/it]
+100%|██████████| 5/5 [07:21<00:00, 86.63s/it][A100%|██████████| 5/5 [07:21<00:00, 88.32s/it]
+  0%|          | 1/437 [07:25<53:59:09, 445.76s/it]
+100%|██████████| 5/5 [07:21<00:00, 86.59s/it][A100%|██████████| 5/5 [07:21<00:00, 88.32s/it]
+  0%|          | 1/437 [07:27<54:15:19, 447.98s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:24<05:36, 84.24s/it][A[2024-06-10 22:24:38,807] [INFO] [logging.py:96:log_dist] [Rank 0] step=6, skipped=0, lr=[0.0004856950253725013], mom=[(0.9, 0.999)]
+steps: 6 loss: 2.2574 iter time (s): 83.390 samples/sec: 1.535
+
+ 20%|██        | 1/5 [01:24<05:36, 84.11s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.28s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.93s/it][A
+ 20%|██        | 1/5 [01:24<05:36, 84.12s/it][A
+ 20%|██        | 1/5 [01:24<05:36, 84.19s/it][A
+ 20%|██        | 1/5 [01:24<05:36, 84.14s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.31s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.92s/it][A[2024-06-10 22:26:02,503] [INFO] [logging.py:96:log_dist] [Rank 0] step=7, skipped=0, lr=[0.0005188775765956171], mom=[(0.9, 0.999)]
+steps: 7 loss: 2.1005 iter time (s): 83.051 samples/sec: 1.541
+
+ 40%|████      | 2/5 [02:47<04:11, 83.87s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.89s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.82s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.78s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.84s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.90s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.93s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.87s/it][A[2024-06-10 22:27:26,303] [INFO] [logging.py:96:log_dist] [Rank 0] step=8, skipped=0, lr=[0.0005476216099052495], mom=[(0.9, 0.999)]
+steps: 8 loss: 2.0923 iter time (s): 83.250 samples/sec: 1.538
+
+ 60%|██████    | 3/5 [04:11<02:47, 83.86s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.86s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.81s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.84s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.87s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.89s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.87s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.04s/it][A[2024-06-10 22:28:50,607] [INFO] [logging.py:96:log_dist] [Rank 0] step=9, skipped=0, lr=[0.0005729756441415029], mom=[(0.9, 0.999)]
+steps: 9 loss: 2.0636 iter time (s): 83.723 samples/sec: 1.529
+
+ 80%|████████  | 4/5 [05:35<01:24, 84.04s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.06s/it][A
+ 80%|████████  | 4/5 [05:35<01:24, 84.02s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.06s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.07s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.08s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.06s/it][A
+100%|██████████| 5/5 [06:59<00:00, 83.75s/it][A100%|██████████| 5/5 [06:59<00:00, 83.86s/it]
+  0%|          | 2/437 [14:27<52:09:45, 431.69s/it][2024-06-10 22:30:13,854] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=0, lr=[0.0005956556006076533], mom=[(0.9, 0.999)]
+steps: 10 loss: 2.0501 iter time (s): 82.635 samples/sec: 1.549
+
+100%|██████████| 5/5 [06:59<00:00, 83.77s/it][A100%|██████████| 5/5 [06:59<00:00, 83.85s/it]
+  0%|          | 2/437 [14:27<52:10:46, 431.83s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.78s/it][A100%|██████████| 5/5 [06:59<00:00, 83.88s/it]
+  0%|          | 2/437 [14:27<52:11:07, 431.88s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.76s/it][A100%|██████████| 5/5 [06:59<00:00, 83.82s/it]
+  0%|          | 2/437 [14:28<52:11:53, 431.99s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.77s/it][A100%|██████████| 5/5 [06:59<00:00, 83.85s/it]
+  0%|          | 2/437 [14:28<52:12:00, 432.00s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.77s/it][A100%|██████████| 5/5 [06:59<00:00, 83.87s/it]
+  0%|          | 2/437 [14:28<52:12:18, 432.04s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.76s/it][A100%|██████████| 5/5 [06:59<00:00, 83.85s/it]
+  0%|          | 2/437 [14:30<52:19:01, 432.97s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [06:59<00:00, 83.78s/it][A100%|██████████| 5/5 [06:59<00:00, 83.88s/it]
+  0%|          | 2/437 [14:28<52:12:25, 432.06s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:22<05:31, 82.82s/it][A[2024-06-10 22:31:39,763] [INFO] [logging.py:96:log_dist] [Rank 0] step=11, skipped=0, lr=[0.0006161721168305167], mom=[(0.9, 0.999)]
+steps: 11 loss: 1.9821 iter time (s): 81.938 samples/sec: 1.562
+
+ 20%|██        | 1/5 [01:22<05:30, 82.62s/it][A
+ 20%|██        | 1/5 [01:22<05:30, 82.70s/it][A
+ 20%|██        | 1/5 [01:22<05:30, 82.55s/it][A
+ 20%|██        | 1/5 [01:22<05:30, 82.66s/it][A
+ 20%|██        | 1/5 [01:22<05:30, 82.70s/it][A
+ 20%|██        | 1/5 [01:22<05:30, 82.54s/it][A
+ 20%|██        | 1/5 [01:22<05:30, 82.68s/it][A
+ 40%|████      | 2/5 [02:45<04:07, 82.44s/it][A[2024-06-10 22:33:01,944] [INFO] [logging.py:96:log_dist] [Rank 0] step=12, skipped=0, lr=[0.0006349022286742512], mom=[(0.9, 0.999)]
+steps: 12 loss: 1.8372 iter time (s): 81.526 samples/sec: 1.570
+
+ 40%|████      | 2/5 [02:44<04:07, 82.37s/it][A
+ 40%|████      | 2/5 [02:44<04:07, 82.43s/it][A
+ 40%|████      | 2/5 [02:44<04:06, 82.33s/it][A
+ 40%|████      | 2/5 [02:44<04:07, 82.36s/it][A
+ 40%|████      | 2/5 [02:44<04:07, 82.40s/it][A
+ 40%|████      | 2/5 [02:44<04:07, 82.37s/it][A
+ 40%|████      | 2/5 [02:44<04:06, 82.32s/it][A
+ 60%|██████    | 3/5 [04:07<02:44, 82.31s/it][A[2024-06-10 22:34:24,096] [INFO] [logging.py:96:log_dist] [Rank 0] step=13, skipped=0, lr=[0.000652132261330548], mom=[(0.9, 0.999)]
+steps: 13 loss: 1.8307 iter time (s): 81.546 samples/sec: 1.570
+
+ 60%|██████    | 3/5 [04:06<02:44, 82.28s/it][A
+ 60%|██████    | 3/5 [04:07<02:44, 82.31s/it][A
+ 60%|██████    | 3/5 [04:06<02:44, 82.25s/it][A
+ 60%|██████    | 3/5 [04:06<02:44, 82.28s/it][A
+ 60%|██████    | 3/5 [04:07<02:44, 82.28s/it][A
+ 60%|██████    | 3/5 [04:06<02:44, 82.24s/it][A
+ 60%|██████    | 3/5 [04:06<02:44, 82.27s/it][A
+ 80%|████████  | 4/5 [05:30<01:22, 82.87s/it][A[2024-06-10 22:35:47,820] [INFO] [logging.py:96:log_dist] [Rank 0] step=14, skipped=0, lr=[0.000668084779897367], mom=[(0.9, 0.999)]
+steps: 14 loss: 1.7781 iter time (s): 83.134 samples/sec: 1.540
+
+ 80%|████████  | 4/5 [05:30<01:22, 82.86s/it][A
+ 80%|████████  | 4/5 [05:30<01:22, 82.85s/it][A
+ 80%|████████  | 4/5 [05:30<01:22, 82.84s/it][A
+ 80%|████████  | 4/5 [05:30<01:22, 82.86s/it][A
+ 80%|████████  | 4/5 [05:30<01:22, 82.86s/it][A
+ 80%|████████  | 4/5 [05:30<01:22, 82.83s/it][A
+ 80%|████████  | 4/5 [05:30<01:22, 82.86s/it][A
+100%|██████████| 5/5 [06:54<00:00, 82.97s/it][A100%|██████████| 5/5 [06:54<00:00, 82.80s/it]
+  1%|          | 3/437 [21:24<51:14:23, 425.03s/it][2024-06-10 22:37:10,952] [INFO] [logging.py:96:log_dist] [Rank 0] step=15, skipped=0, lr=[0.0006829362193766548], mom=[(0.9, 0.999)]
+steps: 15 loss: 1.7848 iter time (s): 82.438 samples/sec: 1.553
+
+100%|██████████| 5/5 [06:53<00:00, 82.93s/it][A100%|██████████| 5/5 [06:53<00:00, 82.76s/it]
+  1%|          | 3/437 [21:24<51:14:29, 425.05s/it]
+100%|██████████| 5/5 [06:53<00:00, 82.93s/it][A100%|██████████| 5/5 [06:53<00:00, 82.77s/it]
+  1%|          | 3/437 [21:24<51:14:38, 425.07s/it]
+100%|██████████| 5/5 [06:53<00:00, 82.93s/it][A100%|██████████| 5/5 [06:53<00:00, 82.74s/it]
+  1%|          | 3/437 [21:24<51:14:56, 425.11s/it]
+100%|██████████| 5/5 [06:53<00:00, 82.92s/it][A100%|██████████| 5/5 [06:53<00:00, 82.75s/it]
+  1%|          | 3/437 [21:24<51:14:56, 425.11s/it]
+100%|██████████| 5/5 [06:53<00:00, 82.93s/it][A100%|██████████| 5/5 [06:53<00:00, 82.77s/it]
+  1%|          | 3/437 [21:25<51:15:18, 425.16s/it]
+100%|██████████| 5/5 [06:53<00:00, 82.91s/it][A100%|██████████| 5/5 [06:53<00:00, 82.73s/it]
+  1%|          | 3/437 [21:25<51:15:20, 425.16s/it]
+100%|██████████| 5/5 [06:53<00:00, 82.92s/it][A100%|██████████| 5/5 [06:53<00:00, 82.76s/it]
+  1%|          | 3/437 [21:27<51:18:55, 425.66s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:24<05:38, 84.50s/it][A[2024-06-10 22:38:38,540] [INFO] [logging.py:96:log_dist] [Rank 0] step=16, skipped=0, lr=[0.0006968288132069994], mom=[(0.9, 0.999)]
+steps: 16 loss: 1.6936 iter time (s): 83.635 samples/sec: 1.530
+
+ 20%|██        | 1/5 [01:24<05:37, 84.47s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.51s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.44s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.50s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.43s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.36s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.53s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.45s/it][A[2024-06-10 22:40:01,243] [INFO] [logging.py:96:log_dist] [Rank 0] step=17, skipped=0, lr=[0.0007098788991427876], mom=[(0.9, 0.999)]
+steps: 17 loss: 1.5717 iter time (s): 82.065 samples/sec: 1.560
+
+ 40%|████      | 2/5 [02:47<04:10, 83.40s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.42s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.43s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.42s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.43s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.45s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.39s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.68s/it][A[2024-06-10 22:41:25,198] [INFO] [logging.py:96:log_dist] [Rank 0] step=18, skipped=0, lr=[0.0007221828474432526], mom=[(0.9, 0.999)]
+steps: 18 loss: 1.5702 iter time (s): 83.312 samples/sec: 1.536
+
+ 60%|██████    | 3/5 [04:11<02:47, 83.66s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.66s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.65s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.67s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.66s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.64s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.68s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.32s/it][A[2024-06-10 22:42:50,514] [INFO] [logging.py:96:log_dist] [Rank 0] step=19, skipped=0, lr=[0.0007338213841094739], mom=[(0.9, 0.999)]
+steps: 19 loss: 1.4736 iter time (s): 84.683 samples/sec: 1.512
+
+ 80%|████████  | 4/5 [05:36<01:24, 84.32s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.32s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.31s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.31s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.35s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.30s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.33s/it][A
+100%|██████████| 5/5 [07:00<00:00, 84.23s/it][A100%|██████████| 5/5 [07:00<00:00, 84.11s/it]
+  1%|          | 4/437 [28:28<51:03:16, 424.47s/it][2024-06-10 22:44:14,576] [INFO] [logging.py:96:log_dist] [Rank 0] step=20, skipped=0, lr=[0.0007448628039094032], mom=[(0.9, 0.999)]
+steps: 20 loss: 1.4859 iter time (s): 83.480 samples/sec: 1.533
+
+100%|██████████| 5/5 [07:00<00:00, 84.25s/it][A100%|██████████| 5/5 [07:00<00:00, 84.11s/it]
+  1%|          | 4/437 [28:28<51:03:38, 424.52s/it]
+100%|██████████| 5/5 [07:00<00:00, 84.24s/it][A100%|██████████| 5/5 [07:00<00:00, 84.11s/it]
+  1%|          | 4/437 [28:28<51:03:43, 424.53s/it]
+100%|██████████| 5/5 [07:00<00:00, 84.24s/it][A100%|██████████| 5/5 [07:00<00:00, 84.10s/it]
+  1%|          | 4/437 [28:28<51:03:44, 424.54s/it]
+100%|██████████| 5/5 [07:00<00:00, 84.24s/it][A100%|██████████| 5/5 [07:00<00:00, 84.11s/it]
+  1%|          | 4/437 [28:28<51:03:55, 424.56s/it]
+100%|██████████| 5/5 [07:00<00:00, 84.23s/it][A100%|██████████| 5/5 [07:00<00:00, 84.11s/it]
+  1%|          | 4/437 [28:28<51:04:01, 424.58s/it]
+100%|██████████| 5/5 [07:00<00:00, 84.24s/it][A100%|██████████| 5/5 [07:00<00:00, 84.10s/it]
+  1%|          | 4/437 [28:28<51:04:03, 424.58s/it]
+100%|██████████| 5/5 [07:00<00:00, 84.22s/it][A100%|██████████| 5/5 [07:00<00:00, 84.08s/it]
+  1%|          | 4/437 [28:31<51:06:13, 424.88s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:25<05:42, 85.52s/it][A[2024-06-10 22:45:43,149] [INFO] [logging.py:96:log_dist] [Rank 0] step=21, skipped=0, lr=[0.0007553653986663684], mom=[(0.9, 0.999)]
+steps: 21 loss: 1.3732 iter time (s): 83.444 samples/sec: 1.534
+
+ 20%|██        | 1/5 [01:25<05:41, 85.35s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.44s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.36s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.27s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.40s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.36s/it][A
+ 20%|██        | 1/5 [01:24<05:36, 84.24s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.65s/it][A[2024-06-10 22:47:07,190] [INFO] [logging.py:96:log_dist] [Rank 0] step=22, skipped=0, lr=[0.0007653793201322668], mom=[(0.9, 0.999)]
+steps: 22 loss: 1.2510 iter time (s): 83.365 samples/sec: 1.535
+
+ 40%|████      | 2/5 [02:49<04:13, 84.59s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.62s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.57s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.59s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.09s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.57s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.58s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.32s/it][A[2024-06-10 22:48:30,646] [INFO] [logging.py:96:log_dist] [Rank 0] step=23, skipped=0, lr=[0.00077494802842546], mom=[(0.9, 0.999)]
+steps: 23 loss: 1.2634 iter time (s): 82.883 samples/sec: 1.544
+
+ 60%|██████    | 3/5 [04:12<02:48, 84.10s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.09s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.07s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.07s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.06s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.06s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.82s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.74s/it][A[2024-06-10 22:49:53,965] [INFO] [logging.py:96:log_dist] [Rank 0] step=24, skipped=0, lr=[0.0007841094319760011], mom=[(0.9, 0.999)]
+steps: 24 loss: 1.1167 iter time (s): 82.722 samples/sec: 1.547
+
+ 80%|████████  | 4/5 [05:36<01:23, 83.78s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.76s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.78s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.74s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.77s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.75s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.66s/it][A
+100%|██████████| 5/5 [07:00<00:00, 83.72s/it][A100%|██████████| 5/5 [07:00<00:00, 84.00s/it]
+  1%|          | 5/437 [35:31<50:52:33, 423.97s/it][2024-06-10 22:51:17,639] [INFO] [logging.py:96:log_dist] [Rank 0] step=25, skipped=0, lr=[0.0007928967946118068], mom=[(0.9, 0.999)]
+steps: 25 loss: 1.1069 iter time (s): 82.911 samples/sec: 1.544
+
+100%|██████████| 5/5 [06:59<00:00, 83.75s/it][A100%|██████████| 5/5 [06:59<00:00, 83.98s/it]
+  1%|          | 5/437 [35:31<50:52:42, 423.99s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.76s/it][A100%|██████████| 5/5 [06:59<00:00, 83.99s/it]
+  1%|          | 5/437 [35:31<50:52:51, 424.01s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.74s/it][A100%|██████████| 5/5 [06:59<00:00, 83.97s/it]
+  1%|          | 5/437 [35:31<50:52:48, 424.00s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.73s/it][A100%|██████████| 5/5 [06:59<00:00, 83.97s/it]
+  1%|          | 5/437 [35:31<50:52:49, 424.00s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.72s/it][A100%|██████████| 5/5 [06:59<00:00, 83.95s/it]
+  1%|          | 5/437 [35:31<50:52:51, 424.01s/it]
+100%|██████████| 5/5 [06:58<00:00, 83.61s/it][A100%|██████████| 5/5 [06:58<00:00, 83.73s/it]
+  1%|          | 5/437 [35:34<50:54:19, 424.21s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [06:59<00:00, 83.73s/it][A100%|██████████| 5/5 [06:59<00:00, 83.96s/it]
+  1%|          | 5/437 [35:31<50:52:57, 424.02s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:25<05:41, 85.43s/it][A[2024-06-10 22:52:46,132] [INFO] [logging.py:96:log_dist] [Rank 0] step=26, skipped=0, lr=[0.0008013394646322978], mom=[(0.9, 0.999)]
+steps: 26 loss: 0.9795 iter time (s): 83.226 samples/sec: 1.538
+
+ 20%|██        | 1/5 [01:25<05:41, 85.31s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.26s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.35s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.40s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.38s/it][A
+ 20%|██        | 1/5 [01:24<05:36, 84.08s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.37s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.45s/it][A[2024-06-10 22:54:09,891] [INFO] [logging.py:96:log_dist] [Rank 0] step=27, skipped=0, lr=[0.0008094634662122543], mom=[(0.9, 0.999)]
+steps: 27 loss: 0.8884 iter time (s): 83.104 samples/sec: 1.540
+
+ 40%|████      | 2/5 [02:48<04:13, 84.35s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.35s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.39s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.43s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.42s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.88s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.41s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.31s/it][A[2024-06-10 22:55:34,046] [INFO] [logging.py:96:log_dist] [Rank 0] step=28, skipped=0, lr=[0.0008172919831991168], mom=[(0.9, 0.999)]
+steps: 28 loss: 0.9021 iter time (s): 83.564 samples/sec: 1.532
+
+ 60%|██████    | 3/5 [04:13<02:48, 84.27s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.26s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.31s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.32s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.33s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.31s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.03s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.74s/it][A[2024-06-10 22:56:56,923] [INFO] [logging.py:96:log_dist] [Rank 0] step=29, skipped=0, lr=[0.0008248457579760369], mom=[(0.9, 0.999)]
+steps: 29 loss: 0.7533 iter time (s): 82.481 samples/sec: 1.552
+
+ 80%|████████  | 4/5 [05:36<01:23, 83.84s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.82s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.83s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.85s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.86s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.86s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.68s/it][A
+100%|██████████| 5/5 [06:59<00:00, 83.68s/it][A100%|██████████| 5/5 [06:59<00:00, 83.96s/it]
+  1%|▏         | 6/437 [42:33<50:42:45, 423.58s/it][2024-06-10 22:58:20,495] [INFO] [logging.py:96:log_dist] [Rank 0] step=30, skipped=0, lr=[0.0008321434226784047], mom=[(0.9, 0.999)]
+steps: 30 loss: 0.7302 iter time (s): 82.776 samples/sec: 1.546
+
+100%|██████████| 5/5 [06:59<00:00, 83.67s/it][A100%|██████████| 5/5 [06:59<00:00, 83.94s/it]
+  1%|▏         | 6/437 [42:34<50:43:04, 423.63s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.68s/it][A100%|██████████| 5/5 [06:59<00:00, 83.94s/it]
+  1%|▏         | 6/437 [42:34<50:43:13, 423.65s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.69s/it][A100%|██████████| 5/5 [06:59<00:00, 83.97s/it]
+  1%|▏         | 6/437 [42:34<50:43:19, 423.66s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.70s/it][A100%|██████████| 5/5 [06:59<00:00, 83.98s/it]
+  1%|▏         | 6/437 [42:34<50:43:20, 423.67s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.69s/it][A100%|██████████| 5/5 [06:59<00:00, 83.97s/it]
+  1%|▏         | 6/437 [42:34<50:43:23, 423.67s/it]
+
+100%|██████████| 5/5 [06:59<00:00, 83.69s/it][A100%|██████████| 5/5 [06:58<00:00, 83.58s/it][A100%|██████████| 5/5 [06:59<00:00, 83.97s/it]
+100%|██████████| 5/5 [06:58<00:00, 83.71s/it]
+  1%|▏         | 6/437 [42:34<50:43:27, 423.68s/it]  1%|▏         | 6/437 [42:37<50:44:21, 423.81s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:24<05:39, 84.86s/it][A[2024-06-10 22:59:48,435] [INFO] [logging.py:96:log_dist] [Rank 0] step=31, skipped=0, lr=[0.0008392017760806736], mom=[(0.9, 0.999)]
+steps: 31 loss: 0.6368 iter time (s): 83.534 samples/sec: 1.532
+
+ 20%|██        | 1/5 [01:24<05:38, 84.65s/it][A
+ 20%|██        | 1/5 [01:24<05:36, 84.02s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.71s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.66s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.50s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.57s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.47s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.63s/it][A[2024-06-10 23:01:12,904] [INFO] [logging.py:96:log_dist] [Rank 0] step=32, skipped=0, lr=[0.0008460360165087493], mom=[(0.9, 0.999)]
+steps: 32 loss: 0.5841 iter time (s): 83.806 samples/sec: 1.527
+
+ 40%|████      | 2/5 [02:49<04:13, 84.53s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.25s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.54s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.54s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.45s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.44s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.49s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.45s/it][A[2024-06-10 23:02:37,128] [INFO] [logging.py:96:log_dist] [Rank 0] step=33, skipped=0, lr=[0.0008526599389012683], mom=[(0.9, 0.999)]
+steps: 33 loss: 0.5970 iter time (s): 83.638 samples/sec: 1.530
+
+ 60%|██████    | 3/5 [04:13<02:48, 84.44s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.24s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.44s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.36s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.44s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.40s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.38s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.25s/it][A[2024-06-10 23:04:01,076] [INFO] [logging.py:96:log_dist] [Rank 0] step=34, skipped=0, lr=[0.0008590861024445375], mom=[(0.9, 0.999)]
+steps: 34 loss: 0.4920 iter time (s): 83.239 samples/sec: 1.538
+
+ 80%|████████  | 4/5 [05:37<01:24, 84.21s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.11s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.22s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.21s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.17s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.19s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.19s/it][A
+100%|██████████| 5/5 [07:01<00:00, 84.16s/it][A100%|██████████| 5/5 [07:01<00:00, 84.30s/it]
+  2%|▏         | 7/437 [49:38<50:38:01, 423.91s/it][2024-06-10 23:05:25,070] [INFO] [logging.py:96:log_dist] [Rank 0] step=35, skipped=0, lr=[0.0008653259739015204], mom=[(0.9, 0.999)]
+steps: 35 loss: 0.5498 iter time (s): 83.430 samples/sec: 1.534
+
+100%|██████████| 5/5 [07:01<00:00, 84.18s/it][A100%|██████████| 5/5 [07:01<00:00, 84.28s/it]
+  2%|▏         | 7/437 [49:38<50:38:08, 423.93s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.19s/it][A100%|██████████| 5/5 [07:01<00:00, 84.29s/it]
+  2%|▏         | 7/437 [49:39<50:38:21, 423.96s/it]
+100%|██████████| 5/5 [07:00<00:00, 84.17s/it][A100%|██████████| 5/5 [07:00<00:00, 84.17s/it]
+  2%|▏         | 7/437 [49:39<50:38:31, 423.98s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.20s/it][A100%|██████████| 5/5 [07:01<00:00, 84.30s/it]
+  2%|▏         | 7/437 [49:39<50:38:30, 423.98s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.16s/it][A100%|██████████| 5/5 [07:01<00:00, 84.23s/it]
+  2%|▏         | 7/437 [49:41<50:39:00, 424.05s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [07:01<00:00, 84.17s/it][A100%|██████████| 5/5 [07:01<00:00, 84.25s/it]
+  2%|▏         | 7/437 [49:39<50:38:27, 423.97s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.17s/it][A100%|██████████| 5/5 [07:01<00:00, 84.26s/it]
+  2%|▏         | 7/437 [49:39<50:38:26, 423.97s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:25<05:42, 85.71s/it][A[2024-06-10 23:06:53,874] [INFO] [logging.py:96:log_dist] [Rank 0] step=36, skipped=0, lr=[0.0008713900507450026], mom=[(0.9, 0.999)]
+steps: 36 loss: 0.4709 iter time (s): 83.641 samples/sec: 1.530
+
+ 20%|██        | 1/5 [01:25<05:42, 85.52s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.40s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.32s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.42s/it][A
+ 20%|██        | 1/5 [01:25<05:42, 85.51s/it][A
+ 20%|██        | 1/5 [01:24<05:37, 84.42s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.42s/it][A
+ 40%|████      | 2/5 [02:50<04:14, 84.89s/it][A[2024-06-10 23:08:18,181] [INFO] [logging.py:96:log_dist] [Rank 0] step=37, skipped=0, lr=[0.0008772879674163837], mom=[(0.9, 0.999)]
+steps: 37 loss: 0.4349 iter time (s): 83.666 samples/sec: 1.530
+
+ 40%|████      | 2/5 [02:49<04:14, 84.80s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.76s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.70s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.77s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.75s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.74s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.34s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.39s/it][A[2024-06-10 23:09:41,975] [INFO] [logging.py:96:log_dist] [Rank 0] step=38, skipped=0, lr=[0.0008830285874112237], mom=[(0.9, 0.999)]
+steps: 38 loss: 0.5392 iter time (s): 83.194 samples/sec: 1.539
+
+ 60%|██████    | 3/5 [04:13<02:48, 84.38s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.29s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.35s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.35s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.34s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.11s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.34s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.10s/it][A[2024-06-10 23:11:05,639] [INFO] [logging.py:96:log_dist] [Rank 0] step=39, skipped=0, lr=[0.0008886200834012993], mom=[(0.9, 0.999)]
+steps: 39 loss: 0.4578 iter time (s): 83.094 samples/sec: 1.540
+
+ 80%|████████  | 4/5 [05:37<01:24, 84.09s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.06s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.13s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.10s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.11s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.09s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.96s/it][A
+100%|██████████| 5/5 [07:00<00:00, 83.82s/it][A100%|██████████| 5/5 [07:00<00:00, 84.16s/it]
+  2%|▏         | 8/437 [56:42<50:30:55, 423.91s/it][2024-06-10 23:12:28,972] [INFO] [logging.py:96:log_dist] [Rank 0] step=40, skipped=0, lr=[0.0008940700072111531], mom=[(0.9, 0.999)]
+steps: 40 loss: 0.4828 iter time (s): 82.668 samples/sec: 1.548
+
+100%|██████████| 5/5 [07:00<00:00, 83.86s/it][A100%|██████████| 5/5 [07:00<00:00, 84.16s/it]
+  2%|▏         | 8/437 [56:42<50:31:10, 423.94s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.86s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  2%|▏         | 8/437 [56:43<50:31:21, 423.97s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.88s/it][A100%|██████████| 5/5 [07:00<00:00, 84.16s/it]
+  2%|▏         | 8/437 [56:43<50:31:23, 423.97s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.87s/it][A100%|██████████| 5/5 [07:00<00:00, 84.15s/it]
+  2%|▏         | 8/437 [56:43<50:31:22, 423.97s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.86s/it][A100%|██████████| 5/5 [07:00<00:00, 84.15s/it]
+  2%|▏         | 8/437 [56:43<50:31:21, 423.97s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.06s/it][A100%|██████████| 5/5 [07:01<00:00, 84.25s/it]
+  2%|▏         | 8/437 [56:44<50:32:38, 424.15s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+100%|██████████| 5/5 [07:00<00:00, 83.98s/it][A100%|██████████| 5/5 [07:00<00:00, 84.06s/it]
+  2%|▏         | 8/437 [56:46<50:33:07, 424.21s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:24<05:39, 84.82s/it][A[2024-06-10 23:13:56,991] [INFO] [logging.py:96:log_dist] [Rank 0] step=41, skipped=0, lr=[0.000899385351152748], mom=[(0.9, 0.999)]
+steps: 41 loss: 0.4977 iter time (s): 82.434 samples/sec: 1.553
+
+ 20%|██        | 1/5 [01:24<05:38, 84.67s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.52s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.64s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.72s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.69s/it][A
+ 20%|██        | 1/5 [01:23<05:32, 83.20s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.30s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.26s/it][A[2024-06-10 23:15:20,851] [INFO] [logging.py:96:log_dist] [Rank 0] step=42, skipped=0, lr=[0.0009045726019681184], mom=[(0.9, 0.999)]
+steps: 42 loss: 0.4779 iter time (s): 83.143 samples/sec: 1.540
+
+ 40%|████      | 2/5 [02:48<04:12, 84.23s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.14s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.16s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.17s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.13s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.57s/it][A
+ 40%|████      | 2/5 [02:46<04:10, 83.53s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.07s/it][A[2024-06-10 23:16:44,688] [INFO] [logging.py:96:log_dist] [Rank 0] step=43, skipped=0, lr=[0.0009096377884239557], mom=[(0.9, 0.999)]
+steps: 43 loss: 0.4494 iter time (s): 83.186 samples/sec: 1.539
+
+ 60%|██████    | 3/5 [04:12<02:48, 84.07s/it][A
+ 60%|██████    | 3/5 [04:12<02:47, 83.96s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.05s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.03s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.00s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.67s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.70s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.71s/it][A[2024-06-10 23:18:07,859] [INFO] [logging.py:96:log_dist] [Rank 0] step=44, skipped=0, lr=[0.0009145865234340165], mom=[(0.9, 0.999)]
+steps: 44 loss: 0.3640 iter time (s): 82.504 samples/sec: 1.551
+
+ 80%|████████  | 4/5 [05:35<01:23, 83.77s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.76s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.77s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.72s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.75s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.53s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.55s/it][A
+100%|██████████| 5/5 [06:59<00:00, 83.82s/it][A100%|██████████| 5/5 [06:59<00:00, 83.94s/it]
+  2%|▏         | 9/437 [1:03:45<50:21:37, 423.59s/it][2024-06-10 23:19:31,868] [INFO] [logging.py:96:log_dist] [Rank 0] step=45, skipped=0, lr=[0.0009194240414474062], mom=[(0.9, 0.999)]
+steps: 45 loss: 0.4236 iter time (s): 83.191 samples/sec: 1.539
+
+100%|██████████| 5/5 [06:59<00:00, 83.78s/it][A100%|██████████| 5/5 [06:59<00:00, 83.91s/it]
+  2%|▏         | 9/437 [1:03:45<50:21:24, 423.56s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.76s/it][A100%|██████████| 5/5 [06:59<00:00, 83.87s/it]
+  2%|▏         | 9/437 [1:03:45<50:21:20, 423.55s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.76s/it][A100%|██████████| 5/5 [06:59<00:00, 83.89s/it]
+  2%|▏         | 9/437 [1:03:45<50:21:17, 423.54s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.77s/it][A100%|██████████| 5/5 [06:59<00:00, 83.90s/it]
+  2%|▏         | 9/437 [1:03:45<50:21:21, 423.55s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.77s/it][A100%|██████████| 5/5 [06:59<00:00, 83.88s/it]
+  2%|▏         | 9/437 [1:03:46<50:21:25, 423.56s/it]
+100%|██████████| 5/5 [06:57<00:00, 83.64s/it][A100%|██████████| 5/5 [06:57<00:00, 83.59s/it]
+  2%|▏         | 9/437 [1:03:46<50:21:04, 423.51s/it]
+100%|██████████| 5/5 [06:58<00:00, 83.65s/it][A100%|██████████| 5/5 [06:58<00:00, 83.61s/it]
+  2%|▏         | 9/437 [1:03:48<50:21:22, 423.56s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:23<05:35, 83.91s/it][A[2024-06-10 23:20:58,858] [INFO] [logging.py:96:log_dist] [Rank 0] step=46, skipped=0, lr=[0.00092415523172721], mom=[(0.9, 0.999)]
+steps: 46 loss: 0.4376 iter time (s): 83.094 samples/sec: 1.540
+
+ 20%|██        | 1/5 [01:23<05:35, 83.85s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.84s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.83s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.91s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.82s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.82s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.83s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.82s/it][A[2024-06-10 23:22:22,618] [INFO] [logging.py:96:log_dist] [Rank 0] step=47, skipped=0, lr=[0.0009287846680498986], mom=[(0.9, 0.999)]
+steps: 47 loss: 0.2836 iter time (s): 83.087 samples/sec: 1.541
+
+ 40%|████      | 2/5 [02:47<04:11, 83.76s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.75s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.76s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.82s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.76s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.78s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.77s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.16s/it][A[2024-06-10 23:23:47,160] [INFO] [logging.py:96:log_dist] [Rank 0] step=48, skipped=0, lr=[0.0009333166352777509], mom=[(0.9, 0.999)]
+steps: 48 loss: 0.3297 iter time (s): 83.907 samples/sec: 1.525
+
+ 60%|██████    | 3/5 [04:12<02:48, 84.12s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.13s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.16s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.16s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.13s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.13s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.12s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.60s/it][A[2024-06-10 23:25:12,433] [INFO] [logging.py:96:log_dist] [Rank 0] step=49, skipped=0, lr=[0.0009377551531912342], mom=[(0.9, 0.999)]
+steps: 49 loss: 0.3054 iter time (s): 84.653 samples/sec: 1.512
+
+ 80%|████████  | 4/5 [05:37<01:24, 84.58s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.60s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.58s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.59s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.59s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.59s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.58s/it][A
+100%|██████████| 5/5 [07:02<00:00, 84.76s/it][A100%|██████████| 5/5 [07:02<00:00, 84.51s/it]
+  2%|▏         | 10/437 [1:10:51<50:19:01, 424.22s/it][2024-06-10 23:26:37,488] [INFO] [logging.py:96:log_dist] [Rank 0] step=50, skipped=0, lr=[0.0009421039979135567], mom=[(0.9, 0.999)]
+steps: 50 loss: 0.3071 iter time (s): 84.390 samples/sec: 1.517
+
+100%|██████████| 5/5 [07:02<00:00, 84.75s/it][A100%|██████████| 5/5 [07:02<00:00, 84.49s/it]
+  2%|▏         | 10/437 [1:10:51<50:18:51, 424.20s/it]
+100%|██████████| 5/5 [07:02<00:00, 84.75s/it][A100%|██████████| 5/5 [07:02<00:00, 84.49s/it]
+  2%|▏         | 10/437 [1:10:51<50:18:49, 424.19s/it]
+100%|██████████| 5/5 [07:02<00:00, 84.74s/it][A100%|██████████| 5/5 [07:02<00:00, 84.49s/it]
+  2%|▏         | 10/437 [1:10:51<50:18:48, 424.19s/it]
+100%|██████████| 5/5 [07:02<00:00, 84.74s/it][A100%|██████████| 5/5 [07:02<00:00, 84.50s/it]
+  2%|▏         | 10/437 [1:10:51<50:18:46, 424.18s/it]
+100%|██████████| 5/5 [07:02<00:00, 84.74s/it][A100%|██████████| 5/5 [07:02<00:00, 84.48s/it]
+  2%|▏         | 10/437 [1:10:51<50:18:52, 424.20s/it]
+100%|██████████| 5/5 [07:02<00:00, 84.73s/it][A100%|██████████| 5/5 [07:02<00:00, 84.48s/it]
+  2%|▏         | 10/437 [1:10:51<50:18:34, 424.16s/it]
+100%|██████████| 5/5 [07:02<00:00, 84.73s/it][A100%|██████████| 5/5 [07:02<00:00, 84.48s/it]
+  2%|▏         | 10/437 [1:10:53<50:18:46, 424.18s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:26<05:44, 86.14s/it][A[2024-06-10 23:28:06,890] [INFO] [logging.py:96:log_dist] [Rank 0] step=51, skipped=0, lr=[0.000946366721213539], mom=[(0.9, 0.999)]
+steps: 51 loss: 0.2370 iter time (s): 84.672 samples/sec: 1.512
+
+ 20%|██        | 1/5 [01:26<05:44, 86.19s/it][A
+ 20%|██        | 1/5 [01:26<05:44, 86.21s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.38s/it][A
+ 20%|██        | 1/5 [01:26<05:45, 86.29s/it][A
+ 20%|██        | 1/5 [01:26<05:45, 86.32s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.42s/it][A
+ 20%|██        | 1/5 [01:26<05:45, 86.30s/it][A
+ 40%|████      | 2/5 [02:50<04:15, 85.08s/it][A[2024-06-10 23:29:30,763] [INFO] [logging.py:96:log_dist] [Rank 0] step=52, skipped=0, lr=[0.0009505466679340477], mom=[(0.9, 0.999)]
+steps: 52 loss: 0.1739 iter time (s): 83.239 samples/sec: 1.538
+
+ 40%|████      | 2/5 [02:50<04:14, 84.80s/it][A
+ 40%|████      | 2/5 [02:50<04:14, 84.79s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.49s/it][A
+ 40%|████      | 2/5 [02:50<04:14, 84.83s/it][A
+ 40%|████      | 2/5 [02:50<04:14, 84.87s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.50s/it][A
+ 40%|████      | 2/5 [02:50<04:14, 84.86s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.21s/it][A[2024-06-10 23:30:54,391] [INFO] [logging.py:96:log_dist] [Rank 0] step=53, skipped=0, lr=[0.0009546469917602629], mom=[(0.9, 0.999)]
+steps: 53 loss: 0.2314 iter time (s): 83.008 samples/sec: 1.542
+
+ 60%|██████    | 3/5 [04:13<02:48, 84.29s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.28s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.11s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.31s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.29s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.10s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.30s/it][A
+ 80%|████████  | 4/5 [05:37<01:23, 83.92s/it][A[2024-06-10 23:32:17,861] [INFO] [logging.py:96:log_dist] [Rank 0] step=54, skipped=0, lr=[0.0009586706695140041], mom=[(0.9, 0.999)]
+steps: 54 loss: 0.1771 iter time (s): 82.853 samples/sec: 1.545
+
+ 80%|████████  | 4/5 [05:37<01:23, 83.94s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.84s/it][A
+ 80%|████████  | 4/5 [05:37<01:23, 83.98s/it][A
+ 80%|████████  | 4/5 [05:37<01:23, 83.97s/it][A
+ 80%|████████  | 4/5 [05:37<01:23, 83.98s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.86s/it][A
+ 80%|████████  | 4/5 [05:37<01:23, 83.98s/it][A
+100%|██████████| 5/5 [07:00<00:00, 83.75s/it][A100%|██████████| 5/5 [07:00<00:00, 84.11s/it]
+  3%|▎         | 11/437 [1:17:54<50:11:06, 424.10s/it][2024-06-10 23:33:41,329] [INFO] [logging.py:96:log_dist] [Rank 0] step=55, skipped=0, lr=[0.0009626205141364204], mom=[(0.9, 0.999)]
+steps: 55 loss: 0.1685 iter time (s): 82.828 samples/sec: 1.545
+
+100%|██████████| 5/5 [07:00<00:00, 83.78s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  3%|▎         | 11/437 [1:17:55<50:11:02, 424.09s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.77s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  3%|▎         | 11/437 [1:17:55<50:10:53, 424.07s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.71s/it][A100%|██████████| 5/5 [06:59<00:00, 83.96s/it]
+  3%|▎         | 11/437 [1:17:55<50:10:57, 424.08s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.79s/it][A100%|██████████| 5/5 [07:00<00:00, 84.14s/it]
+  3%|▎         | 11/437 [1:17:55<50:11:02, 424.09s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.79s/it][A100%|██████████| 5/5 [07:00<00:00, 84.14s/it]
+  3%|▎         | 11/437 [1:17:55<50:11:02, 424.09s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.70s/it][A100%|██████████| 5/5 [06:59<00:00, 83.96s/it]
+  3%|▎         | 11/437 [1:17:57<50:10:57, 424.08s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [07:00<00:00, 83.78s/it][A100%|██████████| 5/5 [07:00<00:00, 84.14s/it]
+  3%|▎         | 11/437 [1:17:55<50:10:51, 424.06s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:25<05:42, 85.54s/it][A[2024-06-10 23:35:09,988] [INFO] [logging.py:96:log_dist] [Rank 0] step=56, skipped=0, lr=[0.0009664991865008667], mom=[(0.9, 0.999)]
+steps: 56 loss: 0.1889 iter time (s): 83.788 samples/sec: 1.528
+
+ 20%|██        | 1/5 [01:25<05:41, 85.46s/it][A
+ 20%|██        | 1/5 [01:25<05:42, 85.51s/it][A
+ 20%|██        | 1/5 [01:25<05:42, 85.56s/it][A
+ 20%|██        | 1/5 [01:25<05:42, 85.57s/it][A
+ 20%|██        | 1/5 [01:25<05:42, 85.64s/it][A
+ 20%|██        | 1/5 [01:25<05:42, 85.64s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.64s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.74s/it][A[2024-06-10 23:36:34,162] [INFO] [logging.py:96:log_dist] [Rank 0] step=57, skipped=0, lr=[0.0009703092061802254], mom=[(0.9, 0.999)]
+steps: 57 loss: 0.1530 iter time (s): 83.436 samples/sec: 1.534
+
+ 40%|████      | 2/5 [02:49<04:14, 84.71s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.70s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.75s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.74s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.72s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.31s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.73s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.30s/it][A[2024-06-10 23:37:57,932] [INFO] [logging.py:96:log_dist] [Rank 0] step=58, skipped=0, lr=[0.0009740529612777866], mom=[(0.9, 0.999)]
+steps: 58 loss: 0.1651 iter time (s): 83.125 samples/sec: 1.540
+
+ 60%|██████    | 3/5 [04:13<02:48, 84.31s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.29s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.28s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.26s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.29s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.28s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.05s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.21s/it][A[2024-06-10 23:39:22,021] [INFO] [logging.py:96:log_dist] [Rank 0] step=59, skipped=0, lr=[0.000977732717417758], mom=[(0.9, 0.999)]
+steps: 59 loss: 0.1778 iter time (s): 83.472 samples/sec: 1.533
+
+ 80%|████████  | 4/5 [05:37<01:24, 84.21s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.19s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.21s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.21s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.20s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.21s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.08s/it][A
+100%|██████████| 5/5 [07:01<00:00, 83.96s/it][A100%|██████████| 5/5 [07:01<00:00, 84.22s/it]
+  3%|▎         | 12/437 [1:24:59<50:04:15, 424.13s/it][2024-06-10 23:40:45,528] [INFO] [logging.py:96:log_dist] [Rank 0] step=60, skipped=0, lr=[0.0009813506259801546], mom=[(0.9, 0.999)]
+steps: 60 loss: 0.1819 iter time (s): 82.858 samples/sec: 1.545
+
+100%|██████████| 5/5 [07:00<00:00, 83.93s/it][A100%|██████████| 5/5 [07:00<00:00, 84.19s/it]
+  3%|▎         | 12/437 [1:24:59<50:04:05, 424.11s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.94s/it][A100%|██████████| 5/5 [07:00<00:00, 84.20s/it]
+  3%|▎         | 12/437 [1:24:59<50:04:06, 424.11s/it]
+100%|██████████| 5/5 [07:01<00:00, 83.96s/it][A100%|██████████| 5/5 [07:01<00:00, 84.21s/it]
+  3%|▎         | 12/437 [1:24:59<50:04:13, 424.13s/it]
+100%|██████████| 5/5 [07:01<00:00, 83.95s/it][A100%|██████████| 5/5 [07:01<00:00, 84.21s/it]
+  3%|▎         | 12/437 [1:24:59<50:04:11, 424.12s/it]
+100%|██████████| 5/5 [07:01<00:00, 83.94s/it][A100%|██████████| 5/5 [07:01<00:00, 84.21s/it]
+  3%|▎         | 12/437 [1:24:59<50:04:09, 424.12s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.86s/it][A100%|██████████| 5/5 [07:00<00:00, 84.01s/it]
+  3%|▎         | 12/437 [1:25:01<50:04:09, 424.12s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [07:01<00:00, 83.95s/it][A100%|██████████| 5/5 [07:01<00:00, 84.21s/it]
+  3%|▎         | 12/437 [1:24:59<50:04:06, 424.11s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:23<05:35, 83.79s/it][A[2024-06-10 23:42:12,524] [INFO] [logging.py:96:log_dist] [Rank 0] step=61, skipped=0, lr=[0.0009849087316550244], mom=[(0.9, 0.999)]
+steps: 61 loss: 0.1320 iter time (s): 82.997 samples/sec: 1.542
+
+ 20%|██        | 1/5 [01:23<05:35, 83.96s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.84s/it][A
+ 20%|██        | 1/5 [01:23<05:34, 83.55s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.93s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.89s/it][A
+ 20%|██        | 1/5 [01:23<05:35, 83.93s/it][A
+ 20%|██        | 1/5 [01:23<05:34, 83.74s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.57s/it][A[2024-06-10 23:43:37,631] [INFO] [logging.py:96:log_dist] [Rank 0] step=62, skipped=0, lr=[0.0009884089793824235], mom=[(0.9, 0.999)]
+steps: 62 loss: 0.1558 iter time (s): 84.445 samples/sec: 1.516
+
+ 40%|████      | 2/5 [02:49<04:13, 84.61s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.58s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.46s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.61s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.60s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.61s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.53s/it][A
+ 60%|██████    | 3/5 [04:13<02:49, 84.56s/it][A[2024-06-10 23:45:02,184] [INFO] [logging.py:96:log_dist] [Rank 0] step=63, skipped=0, lr=[0.00099185322073712], mom=[(0.9, 0.999)]
+steps: 63 loss: 0.2444 iter time (s): 83.911 samples/sec: 1.525
+
+ 60%|██████    | 3/5 [04:13<02:49, 84.57s/it][A
+ 60%|██████    | 3/5 [04:13<02:49, 84.59s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.50s/it][A
+ 60%|██████    | 3/5 [04:13<02:49, 84.56s/it][A
+ 60%|██████    | 3/5 [04:13<02:49, 84.57s/it][A
+ 60%|██████    | 3/5 [04:13<02:49, 84.58s/it][A
+ 60%|██████    | 3/5 [04:13<02:49, 84.54s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.38s/it][A[2024-06-10 23:46:26,303] [INFO] [logging.py:96:log_dist] [Rank 0] step=64, skipped=0, lr=[0.000995243219810499], mom=[(0.9, 0.999)]
+steps: 64 loss: 0.1436 iter time (s): 83.487 samples/sec: 1.533
+
+ 80%|████████  | 4/5 [05:37<01:24, 84.41s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.38s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.37s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.41s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.41s/it][A
+
+ 80%|████████  | 4/5 [05:37<01:24, 84.42s/it][A 80%|████████  | 4/5 [05:37<01:24, 84.39s/it][A
+100%|██████████| 5/5 [07:01<00:00, 84.33s/it][A100%|██████████| 5/5 [07:01<00:00, 84.36s/it]
+  3%|▎         | 13/437 [1:32:04<49:59:05, 424.40s/it][2024-06-10 23:47:50,542] [INFO] [logging.py:96:log_dist] [Rank 0] step=65, skipped=0, lr=[0.0009985806586364514], mom=[(0.9, 0.999)]
+steps: 65 loss: 0.1288 iter time (s): 83.567 samples/sec: 1.532
+
+100%|██████████| 5/5 [07:01<00:00, 84.33s/it][A100%|██████████| 5/5 [07:01<00:00, 84.38s/it]
+  3%|▎         | 13/437 [1:32:04<49:59:02, 424.39s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.33s/it][A100%|██████████| 5/5 [07:01<00:00, 84.37s/it]
+  3%|▎         | 13/437 [1:32:04<49:58:59, 424.39s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.31s/it][A100%|██████████| 5/5 [07:01<00:00, 84.31s/it]
+  3%|▎         | 13/437 [1:32:04<49:59:01, 424.39s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.34s/it][A100%|██████████| 5/5 [07:01<00:00, 84.38s/it]
+  3%|▎         | 13/437 [1:32:04<49:59:01, 424.39s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.33s/it][A100%|██████████| 5/5 [07:01<00:00, 84.37s/it]
+  3%|▎         | 13/437 [1:32:04<49:59:00, 424.39s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.32s/it][A100%|██████████| 5/5 [07:01<00:00, 84.38s/it]
+  3%|▎         | 13/437 [1:32:04<49:58:54, 424.37s/it]
+100%|██████████| 5/5 [07:01<00:00, 84.31s/it][A100%|██████████| 5/5 [07:01<00:00, 84.34s/it]
+  3%|▎         | 13/437 [1:32:07<49:59:00, 424.39s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:25<05:43, 85.83s/it][A[2024-06-10 23:49:19,564] [INFO] [logging.py:96:log_dist] [Rank 0] step=66, skipped=0, lr=[0.001001867142203018], mom=[(0.9, 0.999)]
+steps: 66 loss: 0.2068 iter time (s): 83.991 samples/sec: 1.524
+
+ 20%|██        | 1/5 [01:25<05:43, 85.88s/it][A
+ 20%|██        | 1/5 [01:25<05:43, 85.88s/it][A
+ 20%|██        | 1/5 [01:25<05:43, 85.76s/it][A
+ 20%|██        | 1/5 [01:25<05:43, 85.87s/it][A
+ 20%|██        | 1/5 [01:25<05:43, 85.85s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.70s/it][A
+ 20%|██        | 1/5 [01:25<05:43, 85.85s/it][A
+ 40%|████      | 2/5 [02:49<04:12, 84.30s/it][A[2024-06-10 23:50:42,776] [INFO] [logging.py:96:log_dist] [Rank 0] step=67, skipped=0, lr=[0.0009999986412466408], mom=[(0.9, 0.999)]
+steps: 67 loss: 0.2284 iter time (s): 82.617 samples/sec: 1.549
+
+ 40%|████      | 2/5 [02:49<04:12, 84.31s/it][A
+ 40%|████      | 2/5 [02:49<04:12, 84.29s/it][A
+ 40%|████      | 2/5 [02:49<04:12, 84.29s/it][A
+ 40%|████      | 2/5 [02:49<04:12, 84.32s/it][A
+ 40%|████      | 2/5 [02:49<04:12, 84.31s/it][A
+ 40%|████      | 2/5 [02:49<04:12, 84.30s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.84s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.63s/it][A[2024-06-10 23:52:05,606] [INFO] [logging.py:96:log_dist] [Rank 0] step=68, skipped=0, lr=[0.0009999963591126473], mom=[(0.9, 0.999)]
+steps: 68 loss: 0.1730 iter time (s): 82.206 samples/sec: 1.557
+
+ 60%|██████    | 3/5 [04:11<02:47, 83.66s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.66s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.63s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.66s/it][A
+ 60%|██████    | 3/5 [04:12<02:47, 83.69s/it][A
+ 60%|██████    | 3/5 [04:10<02:46, 83.42s/it][A
+ 60%|██████    | 3/5 [04:12<02:47, 83.68s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.76s/it][A[2024-06-10 23:53:29,599] [INFO] [logging.py:96:log_dist] [Rank 0] step=69, skipped=0, lr=[0.0009999929745048578], mom=[(0.9, 0.999)]
+steps: 69 loss: 0.1169 iter time (s): 83.272 samples/sec: 1.537
+
+ 80%|████████  | 4/5 [05:35<01:23, 83.80s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.79s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.79s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.82s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.63s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.80s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.79s/it][A
+100%|██████████| 5/5 [06:59<00:00, 83.68s/it][A100%|██████████| 5/5 [06:59<00:00, 83.88s/it]
+  3%|▎         | 14/437 [1:39:06<49:48:08, 423.85s/it][2024-06-10 23:54:53,123] [INFO] [logging.py:96:log_dist] [Rank 0] step=70, skipped=0, lr=[0.0009999884874307358], mom=[(0.9, 0.999)]
+steps: 70 loss: 0.1204 iter time (s): 82.857 samples/sec: 1.545
+
+100%|██████████| 5/5 [06:59<00:00, 83.67s/it][A100%|██████████| 5/5 [06:59<00:00, 83.89s/it]
+  3%|▎         | 14/437 [1:39:06<49:48:07, 423.85s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.67s/it][A100%|██████████| 5/5 [06:59<00:00, 83.88s/it]
+  3%|▎         | 14/437 [1:39:06<49:48:03, 423.84s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.66s/it][A100%|██████████| 5/5 [06:59<00:00, 83.87s/it]
+  3%|▎         | 14/437 [1:39:07<49:48:05, 423.84s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.65s/it][A100%|██████████| 5/5 [06:59<00:00, 83.88s/it]
+  3%|▎         | 14/437 [1:39:07<49:47:59, 423.83s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.66s/it][A100%|██████████| 5/5 [06:59<00:00, 83.89s/it]
+  3%|▎         | 14/437 [1:39:07<49:48:05, 423.84s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.66s/it][A100%|██████████| 5/5 [06:59<00:00, 83.88s/it]
+  3%|▎         | 14/437 [1:39:07<49:48:00, 423.83s/it]
+100%|██████████| 5/5 [06:58<00:00, 83.56s/it][A100%|██████████| 5/5 [06:58<00:00, 83.65s/it]
+  3%|▎         | 14/437 [1:39:09<49:48:04, 423.84s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:24<05:38, 84.55s/it][A[2024-06-10 23:56:20,960] [INFO] [logging.py:96:log_dist] [Rank 0] step=71, skipped=0, lr=[0.0009999828979001763], mom=[(0.9, 0.999)]
+steps: 71 loss: 0.1446 iter time (s): 83.346 samples/sec: 1.536
+
+ 20%|██        | 1/5 [01:24<05:38, 84.65s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.63s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.68s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.58s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.61s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.69s/it][A
+ 20%|██        | 1/5 [01:24<05:36, 84.17s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.19s/it][A[2024-06-10 23:57:44,902] [INFO] [logging.py:96:log_dist] [Rank 0] step=72, skipped=0, lr=[0.000999976205925505], mom=[(0.9, 0.999)]
+steps: 72 loss: 0.1071 iter time (s): 83.320 samples/sec: 1.536
+
+ 40%|████      | 2/5 [02:48<04:12, 84.25s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.21s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.26s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.23s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.23s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.27s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.04s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.14s/it][A[2024-06-10 23:59:08,964] [INFO] [logging.py:96:log_dist] [Rank 0] step=73, skipped=0, lr=[0.0009999684115214792], mom=[(0.9, 0.999)]
+steps: 73 loss: 0.0959 iter time (s): 83.430 samples/sec: 1.534
+
+ 60%|██████    | 3/5 [04:12<02:48, 84.15s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.17s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.16s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.13s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.15s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.05s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.17s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.85s/it][A[2024-06-11 00:00:32,393] [INFO] [logging.py:96:log_dist] [Rank 0] step=74, skipped=0, lr=[0.0009999595147052868], mom=[(0.9, 0.999)]
+steps: 74 loss: 0.0688 iter time (s): 82.807 samples/sec: 1.546
+
+ 80%|████████  | 4/5 [05:36<01:23, 83.87s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.88s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.88s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.86s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.87s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.87s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.80s/it][A
+100%|██████████| 5/5 [06:59<00:00, 83.57s/it][A100%|██████████| 5/5 [06:59<00:00, 83.81s/it]
+  3%|▎         | 15/437 [1:46:08<49:37:53, 423.40s/it][2024-06-11 00:01:55,457] [INFO] [logging.py:96:log_dist] [Rank 0] step=75, skipped=0, lr=[0.0009999495154965467], mom=[(0.9, 0.999)]
+steps: 75 loss: 0.0632 iter time (s): 82.453 samples/sec: 1.552
+
+100%|██████████| 5/5 [06:59<00:00, 83.58s/it][A100%|██████████| 5/5 [06:59<00:00, 83.83s/it]
+  3%|▎         | 15/437 [1:46:09<49:37:51, 423.39s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.56s/it][A100%|██████████| 5/5 [06:59<00:00, 83.83s/it]
+  3%|▎         | 15/437 [1:46:09<49:37:43, 423.37s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.59s/it][A100%|██████████| 5/5 [06:59<00:00, 83.84s/it]
+  3%|▎         | 15/437 [1:46:09<49:37:55, 423.40s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.56s/it][A100%|██████████| 5/5 [06:59<00:00, 83.81s/it]
+  3%|▎         | 15/437 [1:46:09<49:37:50, 423.39s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.56s/it][A100%|██████████| 5/5 [06:59<00:00, 83.82s/it]
+  3%|▎         | 15/437 [1:46:09<49:37:45, 423.38s/it]
+100%|██████████| 5/5 [06:58<00:00, 83.52s/it][A100%|██████████| 5/5 [06:58<00:00, 83.72s/it]
+  3%|▎         | 15/437 [1:46:11<49:37:46, 423.38s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [06:59<00:00, 83.57s/it][A100%|██████████| 5/5 [06:59<00:00, 83.83s/it]
+  3%|▎         | 15/437 [1:46:09<49:37:44, 423.38s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:22<05:28, 82.15s/it][A[2024-06-11 00:03:21,869] [INFO] [logging.py:96:log_dist] [Rank 0] step=76, skipped=0, lr=[0.0009999384139173098], mom=[(0.9, 0.999)]
+steps: 76 loss: 0.0628 iter time (s): 82.408 samples/sec: 1.553
+
+ 20%|██        | 1/5 [01:23<05:33, 83.28s/it][A
+ 20%|██        | 1/5 [01:22<05:29, 82.26s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.38s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.35s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.36s/it][A
+ 20%|██        | 1/5 [01:23<05:32, 83.13s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.34s/it][A
+ 40%|████      | 2/5 [02:45<04:08, 82.73s/it][A[2024-06-11 00:04:44,999] [INFO] [logging.py:96:log_dist] [Rank 0] step=77, skipped=0, lr=[0.0009999262099920562], mom=[(0.9, 0.999)]
+steps: 77 loss: 0.0691 iter time (s): 82.497 samples/sec: 1.552
+
+ 40%|████      | 2/5 [02:46<04:09, 83.21s/it][A
+ 40%|████      | 2/5 [02:45<04:08, 82.80s/it][A
+ 40%|████      | 2/5 [02:46<04:09, 83.26s/it][A
+ 40%|████      | 2/5 [02:46<04:09, 83.21s/it][A
+ 40%|████      | 2/5 [02:46<04:09, 83.20s/it][A
+ 40%|████      | 2/5 [02:46<04:09, 83.21s/it][A
+ 40%|████      | 2/5 [02:46<04:09, 83.14s/it][A
+ 60%|██████    | 3/5 [04:07<02:45, 82.71s/it][A[2024-06-11 00:06:07,688] [INFO] [logging.py:96:log_dist] [Rank 0] step=78, skipped=0, lr=[0.0009999129037476984], mom=[(0.9, 0.999)]
+steps: 78 loss: 0.0675 iter time (s): 82.037 samples/sec: 1.560
+
+ 60%|██████    | 3/5 [04:09<02:45, 82.98s/it][A
+ 60%|██████    | 3/5 [04:08<02:45, 82.74s/it][A
+ 60%|██████    | 3/5 [04:09<02:45, 82.97s/it][A
+ 60%|██████    | 3/5 [04:09<02:45, 82.95s/it][A
+ 60%|██████    | 3/5 [04:09<02:45, 82.97s/it][A
+ 60%|██████    | 3/5 [04:08<02:45, 82.93s/it][A
+ 60%|██████    | 3/5 [04:09<02:45, 82.97s/it][A
+ 80%|████████  | 4/5 [05:31<01:23, 83.15s/it][A[2024-06-11 00:07:31,049] [INFO] [logging.py:96:log_dist] [Rank 0] step=79, skipped=0, lr=[0.0009998984952135786], mom=[(0.9, 0.999)]
+steps: 79 loss: 0.0441 iter time (s): 82.730 samples/sec: 1.547
+
+ 80%|████████  | 4/5 [05:32<01:23, 83.13s/it][A
+ 80%|████████  | 4/5 [05:32<01:23, 83.12s/it][A
+ 80%|████████  | 4/5 [05:32<01:23, 83.14s/it][A
+ 80%|████████  | 4/5 [05:31<01:23, 83.08s/it][A
+ 80%|████████  | 4/5 [05:32<01:23, 83.15s/it][A
+ 80%|████████  | 4/5 [05:32<01:23, 83.18s/it][A
+ 80%|████████  | 4/5 [05:32<01:23, 83.14s/it][A
+100%|██████████| 5/5 [06:54<00:00, 82.90s/it][A100%|██████████| 5/5 [06:54<00:00, 82.85s/it]
+  4%|▎         | 16/437 [1:53:07<49:20:30, 421.92s/it][2024-06-11 00:08:53,965] [INFO] [logging.py:96:log_dist] [Rank 0] step=80, skipped=0, lr=[0.0009998829844214709], mom=[(0.9, 0.999)]
+steps: 80 loss: 0.0506 iter time (s): 82.177 samples/sec: 1.558
+
+100%|██████████| 5/5 [06:55<00:00, 83.05s/it][A100%|██████████| 5/5 [06:55<00:00, 83.08s/it]
+  4%|▎         | 16/437 [1:53:07<49:20:32, 421.93s/it]
+100%|██████████| 5/5 [06:54<00:00, 82.94s/it][A100%|██████████| 5/5 [06:54<00:00, 82.88s/it]
+  4%|▎         | 16/437 [1:53:07<49:20:27, 421.92s/it]
+100%|██████████| 5/5 [06:55<00:00, 83.05s/it][A100%|██████████| 5/5 [06:55<00:00, 83.09s/it]
+  4%|▎         | 16/437 [1:53:07<49:20:29, 421.92s/it]
+100%|██████████| 5/5 [06:55<00:00, 83.03s/it][A100%|██████████| 5/5 [06:55<00:00, 83.08s/it]
+  4%|▎         | 16/437 [1:53:08<49:20:27, 421.92s/it]
+100%|██████████| 5/5 [06:55<00:00, 83.02s/it][A100%|██████████| 5/5 [06:55<00:00, 83.08s/it]
+  4%|▎         | 16/437 [1:53:08<49:20:27, 421.92s/it]
+100%|██████████| 5/5 [06:55<00:00, 83.03s/it][A100%|██████████| 5/5 [06:55<00:00, 83.08s/it]
+  4%|▎         | 16/437 [1:53:08<49:20:27, 421.92s/it]
+100%|██████████| 5/5 [06:55<00:00, 83.01s/it][A100%|██████████| 5/5 [06:55<00:00, 83.04s/it]
+  4%|▎         | 16/437 [1:53:10<49:20:28, 421.92s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:24<05:38, 84.59s/it][A[2024-06-11 00:10:21,966] [INFO] [logging.py:96:log_dist] [Rank 0] step=81, skipped=0, lr=[0.0009998663714055791], mom=[(0.9, 0.999)]
+steps: 81 loss: 0.0501 iter time (s): 84.088 samples/sec: 1.522
+
+ 20%|██        | 1/5 [01:24<05:39, 84.94s/it][A
+ 20%|██        | 1/5 [01:23<05:34, 83.68s/it][A
+ 20%|██        | 1/5 [01:24<05:39, 84.93s/it][A
+ 20%|██        | 1/5 [01:25<05:40, 85.02s/it][A
+ 20%|██        | 1/5 [01:25<05:40, 85.01s/it][A
+ 20%|██        | 1/5 [01:24<05:39, 84.89s/it][A
+ 20%|██        | 1/5 [01:25<05:40, 85.05s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.31s/it][A[2024-06-11 00:11:46,069] [INFO] [logging.py:96:log_dist] [Rank 0] step=82, skipped=0, lr=[0.0009998486562025378], mom=[(0.9, 0.999)]
+steps: 82 loss: 0.0441 iter time (s): 83.409 samples/sec: 1.535
+
+ 40%|████      | 2/5 [02:49<04:13, 84.42s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.92s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.42s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.43s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.42s/it][A
+ 40%|████      | 2/5 [02:49<04:13, 84.45s/it][A
+ 40%|████      | 2/5 [02:48<04:13, 84.38s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.20s/it][A[2024-06-11 00:13:10,129] [INFO] [logging.py:96:log_dist] [Rank 0] step=83, skipped=0, lr=[0.0009998298388514129], mom=[(0.9, 0.999)]
+steps: 83 loss: 0.0358 iter time (s): 83.428 samples/sec: 1.534
+
+ 60%|██████    | 3/5 [04:13<02:48, 84.25s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.97s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.24s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.26s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.25s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.26s/it][A
+ 60%|██████    | 3/5 [04:12<02:48, 84.23s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.77s/it][A[2024-06-11 00:14:33,240] [INFO] [logging.py:96:log_dist] [Rank 0] step=84, skipped=0, lr=[0.0009998099193936994], mom=[(0.9, 0.999)]
+steps: 84 loss: 0.0348 iter time (s): 82.492 samples/sec: 1.552
+
+ 80%|████████  | 4/5 [05:36<01:23, 83.80s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.63s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.81s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.82s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.81s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.79s/it][A
+ 80%|████████  | 4/5 [05:36<01:23, 83.82s/it][A
+100%|██████████| 5/5 [06:59<00:00, 83.76s/it][A100%|██████████| 5/5 [06:59<00:00, 83.93s/it]
+  4%|▍         | 17/437 [2:00:10<49:15:48, 422.26s/it][2024-06-11 00:15:57,005] [INFO] [logging.py:96:log_dist] [Rank 0] step=85, skipped=0, lr=[0.0009997888978733238], mom=[(0.9, 0.999)]
+steps: 85 loss: 0.0296 iter time (s): 83.127 samples/sec: 1.540
+
+100%|██████████| 5/5 [06:59<00:00, 83.78s/it][A100%|██████████| 5/5 [06:59<00:00, 83.98s/it]
+  4%|▍         | 17/437 [2:00:10<49:15:44, 422.25s/it]
+100%|██████████| 5/5 [06:58<00:00, 83.67s/it][A100%|██████████| 5/5 [06:58<00:00, 83.73s/it]
+  4%|▍         | 17/437 [2:00:10<49:15:43, 422.25s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.77s/it][A100%|██████████| 5/5 [06:59<00:00, 83.98s/it]
+  4%|▍         | 17/437 [2:00:10<49:15:44, 422.25s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.78s/it][A100%|██████████| 5/5 [06:59<00:00, 83.99s/it]
+  4%|▍         | 17/437 [2:00:11<49:15:48, 422.26s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.78s/it][A100%|██████████| 5/5 [06:59<00:00, 83.98s/it]
+  4%|▍         | 17/437 [2:00:11<49:15:46, 422.25s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.77s/it][A100%|██████████| 5/5 [06:59<00:00, 83.96s/it]
+  4%|▍         | 17/437 [2:00:13<49:15:46, 422.25s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [06:59<00:00, 83.78s/it][A100%|██████████| 5/5 [06:59<00:00, 83.99s/it]
+  4%|▍         | 17/437 [2:00:11<49:15:46, 422.25s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:25<05:41, 85.35s/it][A[2024-06-11 00:17:25,474] [INFO] [logging.py:96:log_dist] [Rank 0] step=86, skipped=0, lr=[0.0009997667743366421], mom=[(0.9, 0.999)]
+steps: 86 loss: 0.0307 iter time (s): 84.239 samples/sec: 1.519
+
+ 20%|██        | 1/5 [01:25<05:41, 85.38s/it][A
+ 20%|██        | 1/5 [01:24<05:39, 84.92s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.37s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.36s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.36s/it][A
+ 20%|██        | 1/5 [01:24<05:39, 85.00s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.38s/it][A
+ 40%|████      | 2/5 [02:50<04:15, 85.04s/it][A[2024-06-11 00:18:50,301] [INFO] [logging.py:96:log_dist] [Rank 0] step=87, skipped=0, lr=[0.0009997435488324413], mom=[(0.9, 0.999)]
+steps: 87 loss: 0.0254 iter time (s): 84.189 samples/sec: 1.520
+
+ 40%|████      | 2/5 [02:50<04:15, 85.04s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.84s/it][A
+ 40%|████      | 2/5 [02:50<04:15, 85.04s/it][A
+ 40%|████      | 2/5 [02:50<04:15, 85.03s/it][A
+ 40%|████      | 2/5 [02:50<04:15, 85.05s/it][A
+ 40%|████      | 2/5 [02:49<04:14, 84.89s/it][A
+ 40%|████      | 2/5 [02:50<04:15, 85.05s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.28s/it][A[2024-06-11 00:20:13,673] [INFO] [logging.py:96:log_dist] [Rank 0] step=88, skipped=0, lr=[0.0009997192214119374], mom=[(0.9, 0.999)]
+steps: 88 loss: 0.0169 iter time (s): 82.750 samples/sec: 1.547
+
+ 60%|██████    | 3/5 [04:13<02:48, 84.23s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.29s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.38s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.31s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.33s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.25s/it][A
+ 60%|██████    | 3/5 [04:13<02:48, 84.33s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.11s/it][A[2024-06-11 00:21:37,512] [INFO] [logging.py:96:log_dist] [Rank 0] step=89, skipped=0, lr=[0.000999693792128777], mom=[(0.9, 0.999)]
+steps: 89 loss: 0.0249 iter time (s): 83.103 samples/sec: 1.540
+
+ 80%|████████  | 4/5 [05:37<01:24, 84.08s/it][A
+ 80%|████████  | 4/5 [05:36<01:24, 84.06s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.11s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.11s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.10s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.05s/it][A
+ 80%|████████  | 4/5 [05:37<01:24, 84.10s/it][A
+100%|██████████| 5/5 [07:00<00:00, 83.79s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  4%|▍         | 18/437 [2:07:14<49:11:51, 422.70s/it][2024-06-11 00:23:00,728] [INFO] [logging.py:96:log_dist] [Rank 0] step=90, skipped=0, lr=[0.0009996672610390366], mom=[(0.9, 0.999)]
+steps: 90 loss: 0.0150 iter time (s): 82.569 samples/sec: 1.550
+
+100%|██████████| 5/5 [07:00<00:00, 83.76s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  4%|▍         | 18/437 [2:07:14<49:11:45, 422.69s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.75s/it][A100%|██████████| 5/5 [07:00<00:00, 84.04s/it]
+  4%|▍         | 18/437 [2:07:14<49:11:53, 422.71s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.78s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  4%|▍         | 18/437 [2:07:14<49:11:49, 422.69s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.78s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  4%|▍         | 18/437 [2:07:14<49:11:53, 422.71s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.76s/it][A100%|██████████| 5/5 [07:00<00:00, 84.11s/it]
+  4%|▍         | 18/437 [2:07:14<49:11:51, 422.70s/it]
+100%|██████████| 5/5 [07:00<00:00, 83.73s/it][A100%|██████████| 5/5 [07:00<00:00, 84.04s/it]
+  4%|▍         | 18/437 [2:07:17<49:11:49, 422.70s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [07:00<00:00, 83.77s/it][A100%|██████████| 5/5 [07:00<00:00, 84.12s/it]
+  4%|▍         | 18/437 [2:07:14<49:11:51, 422.70s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:24<05:38, 84.70s/it][A[2024-06-11 00:24:28,555] [INFO] [logging.py:96:log_dist] [Rank 0] step=91, skipped=0, lr=[0.0009996396282012216], mom=[(0.9, 0.999)]
+steps: 91 loss: 0.0262 iter time (s): 82.673 samples/sec: 1.548
+
+ 20%|██        | 1/5 [01:24<05:39, 84.88s/it][A
+ 20%|██        | 1/5 [01:24<05:38, 84.74s/it][A
+ 20%|██        | 1/5 [01:24<05:39, 84.97s/it][A
+ 20%|██        | 1/5 [01:24<05:39, 84.88s/it][A
+ 20%|██        | 1/5 [01:23<05:34, 83.70s/it][A
+ 20%|██        | 1/5 [01:25<05:40, 85.02s/it][A
+ 20%|██        | 1/5 [01:25<05:41, 85.30s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.13s/it][A[2024-06-11 00:25:52,286] [INFO] [logging.py:96:log_dist] [Rank 0] step=92, skipped=0, lr=[0.0009996108936762681], mom=[(0.9, 0.999)]
+steps: 92 loss: 0.0124 iter time (s): 82.885 samples/sec: 1.544
+
+ 40%|████      | 2/5 [02:48<04:12, 84.13s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.09s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.09s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.07s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.02s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.59s/it][A
+ 40%|████      | 2/5 [02:48<04:12, 84.11s/it][A
+ 60%|██████    | 3/5 [04:12<02:47, 83.87s/it][A[2024-06-11 00:27:15,852] [INFO] [logging.py:96:log_dist] [Rank 0] step=93, skipped=0, lr=[0.0009995810575275407], mom=[(0.9, 0.999)]
+steps: 93 loss: 0.0100 iter time (s): 82.942 samples/sec: 1.543
+
+ 60%|██████    | 3/5 [04:12<02:47, 83.88s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.88s/it][A
+ 60%|██████    | 3/5 [04:12<02:47, 83.86s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.84s/it][A
+ 60%|██████    | 3/5 [04:11<02:47, 83.81s/it][A
+ 60%|██████    | 3/5 [04:12<02:47, 83.87s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.59s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.82s/it][A[2024-06-11 00:28:39,577] [INFO] [logging.py:96:log_dist] [Rank 0] step=94, skipped=0, lr=[0.0009995501198208337], mom=[(0.9, 0.999)]
+steps: 94 loss: 0.0135 iter time (s): 83.083 samples/sec: 1.541
+
+ 80%|████████  | 4/5 [05:35<01:23, 83.82s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.81s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.82s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.79s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.79s/it][A
+ 80%|████████  | 4/5 [05:35<01:23, 83.81s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.64s/it][A
+100%|██████████| 5/5 [06:59<00:00, 83.67s/it][A100%|██████████| 5/5 [06:59<00:00, 83.83s/it]
+  4%|▍         | 19/437 [2:14:16<49:03:55, 422.57s/it][2024-06-11 00:30:03,001] [INFO] [logging.py:96:log_dist] [Rank 0] step=95, skipped=0, lr=[0.0009995180806243705], mom=[(0.9, 0.999)]
+steps: 95 loss: 0.0114 iter time (s): 82.778 samples/sec: 1.546
+
+100%|██████████| 5/5 [06:59<00:00, 83.66s/it][A100%|██████████| 5/5 [06:59<00:00, 83.84s/it]
+  4%|▍         | 19/437 [2:14:16<49:03:53, 422.57s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.67s/it][A100%|██████████| 5/5 [06:59<00:00, 83.82s/it]
+  4%|▍         | 19/437 [2:14:16<49:03:56, 422.57s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.66s/it][A100%|██████████| 5/5 [06:59<00:00, 83.83s/it]
+  4%|▍         | 19/437 [2:14:16<49:03:53, 422.57s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.64s/it][A100%|██████████| 5/5 [06:59<00:00, 83.81s/it]
+  4%|▍         | 19/437 [2:14:17<49:03:53, 422.57s/it]
+100%|██████████| 5/5 [06:59<00:00, 83.64s/it][A100%|██████████| 5/5 [06:59<00:00, 83.82s/it]
+  4%|▍         | 19/437 [2:14:17<49:03:54, 422.57s/it]
+100%|██████████| 5/5 [06:57<00:00, 83.55s/it][A100%|██████████| 5/5 [06:57<00:00, 83.58s/it]
+  4%|▍         | 19/437 [2:14:19<49:03:54, 422.57s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+
+100%|██████████| 5/5 [06:59<00:00, 83.66s/it][A100%|██████████| 5/5 [06:59<00:00, 83.84s/it]
+  4%|▍         | 19/437 [2:14:17<49:03:54, 422.57s/it]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][A
+  0%|          | 0/5 [00:00<?, ?it/s][ATraining on 1280 of 1280 sentences.
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 20%|██        | 1/5 [01:23<05:33, 83.44s/it][A[2024-06-11 00:31:29,626] [INFO] [logging.py:96:log_dist] [Rank 0] step=96, skipped=0, lr=[0.0009994849400088031], mom=[(0.9, 0.999)]
+steps: 96 loss: 0.0121 iter time (s): 82.583 samples/sec: 1.550
+
+ 20%|██        | 1/5 [01:23<05:34, 83.51s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.45s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.49s/it][A
+ 20%|██        | 1/5 [01:23<05:34, 83.54s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.44s/it][A
+ 20%|██        | 1/5 [01:23<05:33, 83.31s/it][A
+ 20%|██        | 1/5 [01:23<05:34, 83.58s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.70s/it][A[2024-06-11 00:32:53,507] [INFO] [logging.py:96:log_dist] [Rank 0] step=97, skipped=0, lr=[0.000999450698047213], mom=[(0.9, 0.999)]
+steps: 97 loss: 0.0103 iter time (s): 83.266 samples/sec: 1.537
+
+ 40%|████      | 2/5 [02:47<04:11, 83.74s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.69s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.74s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.68s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.77s/it][A
+ 40%|████      | 2/5 [02:47<04:11, 83.76s/it][A
+ 40%|████      | 2/5 [02:47<04:10, 83.65s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.54s/it][A[2024-06-11 00:34:16,862] [INFO] [logging.py:96:log_dist] [Rank 0] step=98, skipped=0, lr=[0.0009994153548151096], mom=[(0.9, 0.999)]
+steps: 98 loss: 0.0054 iter time (s): 82.730 samples/sec: 1.547
+
+ 60%|██████    | 3/5 [04:10<02:47, 83.55s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.59s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.57s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.57s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.55s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.51s/it][A
+ 60%|██████    | 3/5 [04:10<02:47, 83.58s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.67s/it][A[2024-06-11 00:35:40,716] [INFO] [logging.py:96:log_dist] [Rank 0] step=99, skipped=0, lr=[0.0009993789103904319], mom=[(0.9, 0.999)]
+steps: 99 loss: 0.0180 iter time (s): 83.218 samples/sec: 1.538
+
+ 80%|████████  | 4/5 [05:34<01:23, 83.65s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.67s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.67s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.69s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.68s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.69s/it][A
+ 80%|████████  | 4/5 [05:34<01:23, 83.66s/it][A
+100%|██████████| 5/5 [06:58<00:00, 83.73s/it][A100%|██████████| 5/5 [06:58<00:00, 83.68s/it]
+[2024-06-11 00:37:04,557] [INFO] [logging.py:96:log_dist] [Rank 0] step=100, skipped=0, lr=[0.0009993413648535462], mom=[(0.9, 0.999)]
+steps: 100 loss: 0.0078 iter time (s): 83.179 samples/sec: 1.539
+
+100%|██████████| 5/5 [06:58<00:00, 83.73s/it][A100%|██████████| 5/5 [06:58<00:00, 83.68s/it]
+
+100%|██████████| 5/5 [06:58<00:00, 83.72s/it][A100%|██████████| 5/5 [06:58<00:00, 83.68s/it]
+
+100%|██████████| 5/5 [06:58<00:00, 83.73s/it][A100%|██████████| 5/5 [06:58<00:00, 83.69s/it]
+
+100%|██████████| 5/5 [06:58<00:00, 83.74s/it][A100%|██████████| 5/5 [06:58<00:00, 83.70s/it]
+
+100%|██████████| 5/5 [06:58<00:00, 83.72s/it][A100%|██████████| 5/5 [06:58<00:00, 83.67s/it]
+
+100%|██████████| 5/5 [06:58<00:00, 83.71s/it][A100%|██████████| 5/5 [06:58<00:00, 83.65s/it]
+Checkpointing at shard 20
+
+100%|██████████| 5/5 [06:58<00:00, 83.74s/it][A100%|██████████| 5/5 [06:58<00:00, 83.70s/it]
+[2024-06-11 00:37:10,054] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step100 is about to be saved!
+[2024-06-11 00:37:11,200] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_00-model_states.pt...
+[2024-06-11 00:37:13,941] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_08-model_states.pt...
+[2024-06-11 00:37:14,403] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_07-model_states.pt...
+[2024-06-11 00:37:14,717] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_02-model_states.pt...
+[2024-06-11 00:37:18,331] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_00-model_states.pt.
+[2024-06-11 00:37:21,372] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_05-model_states.pt...
+[2024-06-11 00:37:21,573] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_06-model_states.pt...
+[2024-06-11 00:37:22,471] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_01-model_states.pt...
+[2024-06-11 00:37:23,844] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_03-model_states.pt...
+[2024-06-11 00:37:23,924] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_04-model_states.pt...
+[2024-06-11 00:41:28,347] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_08-model_states.pt.
+[2024-06-11 00:41:28,448] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_09-model_states.pt...
+[2024-06-11 00:41:31,670] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_09-model_states.pt.
+[2024-06-11 00:41:31,696] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_07_model_states.pt...
+[2024-06-11 00:41:31,721] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_07_model_states.pt.
+[2024-06-11 00:41:31,721] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[2024-06-11 00:41:31,988] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_07-model_states.pt.
+[2024-06-11 00:41:32,024] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_06_model_states.pt...
+[2024-06-11 00:41:32,351] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_06_model_states.pt.
+[2024-06-11 00:41:32,351] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[2024-06-11 00:42:12,093] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_04-model_states.pt.
+[2024-06-11 00:42:12,128] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_03_model_states.pt...
+[2024-06-11 00:42:12,158] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_03_model_states.pt.
+[2024-06-11 00:42:12,158] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[2024-06-11 00:42:16,422] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_02-model_states.pt.
+[2024-06-11 00:42:16,455] [INFO] [logging.py:96:log_dist] [Rank 1] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_01_model_states.pt
+[2024-06-11 00:42:16,455] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_01_model_states.pt...
+[2024-06-11 00:42:16,469] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_01_model_states.pt.
+[2024-06-11 00:42:16,470] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[2024-06-11 00:42:17,018] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_03-model_states.pt.
+[2024-06-11 00:42:17,055] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_02_model_states.pt...
+[2024-06-11 00:42:17,081] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_02_model_states.pt.
+[2024-06-11 00:42:17,081] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[2024-06-11 00:42:29,155] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_01-model_states.pt.
+[2024-06-11 00:42:29,191] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_00_model_states.pt
+[2024-06-11 00:42:29,191] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_00_model_states.pt...
+[2024-06-11 00:42:31,348] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_00_model_states.pt.
+[2024-06-11 00:42:31,349] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[2024-06-11 00:42:36,452] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_06-model_states.pt.
+[2024-06-11 00:42:36,733] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_05_model_states.pt...
+[2024-06-11 00:42:36,735] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_05_model_states.pt.
+[2024-06-11 00:42:36,735] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[2024-06-11 00:42:59,197] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/layer_05-model_states.pt.
+[2024-06-11 00:42:59,232] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_04_model_states.pt...
+[2024-06-11 00:42:59,234] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_shard_0_checkpoint/global_step100/mp_rank_04_model_states.pt.
+[2024-06-11 00:42:59,234] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+Checkpoint saved using --- 354.0409269332886 seconds ---
+  5%|▍         | 20/437 [2:27:12<61:13:53, 528.62s/it]  5%|▍         | 20/437 [2:27:15<61:13:36, 528.58s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-Pretrain_processed_dataset/shard_0
+  5%|▍         | 20/437 [2:27:12<61:13:57, 528.63s/it]  5%|▍         | 20/437 [2:27:12<61:13:34, 528.57s/it]  5%|▍         | 20/437 [2:27:12<61:14:16, 528.67s/it]  5%|▍         | 20/437 [2:27:12<61:13:42, 528.59s/it]  5%|▍         | 20/437 [2:27:12<61:13:39, 528.58s/it]  5%|▍         | 20/437 [2:27:14<61:18:33, 529.29s/it]

@@ -1,0 +1,2062 @@
+[2024-06-16 11:02:06,013] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-16 11:02:13,857] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-06-16 11:02:13,857] [INFO] [runner.py:568:main] cmd = /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None llava/train_parallel_deepspeed_mixtral_lora.py --num_stages=8 --lora_r=128 --lora_alpha=256 --save_model_shard=100 --skip_shard=1700 --checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test
+[2024-06-16 11:02:18,643] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-16 11:02:20,361] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2024-06-16 11:02:20,361] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=8, node_rank=0
+[2024-06-16 11:02:20,361] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2024-06-16 11:02:20,361] [INFO] [launch.py:163:main] dist_world_size=8
+[2024-06-16 11:02:20,361] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+[2024-06-16 11:02:20,369] [INFO] [launch.py:253:main] process 280569 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=0', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:20,376] [INFO] [launch.py:253:main] process 280570 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=1', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:20,383] [INFO] [launch.py:253:main] process 280571 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=2', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:20,390] [INFO] [launch.py:253:main] process 280572 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=3', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:20,402] [INFO] [launch.py:253:main] process 280573 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=4', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:20,414] [INFO] [launch.py:253:main] process 280574 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=5', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:20,424] [INFO] [launch.py:253:main] process 280575 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=6', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:20,435] [INFO] [launch.py:253:main] process 280576 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=7', '--num_stages=8', '--lora_r=128', '--lora_alpha=256', '--save_model_shard=100', '--skip_shard=1700', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test']
+[2024-06-16 11:02:34,011] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-16 11:02:35,435] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-06-16 11:02:37,293] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-06-16 11:02:38,035] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-06-16 11:02:38,035] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:00<00:06,  2.72it/s]Loading checkpoint shards:  10%|█         | 2/20 [00:00<00:08,  2.22it/s]Loading checkpoint shards:  15%|█▌        | 3/20 [00:01<00:08,  2.04it/s]Loading checkpoint shards:  20%|██        | 4/20 [00:01<00:08,  1.90it/s]Loading checkpoint shards:  25%|██▌       | 5/20 [00:02<00:08,  1.87it/s][2024-06-16 11:02:44,068] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:  30%|███       | 6/20 [00:03<00:07,  1.88it/s]Loading checkpoint shards:  35%|███▌      | 7/20 [00:03<00:06,  1.88it/s][2024-06-16 11:02:45,004] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-06-16 11:02:45,153] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:  40%|████      | 8/20 [00:04<00:06,  1.89it/s][2024-06-16 11:02:45,373] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:  45%|████▌     | 9/20 [00:04<00:05,  1.84it/s]Loading checkpoint shards:  50%|█████     | 10/20 [00:05<00:05,  1.75it/s][2024-06-16 11:02:46,526] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-06-16 11:02:46,581] [INFO] [comm.py:637:init_distributed] cdb=None
+Loading checkpoint shards:  55%|█████▌    | 11/20 [00:05<00:05,  1.72it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:19,  1.04s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:01<00:16,  1.12it/s]Loading checkpoint shards:  60%|██████    | 12/20 [00:08<00:09,  1.13s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:02<00:15,  1.11it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:09<00:08,  1.17s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:03<00:14,  1.09it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:00<00:18,  1.02it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:19,  1.04s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:04<00:14,  1.05it/s]Loading checkpoint shards:  10%|█         | 2/20 [00:01<00:17,  1.02it/s]Loading checkpoint shards:  10%|█         | 2/20 [00:02<00:19,  1.06s/it][2024-06-16 11:02:52,346] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:  70%|███████   | 14/20 [00:11<00:08,  1.34s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:05<00:14,  1.01s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:03<00:18,  1.06s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:03<00:17,  1.05s/it][2024-06-16 11:02:53,778] [INFO] [comm.py:637:init_distributed] cdb=None
+Loading checkpoint shards:  35%|███▌      | 7/20 [00:06<00:12,  1.02it/s]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:12<00:07,  1.42s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:04<00:16,  1.02s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:04<00:17,  1.07s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:07<00:12,  1.07s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:05<00:15,  1.03s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:05<00:18,  1.21s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:14<00:06,  1.60s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:09<00:11,  1.08s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:06<00:15,  1.10s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:06<00:17,  1.23s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 10/20 [00:10<00:10,  1.03s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:07<00:13,  1.04s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:16<00:05,  1.70s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:11<00:09,  1.02s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:20,  1.06s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:08<00:17,  1.36s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:08<00:13,  1.10s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:02<00:19,  1.08s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:12<00:08,  1.09s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:09<00:15,  1.32s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:09<00:12,  1.13s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:13<00:07,  1.04s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:19<00:03,  1.94s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:03<00:18,  1.11s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:11<00:14,  1.30s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:11<00:11,  1.18s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:14<00:06,  1.06s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:04<00:17,  1.11s/it][2024-06-16 11:03:02,131] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:  50%|█████     | 10/20 [00:12<00:13,  1.33s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:15<00:05,  1.03s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:05<00:15,  1.01s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:12<00:11,  1.24s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:21<00:01,  1.99s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:06<00:14,  1.04s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:16<00:04,  1.06s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:22<00:00,  1.70s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:22<00:00,  1.13s/it]
+[2024-06-16 11:03:03,636] [INFO] [comm.py:637:init_distributed] cdb=None
+Loading checkpoint shards:  55%|█████▌    | 11/20 [00:13<00:12,  1.34s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:13<00:10,  1.30s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:17<00:03,  1.14s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:07<00:15,  1.16s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:15<00:10,  1.32s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:15<00:09,  1.42s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:19<00:02,  1.28s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:09<00:15,  1.32s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:16<00:10,  1.49s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:20<00:01,  1.22s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:17<00:09,  1.61s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:10<00:13,  1.25s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:20<00:00,  1.00s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:20<00:00,  1.04s/it]
+Loading checkpoint shards:  70%|███████   | 14/20 [00:18<00:08,  1.46s/it]Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+Loading checkpoint shards:  50%|█████     | 10/20 [00:11<00:12,  1.22s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:19<00:07,  1.58s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:26,  1.40s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:19<00:07,  1.50s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:12<00:11,  1.24s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:20<00:06,  1.54s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:02<00:25,  1.40s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:21<00:05,  1.47s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:14<00:10,  1.28s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:22<00:04,  1.54s/it][2024-06-16 11:03:12,175] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:24,  1.43s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:22<00:04,  1.37s/it]Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+Loading checkpoint shards:  65%|██████▌   | 13/20 [00:15<00:08,  1.25s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:05<00:21,  1.34s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:23<00:03,  1.50s/it][2024-06-16 11:03:13,581] [INFO] [comm.py:637:init_distributed] cdb=None
+Loading checkpoint shards:  70%|███████   | 14/20 [00:16<00:07,  1.22s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:23<00:02,  1.41s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:06<00:20,  1.35s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:24<00:01,  1.48s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:17<00:06,  1.25s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:25<00:01,  1.39s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:25<00:00,  1.29s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:25<00:00,  1.29s/it]
+Loading checkpoint shards: 100%|██████████| 20/20 [00:25<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:25<00:00,  1.29s/it]
+Loading checkpoint shards:  30%|███       | 6/20 [00:08<00:19,  1.38s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:19<00:05,  1.32s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:09<00:17,  1.34s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:21<00:04,  1.46s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:10<00:15,  1.29s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:30,  1.62s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:12<00:14,  1.33s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:34,  1.82s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:23<00:03,  1.71s/it]Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:27,  1.51s/it]Rank 4 initialized with CUDA_MEM (60870623232, 85100068864)
+Deepspeed engine initializing at --- RANK 4 --- ...
+Loading checkpoint shards:  50%|█████     | 10/20 [00:13<00:13,  1.39s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:24<00:01,  1.60s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:33,  1.88s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:25<00:00,  1.22s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:24,  1.41s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:25<00:00,  1.26s/it]
+Loading checkpoint shards:  55%|█████▌    | 11/20 [00:14<00:11,  1.31s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:27,  1.60s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:05<00:21,  1.34s/it]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Loading checkpoint shards:  60%|██████    | 12/20 [00:15<00:09,  1.19s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:06<00:17,  1.18s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:06<00:23,  1.45s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:16<00:08,  1.15s/it]Rank 3 initialized with CUDA_MEM (60870623232, 85100068864)
+Deepspeed engine initializing at --- RANK 3 --- ...
+Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+Loading checkpoint shards:  30%|███       | 6/20 [00:07<00:16,  1.17s/it]Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading checkpoint shards:  25%|██▌       | 5/20 [00:07<00:20,  1.36s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:17<00:06,  1.14s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:08<00:14,  1.08s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:18<00:05,  1.12s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:08<00:18,  1.31s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:09<00:12,  1.01s/it]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Loading checkpoint shards:  80%|████████  | 16/20 [00:19<00:04,  1.05s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:09<00:16,  1.26s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:10<00:10,  1.06it/s]ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 4.738264560699463 seconds
+[2024-06-16 11:03:28,329] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.6048636436462402 seconds
+[2024-06-16 11:03:28,345] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Rank 6 initialized with CUDA_MEM (60870623232, 85100068864)
+Deepspeed engine initializing at --- RANK 6 --- ...
+Loading checkpoint shards:  85%|████████▌ | 17/20 [00:20<00:03,  1.03s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:10<00:08,  1.16it/s]Loading checkpoint shards:  40%|████      | 8/20 [00:10<00:14,  1.17s/it]Rank 7 initialized with CUDA_MEM (60344238080, 85100068864)
+Deepspeed engine initializing at --- RANK 7 --- ...
+Loading checkpoint shards:  90%|█████████ | 18/20 [00:21<00:01,  1.02it/s]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:11<00:07,  1.15it/s]Loading checkpoint shards:  45%|████▌     | 9/20 [00:11<00:11,  1.05s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:22<00:00,  1.04it/s]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Rank 2 initialized with CUDA_MEM (60870623232, 85100068864)
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Deepspeed engine initializing at --- RANK 2 --- ...
+Loading checkpoint shards:  60%|██████    | 12/20 [00:12<00:07,  1.12it/s]Loading checkpoint shards:  50%|█████     | 10/20 [00:12<00:10,  1.03s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:22<00:00,  1.28it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:22<00:00,  1.15s/it]
+Loading checkpoint shards:  65%|██████▌   | 13/20 [00:13<00:05,  1.22it/s]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:13<00:08,  1.02it/s]Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading checkpoint shards:  70%|███████   | 14/20 [00:14<00:04,  1.24it/s]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Loading checkpoint shards:  60%|██████    | 12/20 [00:14<00:07,  1.11it/s]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:14<00:03,  1.27it/s]ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 2.364077568054199 seconds
+[2024-06-16 11:03:32,956] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.7071065902709961 seconds
+[2024-06-16 11:03:33,036] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 2.408360481262207 seconds
+[2024-06-16 11:03:33,052] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+Loading checkpoint shards:  65%|██████▌   | 13/20 [00:14<00:06,  1.14it/s]Loading checkpoint shards:  80%|████████  | 16/20 [00:15<00:03,  1.25it/s]Loading checkpoint shards:  70%|███████   | 14/20 [00:15<00:04,  1.28it/s]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:16<00:02,  1.24it/s]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:16<00:03,  1.34it/s]Loading checkpoint shards:  80%|████████  | 16/20 [00:16<00:02,  1.40it/s]Loading checkpoint shards:  90%|█████████ | 18/20 [00:17<00:01,  1.25it/s]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:17<00:02,  1.39it/s]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:18<00:00,  1.23it/s]Loading checkpoint shards:  90%|█████████ | 18/20 [00:18<00:01,  1.51it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:18<00:00,  1.51it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:18<00:00,  1.08it/s]
+Loading checkpoint shards:  95%|█████████▌| 19/20 [00:18<00:00,  1.66it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:18<00:00,  1.98it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:18<00:00,  1.06it/s]
+Rank 1 initialized with CUDA_MEM (60870623232, 85100068864)
+Deepspeed engine initializing at --- RANK 1 --- ...
+Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+Print trainable params: 96485376 || all params: 47115384832 || trainable%: 0.20
+SEED_LAYERS=False BASE_SEED=1234 SEED_FN=None
+Using topology: {ProcessCoord(pipe=0, data=0): 0, ProcessCoord(pipe=1, data=0): 1, ProcessCoord(pipe=2, data=0): 2, ProcessCoord(pipe=3, data=0): 3, ProcessCoord(pipe=4, data=0): 4, ProcessCoord(pipe=5, data=0): 5, ProcessCoord(pipe=6, data=0): 6, ProcessCoord(pipe=7, data=0): 7}
+[2024-06-16 11:03:38,441] [INFO] [module.py:375:_partition_layers] Partitioning pipeline stages with method type:LanguageModelLayerWrapper
+stage=0 layers=2
+     0: LlavaMultiModalModuleWrapper
+     1: LanguageModelLayerWrapper
+stage=1 layers=1
+     2: LanguageModelLayerWrapper
+stage=2 layers=1
+     3: LanguageModelLayerWrapper
+stage=3 layers=1
+     4: LanguageModelLayerWrapper
+stage=4 layers=1
+     5: LanguageModelLayerWrapper
+stage=5 layers=1
+     6: LanguageModelLayerWrapper
+stage=6 layers=1
+     7: LanguageModelLayerWrapper
+stage=7 layers=2
+     8: LanguageModelLayerWrapper
+     9: LanguageModelFinalWrapper
+  loss: loss_fn
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Rank 5 initialized with CUDA_MEM (60870623232, 85100068864)
+Loading extension module fused_adam...
+Time to load fused_adam op: 1.4450898170471191 seconds
+Deepspeed engine initializing at --- RANK 5 --- ...
+[2024-06-16 11:03:40,089] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Rank 0 initialized with CUDA_MEM (58909786112, 85100068864)
+Deepspeed engine initializing at --- RANK 0 --- ...
+[2024-06-16 11:03:41,148] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.0, git-hash=unknown, git-branch=unknown
+[2024-06-16 11:03:41,441] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 1.1799228191375732 seconds
+[2024-06-16 11:03:41,971] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 1.638488531112671 seconds
+[2024-06-16 11:03:43,632] [INFO] [logging.py:96:log_dist] [Rank 0] Using DeepSpeed Optimizer param name adam as basic optimizer
+[2024-06-16 11:03:43,632] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-06-16 11:03:43,642] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedAdam
+[2024-06-16 11:03:43,642] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = adam
+[2024-06-16 11:03:43,642] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = WarmupCosineLR
+[2024-06-16 11:03:43,642] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.runtime.lr_schedules.WarmupCosineLR object at 0x1498703aee80>
+[2024-06-16 11:03:43,642] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[2e-05], mom=[(0.9, 0.999)]
+[2024-06-16 11:03:43,643] [INFO] [config.py:996:print] DeepSpeedEngine configuration:
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   amp_enabled .................. False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   amp_params ................... False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   bfloat16_enabled ............. False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   bfloat16_immediate_grad_update  False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   checkpoint_parallel_write_pipeline  False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   checkpoint_tag_validation_enabled  True
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   checkpoint_tag_validation_fail  False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x1498703ae9d0>
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   communication_data_type ...... None
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   curriculum_enabled_legacy .... False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   curriculum_params_legacy ..... False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   data_efficiency_enabled ...... False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   dataloader_drop_last ......... False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   disable_allgather ............ False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   dump_state ................... False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   dynamic_loss_scale_args ...... None
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   eigenvalue_enabled ........... False
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   eigenvalue_gas_boundary_resolution  1
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-06-16 11:03:43,644] [INFO] [config.py:1000:print]   eigenvalue_layer_num ......... 0
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   eigenvalue_max_iter .......... 100
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   eigenvalue_stability ......... 1e-06
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   eigenvalue_tol ............... 0.01
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   eigenvalue_verbose ........... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   elasticity_enabled ........... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   fp16_auto_cast ............... None
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   fp16_enabled ................. False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   fp16_master_weights_and_gradients  False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   global_rank .................. 0
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   grad_accum_dtype ............. None
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   gradient_accumulation_steps .. 128
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   gradient_clipping ............ 0.0
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   gradient_predivide_factor .... 1.0
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   graph_harvesting ............. False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   initial_dynamic_scale ........ 65536
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   load_universal_checkpoint .... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   loss_scale ................... 0
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   memory_breakdown ............. False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   mics_hierarchial_params_gather  False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   mics_shard_size .............. -1
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=True, output_path='/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test', job_name='deepspeed_monitor_logs') enabled=True
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   optimizer_legacy_fusion ...... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   optimizer_name ............... adam
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   optimizer_params ............. {'lr': 2e-05}
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True, 'use_reentrant': False}
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   pld_enabled .................. False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   pld_params ................... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   prescale_gradients ........... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   scheduler_name ............... WarmupCosineLR
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   scheduler_params ............. {'total_num_steps': 5718, 'warmup_min_ratio': 0.1, 'warmup_num_steps': 171.54}
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   seq_parallel_communication_data_type  torch.float32
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   sparse_attention ............. None
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   sparse_gradients_enabled ..... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   steps_per_print .............. 1
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   train_batch_size ............. 128
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   train_micro_batch_size_per_gpu  1
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   use_data_before_expert_parallel_  False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   use_node_local_storage ....... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   wall_clock_breakdown ......... False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   weight_quantization_config ... None
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   world_size ................... 1
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   zero_allow_untested_optimizer  False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   zero_enabled ................. False
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   zero_force_ds_cpu_optimizer .. True
+[2024-06-16 11:03:43,645] [INFO] [config.py:1000:print]   zero_optimization_stage ...... 0
+[2024-06-16 11:03:43,645] [INFO] [config.py:986:print_user_config]   json = {
+    "train_batch_size": 128, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 128, 
+    "steps_per_print": 1, 
+    "optimizer": {
+        "type": "Adam", 
+        "params": {
+            "lr": 2e-05
+        }
+    }, 
+    "scheduler": {
+        "type": "WarmupCosineLR", 
+        "params": {
+            "total_num_steps": 5.718000e+03, 
+            "warmup_min_ratio": 0.1, 
+            "warmup_num_steps": 171.54
+        }
+    }, 
+    "pipeline": {
+        "use_reentrant": false
+    }, 
+    "csv_monitor": {
+        "enabled": true, 
+        "output_path": "/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test", 
+        "job_name": "deepspeed_monitor_logs"
+    }
+}
+[2024-06-16 11:03:43,646] [INFO] [engine.py:101:__init__] CONFIG: micro_batches=128 micro_batch_size=1
+[2024-06-16 11:03:43,646] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2024-06-16 11:03:48,017] [INFO] [engine.py:160:__init__] RANK=1 STAGE=1 LAYERS=1 [2, 3) STAGE_PARAMS=6815744 (6.816M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+[2024-06-16 11:03:48,017] [INFO] [engine.py:160:__init__] RANK=2 STAGE=2 LAYERS=1 [3, 4) STAGE_PARAMS=6815744 (6.816M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+[2024-06-16 11:03:48,017] [INFO] [engine.py:160:__init__] RANK=5 STAGE=5 LAYERS=1 [6, 7) STAGE_PARAMS=6815744 (6.816M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+[2024-06-16 11:03:48,017] [INFO] [engine.py:160:__init__] RANK=6 STAGE=6 LAYERS=1 [7, 8) STAGE_PARAMS=6815744 (6.816M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+[2024-06-16 11:03:48,017] [INFO] [engine.py:160:__init__] RANK=7 STAGE=7 LAYERS=2 [8, 10) STAGE_PARAMS=6815744 (6.816M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+[2024-06-16 11:03:48,018] [INFO] [engine.py:160:__init__] RANK=3 STAGE=3 LAYERS=1 [4, 5) STAGE_PARAMS=6815744 (6.816M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+[2024-06-16 11:03:48,018] [INFO] [engine.py:160:__init__] RANK=4 STAGE=4 LAYERS=1 [5, 6) STAGE_PARAMS=6815744 (6.816M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+[2024-06-16 11:03:48,018] [INFO] [engine.py:160:__init__] RANK=0 STAGE=0 LAYERS=2 [0, 2) STAGE_PARAMS=48775168 (48.775M) TOTAL_PARAMS=96485376 (96.485M) UNIQUE_PARAMS=96485376 (96.485M)
+Deepspeed engine successfully initialized at --- RANK 0 --- hosting 24 of 136 trainable parameters
+Loading latest model checkpoint at shard 1700
+Warning: Unable to load latest checkpoint at /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_128_256_checkpoint_test. Error: 
+  0%|          | 0/5198 [00:00<?, ?it/s]Shard 0 / 1700 skipped
+Shard 1 / 1700 skipped
+Shard 2 / 1700 skipped
+Shard 3 / 1700 skipped
+Shard 4 / 1700 skipped
+Shard 5 / 1700 skipped
+Shard 6 / 1700 skipped
+Shard 7 / 1700 skipped
+Shard 8 / 1700 skipped
+Shard 9 / 1700 skipped
+Shard 10 / 1700 skipped
+Shard 11 / 1700 skipped
+Shard 12 / 1700 skipped
+Shard 13 / 1700 skipped
+Shard 14 / 1700 skipped
+Shard 15 / 1700 skipped
+Shard 16 / 1700 skipped
+Shard 17 / 1700 skipped
+Shard 18 / 1700 skipped
+Shard 19 / 1700 skipped
+Shard 20 / 1700 skipped
+Shard 21 / 1700 skipped
+Shard 22 / 1700 skipped
+Shard 23 / 1700 skipped
+Shard 24 / 1700 skipped
+Shard 25 / 1700 skipped
+Shard 26 / 1700 skipped
+Shard 27 / 1700 skipped
+Shard 28 / 1700 skipped
+Shard 29 / 1700 skipped
+Shard 30 / 1700 skipped
+Shard 31 / 1700 skipped
+Shard 32 / 1700 skipped
+Shard 33 / 1700 skipped
+Shard 34 / 1700 skipped
+Shard 35 / 1700 skipped
+Shard 36 / 1700 skipped
+Shard 37 / 1700 skipped
+Shard 38 / 1700 skipped
+Shard 39 / 1700 skipped
+Shard 40 / 1700 skipped
+Shard 41 / 1700 skipped
+Shard 42 / 1700 skipped
+Shard 43 / 1700 skipped
+Shard 44 / 1700 skipped
+Shard 45 / 1700 skipped
+Shard 46 / 1700 skipped
+Shard 47 / 1700 skipped
+Shard 48 / 1700 skipped
+Shard 49 / 1700 skipped
+Shard 50 / 1700 skipped
+Shard 51 / 1700 skipped
+Shard 52 / 1700 skipped
+Shard 53 / 1700 skipped
+Shard 54 / 1700 skipped
+Shard 55 / 1700 skipped
+Shard 56 / 1700 skipped
+Shard 57 / 1700 skipped
+Shard 58 / 1700 skipped
+Shard 59 / 1700 skipped
+Shard 60 / 1700 skipped
+Shard 61 / 1700 skipped
+Shard 62 / 1700 skipped
+Shard 63 / 1700 skipped
+Shard 64 / 1700 skipped
+Shard 65 / 1700 skipped
+Shard 66 / 1700 skipped
+Shard 67 / 1700 skipped
+Shard 68 / 1700 skipped
+Shard 69 / 1700 skipped
+Shard 70 / 1700 skipped
+Shard 71 / 1700 skipped
+Shard 72 / 1700 skipped
+Shard 73 / 1700 skipped
+Shard 74 / 1700 skipped
+Shard 75 / 1700 skipped
+Shard 76 / 1700 skipped
+Shard 77 / 1700 skipped
+Shard 78 / 1700 skipped
+Shard 79 / 1700 skipped
+Shard 80 / 1700 skipped
+Shard 81 / 1700 skipped
+Shard 82 / 1700 skipped
+Shard 83 / 1700 skipped
+Shard 84 / 1700 skipped
+Shard 85 / 1700 skipped
+Shard 86 / 1700 skipped
+Shard 87 / 1700 skipped
+Shard 88 / 1700 skipped
+Shard 89 / 1700 skipped
+Shard 90 / 1700 skipped
+Shard 91 / 1700 skipped
+Shard 92 / 1700 skipped
+Shard 93 / 1700 skipped
+Shard 94 / 1700 skipped
+Shard 95 / 1700 skipped
+Shard 96 / 1700 skipped
+Shard 97 / 1700 skipped
+Shard 98 / 1700 skipped
+Shard 99 / 1700 skipped
+Shard 100 / 1700 skipped
+Shard 101 / 1700 skipped
+Shard 102 / 1700 skipped
+Shard 103 / 1700 skipped
+Shard 104 / 1700 skipped
+Shard 105 / 1700 skipped
+Shard 106 / 1700 skipped
+Shard 107 / 1700 skipped
+Shard 108 / 1700 skipped
+Shard 109 / 1700 skipped
+Shard 110 / 1700 skipped
+Shard 111 / 1700 skipped
+Shard 112 / 1700 skipped
+Shard 113 / 1700 skipped
+Shard 114 / 1700 skipped
+Shard 115 / 1700 skipped
+Shard 116 / 1700 skipped
+Shard 117 / 1700 skipped
+Shard 118 / 1700 skipped
+Shard 119 / 1700 skipped
+Shard 120 / 1700 skipped
+Shard 121 / 1700 skipped
+Shard 122 / 1700 skipped
+Shard 123 / 1700 skipped
+Shard 124 / 1700 skipped
+Shard 125 / 1700 skipped
+Shard 126 / 1700 skipped
+Shard 127 / 1700 skipped
+Shard 128 / 1700 skipped
+Shard 129 / 1700 skipped
+Shard 130 / 1700 skipped
+Shard 131 / 1700 skipped
+Shard 132 / 1700 skipped
+Shard 133 / 1700 skipped
+Shard 134 / 1700 skipped
+Shard 135 / 1700 skipped
+Shard 136 / 1700 skipped
+Shard 137 / 1700 skipped
+Shard 138 / 1700 skipped
+Shard 139 / 1700 skipped
+Shard 140 / 1700 skipped
+Shard 141 / 1700 skipped
+Shard 142 / 1700 skipped
+Shard 143 / 1700 skipped
+Shard 144 / 1700 skipped
+Shard 145 / 1700 skipped
+Shard 146 / 1700 skipped
+Shard 147 / 1700 skipped
+Shard 148 / 1700 skipped
+Shard 149 / 1700 skipped
+Shard 150 / 1700 skipped
+Shard 151 / 1700 skipped
+Shard 152 / 1700 skipped
+Shard 153 / 1700 skipped
+Shard 154 / 1700 skipped
+Shard 155 / 1700 skipped
+Shard 156 / 1700 skipped
+Shard 157 / 1700 skipped
+Shard 158 / 1700 skipped
+Shard 159 / 1700 skipped
+Shard 160 / 1700 skipped
+Shard 161 / 1700 skipped
+Shard 162 / 1700 skipped
+Shard 163 / 1700 skipped
+Shard 164 / 1700 skipped
+Shard 165 / 1700 skipped
+Shard 166 / 1700 skipped
+Shard 167 / 1700 skipped
+Shard 168 / 1700 skipped
+Shard 169 / 1700 skipped
+Shard 170 / 1700 skipped
+Shard 171 / 1700 skipped
+Shard 172 / 1700 skipped
+Shard 173 / 1700 skipped
+Shard 174 / 1700 skipped
+Shard 175 / 1700 skipped
+Shard 176 / 1700 skipped
+Shard 177 / 1700 skipped
+Shard 178 / 1700 skipped
+Shard 179 / 1700 skipped
+Shard 180 / 1700 skipped
+Shard 181 / 1700 skipped
+Shard 182 / 1700 skipped
+Shard 183 / 1700 skipped
+Shard 184 / 1700 skipped
+Shard 185 / 1700 skipped
+Shard 186 / 1700 skipped
+Shard 187 / 1700 skipped
+Shard 188 / 1700 skipped
+Shard 189 / 1700 skipped
+Shard 190 / 1700 skipped
+Shard 191 / 1700 skipped
+Shard 192 / 1700 skipped
+Shard 193 / 1700 skipped
+Shard 194 / 1700 skipped
+Shard 195 / 1700 skipped
+Shard 196 / 1700 skipped
+Shard 197 / 1700 skipped
+Shard 198 / 1700 skipped
+Shard 199 / 1700 skipped
+Shard 200 / 1700 skipped
+Shard 201 / 1700 skipped
+Shard 202 / 1700 skipped
+Shard 203 / 1700 skipped
+Shard 204 / 1700 skipped
+Shard 205 / 1700 skipped
+Shard 206 / 1700 skipped
+Shard 207 / 1700 skipped
+Shard 208 / 1700 skipped
+Shard 209 / 1700 skipped
+Shard 210 / 1700 skipped
+Shard 211 / 1700 skipped
+Shard 212 / 1700 skipped
+Shard 213 / 1700 skipped
+Shard 214 / 1700 skipped
+Shard 215 / 1700 skipped
+Shard 216 / 1700 skipped
+Shard 217 / 1700 skipped
+Shard 218 / 1700 skipped
+Shard 219 / 1700 skipped
+Shard 220 / 1700 skipped
+Shard 221 / 1700 skipped
+Shard 222 / 1700 skipped
+Shard 223 / 1700 skipped
+Shard 224 / 1700 skipped
+Shard 225 / 1700 skipped
+Shard 226 / 1700 skipped
+Shard 227 / 1700 skipped
+Shard 228 / 1700 skipped
+Shard 229 / 1700 skipped
+Shard 230 / 1700 skipped
+Shard 231 / 1700 skipped
+Shard 232 / 1700 skipped
+Shard 233 / 1700 skipped
+Shard 234 / 1700 skipped
+Shard 235 / 1700 skipped
+Shard 236 / 1700 skipped
+Shard 237 / 1700 skipped
+Shard 238 / 1700 skipped
+Shard 239 / 1700 skipped
+Shard 240 / 1700 skipped
+Shard 241 / 1700 skipped
+Shard 242 / 1700 skipped
+Shard 243 / 1700 skipped
+Shard 244 / 1700 skipped
+Shard 245 / 1700 skipped
+Shard 246 / 1700 skipped
+Shard 247 / 1700 skipped
+Shard 248 / 1700 skipped
+Shard 249 / 1700 skipped
+Shard 250 / 1700 skipped
+Shard 251 / 1700 skipped
+Shard 252 / 1700 skipped
+Shard 253 / 1700 skipped
+Shard 254 / 1700 skipped
+Shard 255 / 1700 skipped
+Shard 256 / 1700 skipped
+Shard 257 / 1700 skipped
+Shard 258 / 1700 skipped
+Shard 259 / 1700 skipped
+Shard 260 / 1700 skipped
+Shard 261 / 1700 skipped
+Shard 262 / 1700 skipped
+Shard 263 / 1700 skipped
+Shard 264 / 1700 skipped
+Shard 265 / 1700 skipped
+Shard 266 / 1700 skipped
+Shard 267 / 1700 skipped
+Shard 268 / 1700 skipped
+Shard 269 / 1700 skipped
+Shard 270 / 1700 skipped
+Shard 271 / 1700 skipped
+Shard 272 / 1700 skipped
+Shard 273 / 1700 skipped
+Shard 274 / 1700 skipped
+Shard 275 / 1700 skipped
+Shard 276 / 1700 skipped
+Shard 277 / 1700 skipped
+Shard 278 / 1700 skipped
+Shard 279 / 1700 skipped
+Shard 280 / 1700 skipped
+Shard 281 / 1700 skipped
+Shard 282 / 1700 skipped
+Shard 283 / 1700 skipped
+Shard 284 / 1700 skipped
+Shard 285 / 1700 skipped
+Shard 286 / 1700 skipped
+Shard 287 / 1700 skipped
+Shard 288 / 1700 skipped
+Shard 289 / 1700 skipped
+Shard 290 / 1700 skipped
+Shard 291 / 1700 skipped
+Shard 292 / 1700 skipped
+Shard 293 / 1700 skipped
+Shard 294 / 1700 skipped
+Shard 295 / 1700 skipped
+Shard 296 / 1700 skipped
+Shard 297 / 1700 skipped
+Shard 298 / 1700 skipped
+Shard 299 / 1700 skipped
+Shard 300 / 1700 skipped
+Shard 301 / 1700 skipped
+Shard 302 / 1700 skipped
+Shard 303 / 1700 skipped
+Shard 304 / 1700 skipped
+Shard 305 / 1700 skipped
+Shard 306 / 1700 skipped
+Shard 307 / 1700 skipped
+Shard 308 / 1700 skipped
+Shard 309 / 1700 skipped
+Shard 310 / 1700 skipped
+Shard 311 / 1700 skipped
+Shard 312 / 1700 skipped
+Shard 313 / 1700 skipped
+Shard 314 / 1700 skipped
+Shard 315 / 1700 skipped
+Shard 316 / 1700 skipped
+Shard 317 / 1700 skipped
+Shard 318 / 1700 skipped
+Shard 319 / 1700 skipped
+Shard 320 / 1700 skipped
+Shard 321 / 1700 skipped
+Shard 322 / 1700 skipped
+Shard 323 / 1700 skipped
+Shard 324 / 1700 skipped
+Shard 325 / 1700 skipped
+Shard 326 / 1700 skipped
+Shard 327 / 1700 skipped
+Shard 328 / 1700 skipped
+Shard 329 / 1700 skipped
+Shard 330 / 1700 skipped
+Shard 331 / 1700 skipped
+Shard 332 / 1700 skipped
+Shard 333 / 1700 skipped
+Shard 334 / 1700 skipped
+Shard 335 / 1700 skipped
+Shard 336 / 1700 skipped
+Shard 337 / 1700 skipped
+Shard 338 / 1700 skipped
+Shard 339 / 1700 skipped
+Shard 340 / 1700 skipped
+Shard 341 / 1700 skipped
+Shard 342 / 1700 skipped
+Shard 343 / 1700 skipped
+Shard 344 / 1700 skipped
+Shard 345 / 1700 skipped
+Shard 346 / 1700 skipped
+Shard 347 / 1700 skipped
+Shard 348 / 1700 skipped
+Shard 349 / 1700 skipped
+Shard 350 / 1700 skipped
+Shard 351 / 1700 skipped
+Shard 352 / 1700 skipped
+Shard 353 / 1700 skipped
+Shard 354 / 1700 skipped
+Shard 355 / 1700 skipped
+Shard 356 / 1700 skipped
+Shard 357 / 1700 skipped
+Shard 358 / 1700 skipped
+Shard 359 / 1700 skipped
+Shard 360 / 1700 skipped
+Shard 361 / 1700 skipped
+Shard 362 / 1700 skipped
+Shard 363 / 1700 skipped
+Shard 364 / 1700 skipped
+Shard 365 / 1700 skipped
+Shard 366 / 1700 skipped
+Shard 367 / 1700 skipped
+Shard 368 / 1700 skipped
+Shard 369 / 1700 skipped
+Shard 370 / 1700 skipped
+Shard 371 / 1700 skipped
+Shard 372 / 1700 skipped
+Shard 373 / 1700 skipped
+Shard 374 / 1700 skipped
+Shard 375 / 1700 skipped
+Shard 376 / 1700 skipped
+Shard 377 / 1700 skipped
+Shard 378 / 1700 skipped
+Shard 379 / 1700 skipped
+Shard 380 / 1700 skipped
+Shard 381 / 1700 skipped
+Shard 382 / 1700 skipped
+Shard 383 / 1700 skipped
+Shard 384 / 1700 skipped
+Shard 385 / 1700 skipped
+Shard 386 / 1700 skipped
+Shard 387 / 1700 skipped
+Shard 388 / 1700 skipped
+Shard 389 / 1700 skipped
+Shard 390 / 1700 skipped
+Shard 391 / 1700 skipped
+Shard 392 / 1700 skipped
+Shard 393 / 1700 skipped
+Shard 394 / 1700 skipped
+Shard 395 / 1700 skipped
+Shard 396 / 1700 skipped
+Shard 397 / 1700 skipped
+Shard 398 / 1700 skipped
+Shard 399 / 1700 skipped
+Shard 400 / 1700 skipped
+Shard 401 / 1700 skipped
+Shard 402 / 1700 skipped
+Shard 403 / 1700 skipped
+Shard 404 / 1700 skipped
+Shard 405 / 1700 skipped
+Shard 406 / 1700 skipped
+Shard 407 / 1700 skipped
+Shard 408 / 1700 skipped
+Shard 409 / 1700 skipped
+Shard 410 / 1700 skipped
+Shard 411 / 1700 skipped
+Shard 412 / 1700 skipped
+Shard 413 / 1700 skipped
+Shard 414 / 1700 skipped
+Shard 415 / 1700 skipped
+Shard 416 / 1700 skipped
+Shard 417 / 1700 skipped
+Shard 418 / 1700 skipped
+Shard 419 / 1700 skipped
+Shard 420 / 1700 skipped
+Shard 421 / 1700 skipped
+Shard 422 / 1700 skipped
+Shard 423 / 1700 skipped
+Shard 424 / 1700 skipped
+Shard 425 / 1700 skipped
+Shard 426 / 1700 skipped
+Shard 427 / 1700 skipped
+Shard 428 / 1700 skipped
+Shard 429 / 1700 skipped
+Shard 430 / 1700 skipped
+Shard 431 / 1700 skipped
+Shard 432 / 1700 skipped
+Shard 433 / 1700 skipped
+Shard 434 / 1700 skipped
+Shard 435 / 1700 skipped
+Shard 436 / 1700 skipped
+Shard 437 / 1700 skipped
+Shard 438 / 1700 skipped
+Shard 439 / 1700 skipped
+Shard 440 / 1700 skipped
+Shard 441 / 1700 skipped
+Shard 442 / 1700 skipped
+Shard 443 / 1700 skipped
+Shard 444 / 1700 skipped
+Shard 445 / 1700 skipped
+Shard 446 / 1700 skipped
+Shard 447 / 1700 skipped
+Shard 448 / 1700 skipped
+Shard 449 / 1700 skipped
+Shard 450 / 1700 skipped
+Shard 451 / 1700 skipped
+Shard 452 / 1700 skipped
+Shard 453 / 1700 skipped
+Shard 454 / 1700 skipped
+Shard 455 / 1700 skipped
+Shard 456 / 1700 skipped
+Shard 457 / 1700 skipped
+Shard 458 / 1700 skipped
+Shard 459 / 1700 skipped
+Shard 460 / 1700 skipped
+Shard 461 / 1700 skipped
+Shard 462 / 1700 skipped
+Shard 463 / 1700 skipped
+Shard 464 / 1700 skipped
+Shard 465 / 1700 skipped
+Shard 466 / 1700 skipped
+Shard 467 / 1700 skipped
+Shard 468 / 1700 skipped
+Shard 469 / 1700 skipped
+Shard 470 / 1700 skipped
+Shard 471 / 1700 skipped
+Shard 472 / 1700 skipped
+Shard 473 / 1700 skipped
+Shard 474 / 1700 skipped
+Shard 475 / 1700 skipped
+Shard 476 / 1700 skipped
+Shard 477 / 1700 skipped
+Shard 478 / 1700 skipped
+Shard 479 / 1700 skipped
+Shard 480 / 1700 skipped
+Shard 481 / 1700 skipped
+Shard 482 / 1700 skipped
+Shard 483 / 1700 skipped
+Shard 484 / 1700 skipped
+Shard 485 / 1700 skipped
+Shard 486 / 1700 skipped
+Shard 487 / 1700 skipped
+Shard 488 / 1700 skipped
+Shard 489 / 1700 skipped
+Shard 490 / 1700 skipped
+Shard 491 / 1700 skipped
+Shard 492 / 1700 skipped
+Shard 493 / 1700 skipped
+Shard 494 / 1700 skipped
+Shard 495 / 1700 skipped
+Shard 496 / 1700 skipped
+Shard 497 / 1700 skipped
+Shard 498 / 1700 skipped
+Shard 499 / 1700 skipped
+Shard 500 / 1700 skipped
+Shard 501 / 1700 skipped
+Shard 502 / 1700 skipped
+Shard 503 / 1700 skipped
+Shard 504 / 1700 skipped
+Shard 505 / 1700 skipped
+Shard 506 / 1700 skipped
+Shard 507 / 1700 skipped
+Shard 508 / 1700 skipped
+Shard 509 / 1700 skipped
+Shard 510 / 1700 skipped
+Shard 511 / 1700 skipped
+Shard 512 / 1700 skipped
+Shard 513 / 1700 skipped
+Shard 514 / 1700 skipped
+Shard 515 / 1700 skipped
+Shard 516 / 1700 skipped
+Shard 517 / 1700 skipped
+Shard 518 / 1700 skipped
+Shard 519 / 1700 skipped
+Shard 520 / 1700 skipped
+Shard 521 / 1700 skipped
+Shard 522 / 1700 skipped
+Shard 523 / 1700 skipped
+Shard 524 / 1700 skipped
+Shard 525 / 1700 skipped
+Shard 526 / 1700 skipped
+Shard 527 / 1700 skipped
+Shard 528 / 1700 skipped
+Shard 529 / 1700 skipped
+Shard 530 / 1700 skipped
+Shard 531 / 1700 skipped
+Shard 532 / 1700 skipped
+Shard 533 / 1700 skipped
+Shard 534 / 1700 skipped
+Shard 535 / 1700 skipped
+Shard 536 / 1700 skipped
+Shard 537 / 1700 skipped
+Shard 538 / 1700 skipped
+Shard 539 / 1700 skipped
+Shard 540 / 1700 skipped
+Shard 541 / 1700 skipped
+Shard 542 / 1700 skipped
+Shard 543 / 1700 skipped
+Shard 544 / 1700 skipped
+Shard 545 / 1700 skipped
+Shard 546 / 1700 skipped
+Shard 547 / 1700 skipped
+Shard 548 / 1700 skipped
+Shard 549 / 1700 skipped
+Shard 550 / 1700 skipped
+Shard 551 / 1700 skipped
+Shard 552 / 1700 skipped
+Shard 553 / 1700 skipped
+Shard 554 / 1700 skipped
+Shard 555 / 1700 skipped
+Shard 556 / 1700 skipped
+Shard 557 / 1700 skipped
+Shard 558 / 1700 skipped
+Shard 559 / 1700 skipped
+Shard 560 / 1700 skipped
+Shard 561 / 1700 skipped
+Shard 562 / 1700 skipped
+Shard 563 / 1700 skipped
+Shard 564 / 1700 skipped
+Shard 565 / 1700 skipped
+Shard 566 / 1700 skipped
+Shard 567 / 1700 skipped
+Shard 568 / 1700 skipped
+Shard 569 / 1700 skipped
+Shard 570 / 1700 skipped
+Shard 571 / 1700 skipped
+Shard 572 / 1700 skipped
+Shard 573 / 1700 skipped
+Shard 574 / 1700 skipped
+Shard 575 / 1700 skipped
+Shard 576 / 1700 skipped
+Shard 577 / 1700 skipped
+Shard 578 / 1700 skipped
+Shard 579 / 1700 skipped
+Shard 580 / 1700 skipped
+Shard 581 / 1700 skipped
+Shard 582 / 1700 skipped
+Shard 583 / 1700 skipped
+Shard 584 / 1700 skipped
+Shard 585 / 1700 skipped
+Shard 586 / 1700 skipped
+Shard 587 / 1700 skipped
+Shard 588 / 1700 skipped
+Shard 589 / 1700 skipped
+Shard 590 / 1700 skipped
+Shard 591 / 1700 skipped
+Shard 592 / 1700 skipped
+Shard 593 / 1700 skipped
+Shard 594 / 1700 skipped
+Shard 595 / 1700 skipped
+Shard 596 / 1700 skipped
+Shard 597 / 1700 skipped
+Shard 598 / 1700 skipped
+Shard 599 / 1700 skipped
+Shard 600 / 1700 skipped
+Shard 601 / 1700 skipped
+Shard 602 / 1700 skipped
+Shard 603 / 1700 skipped
+Shard 604 / 1700 skipped
+Shard 605 / 1700 skipped
+Shard 606 / 1700 skipped
+Shard 607 / 1700 skipped
+Shard 608 / 1700 skipped
+Shard 609 / 1700 skipped
+Shard 610 / 1700 skipped
+Shard 611 / 1700 skipped
+Shard 612 / 1700 skipped
+Shard 613 / 1700 skipped
+Shard 614 / 1700 skipped
+Shard 615 / 1700 skipped
+Shard 616 / 1700 skipped
+Shard 617 / 1700 skipped
+Shard 618 / 1700 skipped
+Shard 619 / 1700 skipped
+Shard 620 / 1700 skipped
+Shard 621 / 1700 skipped
+Shard 622 / 1700 skipped
+Shard 623 / 1700 skipped
+Shard 624 / 1700 skipped
+Shard 625 / 1700 skipped
+Shard 626 / 1700 skipped
+Shard 627 / 1700 skipped
+Shard 628 / 1700 skipped
+Shard 629 / 1700 skipped
+Shard 630 / 1700 skipped
+Shard 631 / 1700 skipped
+Shard 632 / 1700 skipped
+Shard 633 / 1700 skipped
+Shard 634 / 1700 skipped
+Shard 635 / 1700 skipped
+Shard 636 / 1700 skipped
+Shard 637 / 1700 skipped
+Shard 638 / 1700 skipped
+Shard 639 / 1700 skipped
+Shard 640 / 1700 skipped
+Shard 641 / 1700 skipped
+Shard 642 / 1700 skipped
+Shard 643 / 1700 skipped
+Shard 644 / 1700 skipped
+Shard 645 / 1700 skipped
+Shard 646 / 1700 skipped
+Shard 647 / 1700 skipped
+Shard 648 / 1700 skipped
+Shard 649 / 1700 skipped
+Shard 650 / 1700 skipped
+Shard 651 / 1700 skipped
+Shard 652 / 1700 skipped
+Shard 653 / 1700 skipped
+Shard 654 / 1700 skipped
+Shard 655 / 1700 skipped
+Shard 656 / 1700 skipped
+Shard 657 / 1700 skipped
+Shard 658 / 1700 skipped
+Shard 659 / 1700 skipped
+Shard 660 / 1700 skipped
+Shard 661 / 1700 skipped
+Shard 662 / 1700 skipped
+Shard 663 / 1700 skipped
+Shard 664 / 1700 skipped
+Shard 665 / 1700 skipped
+Shard 666 / 1700 skipped
+Shard 667 / 1700 skipped
+Shard 668 / 1700 skipped
+Shard 669 / 1700 skipped
+Shard 670 / 1700 skipped
+Shard 671 / 1700 skipped
+Shard 672 / 1700 skipped
+Shard 673 / 1700 skipped
+Shard 674 / 1700 skipped
+Shard 675 / 1700 skipped
+Shard 676 / 1700 skipped
+Shard 677 / 1700 skipped
+Shard 678 / 1700 skipped
+Shard 679 / 1700 skipped
+Shard 680 / 1700 skipped
+Shard 681 / 1700 skipped
+Shard 682 / 1700 skipped
+Shard 683 / 1700 skipped
+Shard 684 / 1700 skipped
+Shard 685 / 1700 skipped
+Shard 686 / 1700 skipped
+Shard 687 / 1700 skipped
+Shard 688 / 1700 skipped
+Shard 689 / 1700 skipped
+Shard 690 / 1700 skipped
+Shard 691 / 1700 skipped
+Shard 692 / 1700 skipped
+Shard 693 / 1700 skipped
+Shard 694 / 1700 skipped
+Shard 695 / 1700 skipped
+Shard 696 / 1700 skipped
+Shard 697 / 1700 skipped
+Shard 698 / 1700 skipped
+Shard 699 / 1700 skipped
+Shard 700 / 1700 skipped
+Shard 701 / 1700 skipped
+Shard 702 / 1700 skipped
+Shard 703 / 1700 skipped
+Shard 704 / 1700 skipped
+Shard 705 / 1700 skipped
+Shard 706 / 1700 skipped
+Shard 707 / 1700 skipped
+Shard 708 / 1700 skipped
+Shard 709 / 1700 skipped
+Shard 710 / 1700 skipped
+Shard 711 / 1700 skipped
+Shard 712 / 1700 skipped
+Shard 713 / 1700 skipped
+Shard 714 / 1700 skipped
+Shard 715 / 1700 skipped
+Shard 716 / 1700 skipped
+Shard 717 / 1700 skipped
+Shard 718 / 1700 skipped
+Shard 719 / 1700 skipped
+Shard 720 / 1700 skipped
+Shard 721 / 1700 skipped
+Shard 722 / 1700 skipped
+Shard 723 / 1700 skipped
+Shard 724 / 1700 skipped
+Shard 725 / 1700 skipped
+Shard 726 / 1700 skipped
+Shard 727 / 1700 skipped
+Shard 728 / 1700 skipped
+Shard 729 / 1700 skipped
+Shard 730 / 1700 skipped
+Shard 731 / 1700 skipped
+Shard 732 / 1700 skipped
+Shard 733 / 1700 skipped
+Shard 734 / 1700 skipped
+Shard 735 / 1700 skipped
+Shard 736 / 1700 skipped
+Shard 737 / 1700 skipped
+Shard 738 / 1700 skipped
+Shard 739 / 1700 skipped
+Shard 740 / 1700 skipped
+Shard 741 / 1700 skipped
+Shard 742 / 1700 skipped
+Shard 743 / 1700 skipped
+Shard 744 / 1700 skipped
+Shard 745 / 1700 skipped
+Shard 746 / 1700 skipped
+Shard 747 / 1700 skipped
+Shard 748 / 1700 skipped
+Shard 749 / 1700 skipped
+Shard 750 / 1700 skipped
+Shard 751 / 1700 skipped
+Shard 752 / 1700 skipped
+Shard 753 / 1700 skipped
+Shard 754 / 1700 skipped
+Shard 755 / 1700 skipped
+Shard 756 / 1700 skipped
+Shard 757 / 1700 skipped
+Shard 758 / 1700 skipped
+Shard 759 / 1700 skipped
+Shard 760 / 1700 skipped
+Shard 761 / 1700 skipped
+Shard 762 / 1700 skipped
+Shard 763 / 1700 skipped
+Shard 764 / 1700 skipped
+Shard 765 / 1700 skipped
+Shard 766 / 1700 skipped
+Shard 767 / 1700 skipped
+Shard 768 / 1700 skipped
+Shard 769 / 1700 skipped
+Shard 770 / 1700 skipped
+Shard 771 / 1700 skipped
+Shard 772 / 1700 skipped
+Shard 773 / 1700 skipped
+Shard 774 / 1700 skipped
+Shard 775 / 1700 skipped
+Shard 776 / 1700 skipped
+Shard 777 / 1700 skipped
+Shard 778 / 1700 skipped
+Shard 779 / 1700 skipped
+Shard 780 / 1700 skipped
+Shard 781 / 1700 skipped
+Shard 782 / 1700 skipped
+Shard 783 / 1700 skipped
+Shard 784 / 1700 skipped
+Shard 785 / 1700 skipped
+Shard 786 / 1700 skipped
+Shard 787 / 1700 skipped
+Shard 788 / 1700 skipped
+Shard 789 / 1700 skipped
+Shard 790 / 1700 skipped
+Shard 791 / 1700 skipped
+Shard 792 / 1700 skipped
+Shard 793 / 1700 skipped
+Shard 794 / 1700 skipped
+Shard 795 / 1700 skipped
+Shard 796 / 1700 skipped
+Shard 797 / 1700 skipped
+Shard 798 / 1700 skipped
+Shard 799 / 1700 skipped
+Shard 800 / 1700 skipped
+Shard 801 / 1700 skipped
+Shard 802 / 1700 skipped
+Shard 803 / 1700 skipped
+Shard 804 / 1700 skipped
+Shard 805 / 1700 skipped
+Shard 806 / 1700 skipped
+Shard 807 / 1700 skipped
+Shard 808 / 1700 skipped
+Shard 809 / 1700 skipped
+Shard 810 / 1700 skipped
+Shard 811 / 1700 skipped
+Shard 812 / 1700 skipped
+Shard 813 / 1700 skipped
+Shard 814 / 1700 skipped
+Shard 815 / 1700 skipped
+Shard 816 / 1700 skipped
+Shard 817 / 1700 skipped
+Shard 818 / 1700 skipped
+Shard 819 / 1700 skipped
+Shard 820 / 1700 skipped
+Shard 821 / 1700 skipped
+Shard 822 / 1700 skipped
+Shard 823 / 1700 skipped
+Shard 824 / 1700 skipped
+Shard 825 / 1700 skipped
+Shard 826 / 1700 skipped
+Shard 827 / 1700 skipped
+Shard 828 / 1700 skipped
+Shard 829 / 1700 skipped
+Shard 830 / 1700 skipped
+Shard 831 / 1700 skipped
+Shard 832 / 1700 skipped
+Shard 833 / 1700 skipped
+Shard 834 / 1700 skipped
+Shard 835 / 1700 skipped
+Shard 836 / 1700 skipped
+Shard 837 / 1700 skipped
+Shard 838 / 1700 skipped
+Shard 839 / 1700 skipped
+Shard 840 / 1700 skipped
+Shard 841 / 1700 skipped
+Shard 842 / 1700 skipped
+Shard 843 / 1700 skipped
+Shard 844 / 1700 skipped
+Shard 845 / 1700 skipped
+Shard 846 / 1700 skipped
+Shard 847 / 1700 skipped
+Shard 848 / 1700 skipped
+Shard 849 / 1700 skipped
+Shard 850 / 1700 skipped
+Shard 851 / 1700 skipped
+Shard 852 / 1700 skipped
+Shard 853 / 1700 skipped
+Shard 854 / 1700 skipped
+Shard 855 / 1700 skipped
+Shard 856 / 1700 skipped
+Shard 857 / 1700 skipped
+Shard 858 / 1700 skipped
+Shard 859 / 1700 skipped
+Shard 860 / 1700 skipped
+Shard 861 / 1700 skipped
+Shard 862 / 1700 skipped
+Shard 863 / 1700 skipped
+Shard 864 / 1700 skipped
+Shard 865 / 1700 skipped
+Shard 866 / 1700 skipped
+Shard 867 / 1700 skipped
+Shard 868 / 1700 skipped
+Shard 869 / 1700 skipped
+Shard 870 / 1700 skipped
+Shard 871 / 1700 skipped
+Shard 872 / 1700 skipped
+Shard 873 / 1700 skipped
+Shard 874 / 1700 skipped
+Shard 875 / 1700 skipped
+Shard 876 / 1700 skipped
+Shard 877 / 1700 skipped
+Shard 878 / 1700 skipped
+Shard 879 / 1700 skipped
+Shard 880 / 1700 skipped
+Shard 881 / 1700 skipped
+Shard 882 / 1700 skipped
+Shard 883 / 1700 skipped
+Shard 884 / 1700 skipped
+Shard 885 / 1700 skipped
+Shard 886 / 1700 skipped
+Shard 887 / 1700 skipped
+Shard 888 / 1700 skipped
+Shard 889 / 1700 skipped
+Shard 890 / 1700 skipped
+Shard 891 / 1700 skipped
+Shard 892 / 1700 skipped
+Shard 893 / 1700 skipped
+Shard 894 / 1700 skipped
+Shard 895 / 1700 skipped
+Shard 896 / 1700 skipped
+Shard 897 / 1700 skipped
+Shard 898 / 1700 skipped
+Shard 899 / 1700 skipped
+Shard 900 / 1700 skipped
+Shard 901 / 1700 skipped
+Shard 902 / 1700 skipped
+Shard 903 / 1700 skipped
+Shard 904 / 1700 skipped
+Shard 905 / 1700 skipped
+Shard 906 / 1700 skipped
+Shard 907 / 1700 skipped
+Shard 908 / 1700 skipped
+Shard 909 / 1700 skipped
+Shard 910 / 1700 skipped
+Shard 911 / 1700 skipped
+Shard 912 / 1700 skipped
+Shard 913 / 1700 skipped
+Shard 914 / 1700 skipped
+Shard 915 / 1700 skipped
+Shard 916 / 1700 skipped
+Shard 917 / 1700 skipped
+Shard 918 / 1700 skipped
+Shard 919 / 1700 skipped
+Shard 920 / 1700 skipped
+Shard 921 / 1700 skipped
+Shard 922 / 1700 skipped
+Shard 923 / 1700 skipped
+Shard 924 / 1700 skipped
+Shard 925 / 1700 skipped
+Shard 926 / 1700 skipped
+Shard 927 / 1700 skipped
+Shard 928 / 1700 skipped
+Shard 929 / 1700 skipped
+Shard 930 / 1700 skipped
+Shard 931 / 1700 skipped
+Shard 932 / 1700 skipped
+Shard 933 / 1700 skipped
+Shard 934 / 1700 skipped
+Shard 935 / 1700 skipped
+Shard 936 / 1700 skipped
+Shard 937 / 1700 skipped
+Shard 938 / 1700 skipped
+Shard 939 / 1700 skipped
+Shard 940 / 1700 skipped
+Shard 941 / 1700 skipped
+Shard 942 / 1700 skipped
+Shard 943 / 1700 skipped
+Shard 944 / 1700 skipped
+Shard 945 / 1700 skipped
+Shard 946 / 1700 skipped
+Shard 947 / 1700 skipped
+Shard 948 / 1700 skipped
+Shard 949 / 1700 skipped
+Shard 950 / 1700 skipped
+Shard 951 / 1700 skipped
+Shard 952 / 1700 skipped
+Shard 953 / 1700 skipped
+Shard 954 / 1700 skipped
+Shard 955 / 1700 skipped
+Shard 956 / 1700 skipped
+Shard 957 / 1700 skipped
+Shard 958 / 1700 skipped
+Shard 959 / 1700 skipped
+Shard 960 / 1700 skipped
+Shard 961 / 1700 skipped
+Shard 962 / 1700 skipped
+Shard 963 / 1700 skipped
+Shard 964 / 1700 skipped
+Shard 965 / 1700 skipped
+Shard 966 / 1700 skipped
+Shard 967 / 1700 skipped
+Shard 968 / 1700 skipped
+Shard 969 / 1700 skipped
+Shard 970 / 1700 skipped
+Shard 971 / 1700 skipped
+Shard 972 / 1700 skipped
+Shard 973 / 1700 skipped
+Shard 974 / 1700 skipped
+Shard 975 / 1700 skipped
+Shard 976 / 1700 skipped
+Shard 977 / 1700 skipped
+Shard 978 / 1700 skipped
+Shard 979 / 1700 skipped
+Shard 980 / 1700 skipped
+Shard 981 / 1700 skipped
+Shard 982 / 1700 skipped
+Shard 983 / 1700 skipped
+Shard 984 / 1700 skipped
+Shard 985 / 1700 skipped
+Shard 986 / 1700 skipped
+Shard 987 / 1700 skipped
+Shard 988 / 1700 skipped
+Shard 989 / 1700 skipped
+Shard 990 / 1700 skipped
+Shard 991 / 1700 skipped
+Shard 992 / 1700 skipped
+Shard 993 / 1700 skipped
+Shard 994 / 1700 skipped
+Shard 995 / 1700 skipped
+Shard 996 / 1700 skipped
+Shard 997 / 1700 skipped
+Shard 998 / 1700 skipped
+Shard 999 / 1700 skipped
+Shard 1000 / 1700 skipped
+Shard 1001 / 1700 skipped
+Shard 1002 / 1700 skipped
+Shard 1003 / 1700 skipped
+Shard 1004 / 1700 skipped
+Shard 1005 / 1700 skipped
+Shard 1006 / 1700 skipped
+Shard 1007 / 1700 skipped
+Shard 1008 / 1700 skipped
+Shard 1009 / 1700 skipped
+Shard 1010 / 1700 skipped
+Shard 1011 / 1700 skipped
+Shard 1012 / 1700 skipped
+Shard 1013 / 1700 skipped
+Shard 1014 / 1700 skipped
+Shard 1015 / 1700 skipped
+Shard 1016 / 1700 skipped
+Shard 1017 / 1700 skipped
+Shard 1018 / 1700 skipped
+Shard 1019 / 1700 skipped
+Shard 1020 / 1700 skipped
+Shard 1021 / 1700 skipped
+Shard 1022 / 1700 skipped
+Shard 1023 / 1700 skipped
+Shard 1024 / 1700 skipped
+Shard 1025 / 1700 skipped
+Shard 1026 / 1700 skipped
+Shard 1027 / 1700 skipped
+Shard 1028 / 1700 skipped
+Shard 1029 / 1700 skipped
+Shard 1030 / 1700 skipped
+Shard 1031 / 1700 skipped
+Shard 1032 / 1700 skipped
+Shard 1033 / 1700 skipped
+Shard 1034 / 1700 skipped
+Shard 1035 / 1700 skipped
+Shard 1036 / 1700 skipped
+Shard 1037 / 1700 skipped
+Shard 1038 / 1700 skipped
+Shard 1039 / 1700 skipped
+Shard 1040 / 1700 skipped
+Shard 1041 / 1700 skipped
+Shard 1042 / 1700 skipped
+Shard 1043 / 1700 skipped
+Shard 1044 / 1700 skipped
+Shard 1045 / 1700 skipped
+Shard 1046 / 1700 skipped
+Shard 1047 / 1700 skipped
+Shard 1048 / 1700 skipped
+Shard 1049 / 1700 skipped
+Shard 1050 / 1700 skipped
+Shard 1051 / 1700 skipped
+Shard 1052 / 1700 skipped
+Shard 1053 / 1700 skipped
+Shard 1054 / 1700 skipped
+Shard 1055 / 1700 skipped
+Shard 1056 / 1700 skipped
+Shard 1057 / 1700 skipped
+Shard 1058 / 1700 skipped
+Shard 1059 / 1700 skipped
+Shard 1060 / 1700 skipped
+Shard 1061 / 1700 skipped
+Shard 1062 / 1700 skipped
+Shard 1063 / 1700 skipped
+Shard 1064 / 1700 skipped
+Shard 1065 / 1700 skipped
+Shard 1066 / 1700 skipped
+Shard 1067 / 1700 skipped
+Shard 1068 / 1700 skipped
+Shard 1069 / 1700 skipped
+Shard 1070 / 1700 skipped
+Shard 1071 / 1700 skipped
+Shard 1072 / 1700 skipped
+Shard 1073 / 1700 skipped
+Shard 1074 / 1700 skipped
+Shard 1075 / 1700 skipped
+Shard 1076 / 1700 skipped
+Shard 1077 / 1700 skipped
+Shard 1078 / 1700 skipped
+Shard 1079 / 1700 skipped
+Shard 1080 / 1700 skipped
+Shard 1081 / 1700 skipped
+Shard 1082 / 1700 skipped
+Shard 1083 / 1700 skipped
+Shard 1084 / 1700 skipped
+Shard 1085 / 1700 skipped
+Shard 1086 / 1700 skipped
+Shard 1087 / 1700 skipped
+Shard 1088 / 1700 skipped
+Shard 1089 / 1700 skipped
+Shard 1090 / 1700 skipped
+Shard 1091 / 1700 skipped
+Shard 1092 / 1700 skipped
+Shard 1093 / 1700 skipped
+Shard 1094 / 1700 skipped
+Shard 1095 / 1700 skipped
+Shard 1096 / 1700 skipped
+Shard 1097 / 1700 skipped
+Shard 1098 / 1700 skipped
+Shard 1099 / 1700 skipped
+Shard 1100 / 1700 skipped
+Shard 1101 / 1700 skipped
+Shard 1102 / 1700 skipped
+Shard 1103 / 1700 skipped
+Shard 1104 / 1700 skipped
+Shard 1105 / 1700 skipped
+Shard 1106 / 1700 skipped
+Shard 1107 / 1700 skipped
+Shard 1108 / 1700 skipped
+Shard 1109 / 1700 skipped
+Shard 1110 / 1700 skipped
+Shard 1111 / 1700 skipped
+Shard 1112 / 1700 skipped
+Shard 1113 / 1700 skipped
+Shard 1114 / 1700 skipped
+Shard 1115 / 1700 skipped
+Shard 1116 / 1700 skipped
+Shard 1117 / 1700 skipped
+Shard 1118 / 1700 skipped
+Shard 1119 / 1700 skipped
+Shard 1120 / 1700 skipped
+Shard 1121 / 1700 skipped
+Shard 1122 / 1700 skipped
+Shard 1123 / 1700 skipped
+Shard 1124 / 1700 skipped
+Shard 1125 / 1700 skipped
+Shard 1126 / 1700 skipped
+Shard 1127 / 1700 skipped
+Shard 1128 / 1700 skipped
+Shard 1129 / 1700 skipped
+Shard 1130 / 1700 skipped
+Shard 1131 / 1700 skipped
+Shard 1132 / 1700 skipped
+Shard 1133 / 1700 skipped
+Shard 1134 / 1700 skipped
+Shard 1135 / 1700 skipped
+Shard 1136 / 1700 skipped
+Shard 1137 / 1700 skipped
+Shard 1138 / 1700 skipped
+Shard 1139 / 1700 skipped
+Shard 1140 / 1700 skipped
+Shard 1141 / 1700 skipped
+Shard 1142 / 1700 skipped
+Shard 1143 / 1700 skipped
+Shard 1144 / 1700 skipped
+Shard 1145 / 1700 skipped
+Shard 1146 / 1700 skipped
+Shard 1147 / 1700 skipped
+Shard 1148 / 1700 skipped
+Shard 1149 / 1700 skipped
+Shard 1150 / 1700 skipped
+Shard 1151 / 1700 skipped
+Shard 1152 / 1700 skipped
+Shard 1153 / 1700 skipped
+Shard 1154 / 1700 skipped
+Shard 1155 / 1700 skipped
+Shard 1156 / 1700 skipped
+Shard 1157 / 1700 skipped
+Shard 1158 / 1700 skipped
+Shard 1159 / 1700 skipped
+Shard 1160 / 1700 skipped
+Shard 1161 / 1700 skipped
+Shard 1162 / 1700 skipped
+Shard 1163 / 1700 skipped
+Shard 1164 / 1700 skipped
+Shard 1165 / 1700 skipped
+Shard 1166 / 1700 skipped
+Shard 1167 / 1700 skipped
+Shard 1168 / 1700 skipped
+Shard 1169 / 1700 skipped
+Shard 1170 / 1700 skipped
+Shard 1171 / 1700 skipped
+Shard 1172 / 1700 skipped
+Shard 1173 / 1700 skipped
+Shard 1174 / 1700 skipped
+Shard 1175 / 1700 skipped
+Shard 1176 / 1700 skipped
+Shard 1177 / 1700 skipped
+Shard 1178 / 1700 skipped
+Shard 1179 / 1700 skipped
+Shard 1180 / 1700 skipped
+Shard 1181 / 1700 skipped
+Shard 1182 / 1700 skipped
+Shard 1183 / 1700 skipped
+Shard 1184 / 1700 skipped
+Shard 1185 / 1700 skipped
+Shard 1186 / 1700 skipped
+Shard 1187 / 1700 skipped
+Shard 1188 / 1700 skipped
+Shard 1189 / 1700 skipped
+Shard 1190 / 1700 skipped
+Shard 1191 / 1700 skipped
+Shard 1192 / 1700 skipped
+Shard 1193 / 1700 skipped
+Shard 1194 / 1700 skipped
+Shard 1195 / 1700 skipped
+Shard 1196 / 1700 skipped
+Shard 1197 / 1700 skipped
+Shard 1198 / 1700 skipped
+Shard 1199 / 1700 skipped
+Shard 1200 / 1700 skipped
+Shard 1201 / 1700 skipped
+Shard 1202 / 1700 skipped
+Shard 1203 / 1700 skipped
+Shard 1204 / 1700 skipped
+Shard 1205 / 1700 skipped
+Shard 1206 / 1700 skipped
+Shard 1207 / 1700 skipped
+Shard 1208 / 1700 skipped
+Shard 1209 / 1700 skipped
+Shard 1210 / 1700 skipped
+Shard 1211 / 1700 skipped
+Shard 1212 / 1700 skipped
+Shard 1213 / 1700 skipped
+Shard 1214 / 1700 skipped
+Shard 1215 / 1700 skipped
+Shard 1216 / 1700 skipped
+Shard 1217 / 1700 skipped
+Shard 1218 / 1700 skipped
+Shard 1219 / 1700 skipped
+Shard 1220 / 1700 skipped
+Shard 1221 / 1700 skipped
+Shard 1222 / 1700 skipped
+Shard 1223 / 1700 skipped
+Shard 1224 / 1700 skipped
+Shard 1225 / 1700 skipped
+Shard 1226 / 1700 skipped
+Shard 1227 / 1700 skipped
+Shard 1228 / 1700 skipped
+Shard 1229 / 1700 skipped
+Shard 1230 / 1700 skipped
+Shard 1231 / 1700 skipped
+Shard 1232 / 1700 skipped
+Shard 1233 / 1700 skipped
+Shard 1234 / 1700 skipped
+Shard 1235 / 1700 skipped
+Shard 1236 / 1700 skipped
+Shard 1237 / 1700 skipped
+Shard 1238 / 1700 skipped
+Shard 1239 / 1700 skipped
+Shard 1240 / 1700 skipped
+Shard 1241 / 1700 skipped
+Shard 1242 / 1700 skipped
+Shard 1243 / 1700 skipped
+Shard 1244 / 1700 skipped
+Shard 1245 / 1700 skipped
+Shard 1246 / 1700 skipped
+Shard 1247 / 1700 skipped
+Shard 1248 / 1700 skipped
+Shard 1249 / 1700 skipped
+Shard 1250 / 1700 skipped
+Shard 1251 / 1700 skipped
+Shard 1252 / 1700 skipped
+Shard 1253 / 1700 skipped
+Shard 1254 / 1700 skipped
+Shard 1255 / 1700 skipped
+Shard 1256 / 1700 skipped
+Shard 1257 / 1700 skipped
+Shard 1258 / 1700 skipped
+Shard 1259 / 1700 skipped
+Shard 1260 / 1700 skipped
+Shard 1261 / 1700 skipped
+Shard 1262 / 1700 skipped
+Shard 1263 / 1700 skipped
+Shard 1264 / 1700 skipped
+Shard 1265 / 1700 skipped
+Shard 1266 / 1700 skipped
+Shard 1267 / 1700 skipped
+Shard 1268 / 1700 skipped
+Shard 1269 / 1700 skipped
+Shard 1270 / 1700 skipped
+Shard 1271 / 1700 skipped
+Shard 1272 / 1700 skipped
+Shard 1273 / 1700 skipped
+Shard 1274 / 1700 skipped
+Shard 1275 / 1700 skipped
+Shard 1276 / 1700 skipped
+Shard 1277 / 1700 skipped
+Shard 1278 / 1700 skipped
+Shard 1279 / 1700 skipped
+Shard 1280 / 1700 skipped
+Shard 1281 / 1700 skipped
+Shard 1282 / 1700 skipped
+Shard 1283 / 1700 skipped
+Shard 1284 / 1700 skipped
+Shard 1285 / 1700 skipped
+Shard 1286 / 1700 skipped
+Shard 1287 / 1700 skipped
+Shard 1288 / 1700 skipped
+Shard 1289 / 1700 skipped
+Shard 1290 / 1700 skipped
+Shard 1291 / 1700 skipped
+Shard 1292 / 1700 skipped
+Shard 1293 / 1700 skipped
+Shard 1294 / 1700 skipped
+Shard 1295 / 1700 skipped
+Shard 1296 / 1700 skipped
+Shard 1297 / 1700 skipped
+Shard 1298 / 1700 skipped
+Shard 1299 / 1700 skipped
+Shard 1300 / 1700 skipped
+Shard 1301 / 1700 skipped
+Shard 1302 / 1700 skipped
+Shard 1303 / 1700 skipped
+Shard 1304 / 1700 skipped
+Shard 1305 / 1700 skipped
+Shard 1306 / 1700 skipped
+Shard 1307 / 1700 skipped
+Shard 1308 / 1700 skipped
+Shard 1309 / 1700 skipped
+Shard 1310 / 1700 skipped
+Shard 1311 / 1700 skipped
+Shard 1312 / 1700 skipped
+Shard 1313 / 1700 skipped
+Shard 1314 / 1700 skipped
+Shard 1315 / 1700 skipped
+Shard 1316 / 1700 skipped
+Shard 1317 / 1700 skipped
+Shard 1318 / 1700 skipped
+Shard 1319 / 1700 skipped
+Shard 1320 / 1700 skipped
+Shard 1321 / 1700 skipped
+Shard 1322 / 1700 skipped
+Shard 1323 / 1700 skipped
+Shard 1324 / 1700 skipped
+Shard 1325 / 1700 skipped
+Shard 1326 / 1700 skipped
+Shard 1327 / 1700 skipped
+Shard 1328 / 1700 skipped
+Shard 1329 / 1700 skipped
+Shard 1330 / 1700 skipped
+Shard 1331 / 1700 skipped
+Shard 1332 / 1700 skipped
+Shard 1333 / 1700 skipped
+Shard 1334 / 1700 skipped
+Shard 1335 / 1700 skipped
+Shard 1336 / 1700 skipped
+Shard 1337 / 1700 skipped
+Shard 1338 / 1700 skipped
+Shard 1339 / 1700 skipped
+Shard 1340 / 1700 skipped
+Shard 1341 / 1700 skipped
+Shard 1342 / 1700 skipped
+Shard 1343 / 1700 skipped
+Shard 1344 / 1700 skipped
+Shard 1345 / 1700 skipped
+Shard 1346 / 1700 skipped
+Shard 1347 / 1700 skipped
+Shard 1348 / 1700 skipped
+Shard 1349 / 1700 skipped
+Shard 1350 / 1700 skipped
+Shard 1351 / 1700 skipped
+Shard 1352 / 1700 skipped
+Shard 1353 / 1700 skipped
+Shard 1354 / 1700 skipped
+Shard 1355 / 1700 skipped
+Shard 1356 / 1700 skipped
+Shard 1357 / 1700 skipped
+Shard 1358 / 1700 skipped
+Shard 1359 / 1700 skipped
+Shard 1360 / 1700 skipped
+Shard 1361 / 1700 skipped
+Shard 1362 / 1700 skipped
+Shard 1363 / 1700 skipped
+Shard 1364 / 1700 skipped
+Shard 1365 / 1700 skipped
+Shard 1366 / 1700 skipped
+Shard 1367 / 1700 skipped
+Shard 1368 / 1700 skipped
+Shard 1369 / 1700 skipped
+Shard 1370 / 1700 skipped
+Shard 1371 / 1700 skipped
+Shard 1372 / 1700 skipped
+Shard 1373 / 1700 skipped
+Shard 1374 / 1700 skipped
+Shard 1375 / 1700 skipped
+Shard 1376 / 1700 skipped
+Shard 1377 / 1700 skipped
+Shard 1378 / 1700 skipped
+Shard 1379 / 1700 skipped
+Shard 1380 / 1700 skipped
+Shard 1381 / 1700 skipped
+Shard 1382 / 1700 skipped
+Shard 1383 / 1700 skipped
+Shard 1384 / 1700 skipped
+Shard 1385 / 1700 skipped
+Shard 1386 / 1700 skipped
+Shard 1387 / 1700 skipped
+Shard 1388 / 1700 skipped
+Shard 1389 / 1700 skipped
+Shard 1390 / 1700 skipped
+Shard 1391 / 1700 skipped
+Shard 1392 / 1700 skipped
+Shard 1393 / 1700 skipped
+Shard 1394 / 1700 skipped
+Shard 1395 / 1700 skipped
+Shard 1396 / 1700 skipped
+Shard 1397 / 1700 skipped
+Shard 1398 / 1700 skipped
+Shard 1399 / 1700 skipped
+Shard 1400 / 1700 skipped
+Shard 1401 / 1700 skipped
+Shard 1402 / 1700 skipped
+Shard 1403 / 1700 skipped
+Shard 1404 / 1700 skipped
+Shard 1405 / 1700 skipped
+Shard 1406 / 1700 skipped
+Shard 1407 / 1700 skipped
+Shard 1408 / 1700 skipped
+Shard 1409 / 1700 skipped
+Shard 1410 / 1700 skipped
+Shard 1411 / 1700 skipped
+Shard 1412 / 1700 skipped
+Shard 1413 / 1700 skipped
+Shard 1414 / 1700 skipped
+Shard 1415 / 1700 skipped
+Shard 1416 / 1700 skipped
+Shard 1417 / 1700 skipped
+Shard 1418 / 1700 skipped
+Shard 1419 / 1700 skipped
+Shard 1420 / 1700 skipped
+Shard 1421 / 1700 skipped
+Shard 1422 / 1700 skipped
+Shard 1423 / 1700 skipped
+Shard 1424 / 1700 skipped
+Shard 1425 / 1700 skipped
+Shard 1426 / 1700 skipped
+Shard 1427 / 1700 skipped
+Shard 1428 / 1700 skipped
+Shard 1429 / 1700 skipped
+Shard 1430 / 1700 skipped
+Shard 1431 / 1700 skipped
+Shard 1432 / 1700 skipped
+Shard 1433 / 1700 skipped
+Shard 1434 / 1700 skipped
+Shard 1435 / 1700 skipped
+Shard 1436 / 1700 skipped
+Shard 1437 / 1700 skipped
+Shard 1438 / 1700 skipped
+Shard 1439 / 1700 skipped
+Shard 1440 / 1700 skipped
+Shard 1441 / 1700 skipped
+Shard 1442 / 1700 skipped
+Shard 1443 / 1700 skipped
+Shard 1444 / 1700 skipped
+Shard 1445 / 1700 skipped
+Shard 1446 / 1700 skipped
+Shard 1447 / 1700 skipped
+Shard 1448 / 1700 skipped
+Shard 1449 / 1700 skipped
+Shard 1450 / 1700 skipped
+Shard 1451 / 1700 skipped
+Shard 1452 / 1700 skipped
+Shard 1453 / 1700 skipped
+Shard 1454 / 1700 skipped
+Shard 1455 / 1700 skipped
+Shard 1456 / 1700 skipped
+Shard 1457 / 1700 skipped
+Shard 1458 / 1700 skipped
+Shard 1459 / 1700 skipped
+Shard 1460 / 1700 skipped
+Shard 1461 / 1700 skipped
+Shard 1462 / 1700 skipped
+Shard 1463 / 1700 skipped
+Shard 1464 / 1700 skipped
+Shard 1465 / 1700 skipped
+Shard 1466 / 1700 skipped
+Shard 1467 / 1700 skipped
+Shard 1468 / 1700 skipped
+Shard 1469 / 1700 skipped
+Shard 1470 / 1700 skipped
+Shard 1471 / 1700 skipped
+Shard 1472 / 1700 skipped
+Shard 1473 / 1700 skipped
+Shard 1474 / 1700 skipped
+Shard 1475 / 1700 skipped
+Shard 1476 / 1700 skipped
+Shard 1477 / 1700 skipped
+Shard 1478 / 1700 skipped
+Shard 1479 / 1700 skipped
+Shard 1480 / 1700 skipped
+Shard 1481 / 1700 skipped
+Shard 1482 / 1700 skipped
+Shard 1483 / 1700 skipped
+Shard 1484 / 1700 skipped
+Shard 1485 / 1700 skipped
+Shard 1486 / 1700 skipped
+Shard 1487 / 1700 skipped
+Shard 1488 / 1700 skipped
+Shard 1489 / 1700 skipped
+Shard 1490 / 1700 skipped
+Shard 1491 / 1700 skipped
+Shard 1492 / 1700 skipped
+Shard 1493 / 1700 skipped
+Shard 1494 / 1700 skipped
+Shard 1495 / 1700 skipped
+Shard 1496 / 1700 skipped
+Shard 1497 / 1700 skipped
+Shard 1498 / 1700 skipped
+Shard 1499 / 1700 skipped
+Shard 1500 / 1700 skipped
+Shard 1501 / 1700 skipped
+Shard 1502 / 1700 skipped
+Shard 1503 / 1700 skipped
+Shard 1504 / 1700 skipped
+Shard 1505 / 1700 skipped
+Shard 1506 / 1700 skipped
+Shard 1507 / 1700 skipped
+Shard 1508 / 1700 skipped
+Shard 1509 / 1700 skipped
+Shard 1510 / 1700 skipped
+Shard 1511 / 1700 skipped
+Shard 1512 / 1700 skipped
+Shard 1513 / 1700 skipped
+Shard 1514 / 1700 skipped
+Shard 1515 / 1700 skipped
+Shard 1516 / 1700 skipped
+Shard 1517 / 1700 skipped
+Shard 1518 / 1700 skipped
+Shard 1519 / 1700 skipped
+Shard 1520 / 1700 skipped
+Shard 1521 / 1700 skipped
+Shard 1522 / 1700 skipped
+Shard 1523 / 1700 skipped
+Shard 1524 / 1700 skipped
+Shard 1525 / 1700 skipped
+Shard 1526 / 1700 skipped
+Shard 1527 / 1700 skipped
+Shard 1528 / 1700 skipped
+Shard 1529 / 1700 skipped
+Shard 1530 / 1700 skipped
+Shard 1531 / 1700 skipped
+Shard 1532 / 1700 skipped
+Shard 1533 / 1700 skipped
+Shard 1534 / 1700 skipped
+Shard 1535 / 1700 skipped
+Shard 1536 / 1700 skipped
+Shard 1537 / 1700 skipped
+Shard 1538 / 1700 skipped
+Shard 1539 / 1700 skipped
+Shard 1540 / 1700 skipped
+Shard 1541 / 1700 skipped
+Shard 1542 / 1700 skipped
+Shard 1543 / 1700 skipped
+Shard 1544 / 1700 skipped
+Shard 1545 / 1700 skipped
+Shard 1546 / 1700 skipped
+Shard 1547 / 1700 skipped
+Shard 1548 / 1700 skipped
+Shard 1549 / 1700 skipped
+Shard 1550 / 1700 skipped
+Shard 1551 / 1700 skipped
+Shard 1552 / 1700 skipped
+Shard 1553 / 1700 skipped
+Shard 1554 / 1700 skipped
+Shard 1555 / 1700 skipped
+Shard 1556 / 1700 skipped
+Shard 1557 / 1700 skipped
+Shard 1558 / 1700 skipped
+Shard 1559 / 1700 skipped
+Shard 1560 / 1700 skipped
+Shard 1561 / 1700 skipped
+Shard 1562 / 1700 skipped
+Shard 1563 / 1700 skipped
+Shard 1564 / 1700 skipped
+Shard 1565 / 1700 skipped
+Shard 1566 / 1700 skipped
+Shard 1567 / 1700 skipped
+Shard 1568 / 1700 skipped
+Shard 1569 / 1700 skipped
+Shard 1570 / 1700 skipped
+Shard 1571 / 1700 skipped
+Shard 1572 / 1700 skipped
+Shard 1573 / 1700 skipped
+Shard 1574 / 1700 skipped
+Shard 1575 / 1700 skipped
+Shard 1576 / 1700 skipped
+Shard 1577 / 1700 skipped
+Shard 1578 / 1700 skipped
+Shard 1579 / 1700 skipped
+Shard 1580 / 1700 skipped
+Shard 1581 / 1700 skipped
+Shard 1582 / 1700 skipped
+Shard 1583 / 1700 skipped
+Shard 1584 / 1700 skipped
+Shard 1585 / 1700 skipped
+Shard 1586 / 1700 skipped
+Shard 1587 / 1700 skipped
+Shard 1588 / 1700 skipped
+Shard 1589 / 1700 skipped
+Shard 1590 / 1700 skipped
+Shard 1591 / 1700 skipped
+Shard 1592 / 1700 skipped
+Shard 1593 / 1700 skipped
+Shard 1594 / 1700 skipped
+Shard 1595 / 1700 skipped
+Shard 1596 / 1700 skipped
+Shard 1597 / 1700 skipped
+Shard 1598 / 1700 skipped
+Shard 1599 / 1700 skipped
+Shard 1600 / 1700 skipped
+Shard 1601 / 1700 skipped
+Shard 1602 / 1700 skipped
+Shard 1603 / 1700 skipped
+Shard 1604 / 1700 skipped
+Shard 1605 / 1700 skipped
+Shard 1606 / 1700 skipped
+Shard 1607 / 1700 skipped
+Shard 1608 / 1700 skipped
+Shard 1609 / 1700 skipped
+Shard 1610 / 1700 skipped
+Shard 1611 / 1700 skipped
+Shard 1612 / 1700 skipped
+Shard 1613 / 1700 skipped
+Shard 1614 / 1700 skipped
+Shard 1615 / 1700 skipped
+Shard 1616 / 1700 skipped
+Shard 1617 / 1700 skipped
+Shard 1618 / 1700 skipped
+Shard 1619 / 1700 skipped
+Shard 1620 / 1700 skipped
+Shard 1621 / 1700 skipped
+Shard 1622 / 1700 skipped
+Shard 1623 / 1700 skipped
+Shard 1624 / 1700 skipped
+Shard 1625 / 1700 skipped
+Shard 1626 / 1700 skipped
+Shard 1627 / 1700 skipped
+Shard 1628 / 1700 skipped
+Shard 1629 / 1700 skipped
+Shard 1630 / 1700 skipped
+Shard 1631 / 1700 skipped
+Shard 1632 / 1700 skipped
+Shard 1633 / 1700 skipped
+Shard 1634 / 1700 skipped
+Shard 1635 / 1700 skipped
+Shard 1636 / 1700 skipped
+Shard 1637 / 1700 skipped
+Shard 1638 / 1700 skipped
+Shard 1639 / 1700 skipped
+Shard 1640 / 1700 skipped
+Shard 1641 / 1700 skipped
+Shard 1642 / 1700 skipped
+Shard 1643 / 1700 skipped
+Shard 1644 / 1700 skipped
+Shard 1645 / 1700 skipped
+Shard 1646 / 1700 skipped
+Shard 1647 / 1700 skipped
+Shard 1648 / 1700 skipped
+Shard 1649 / 1700 skipped
+Shard 1650 / 1700 skipped
+Shard 1651 / 1700 skipped
+Shard 1652 / 1700 skipped
+Shard 1653 / 1700 skipped
+Shard 1654 / 1700 skipped
+Shard 1655 / 1700 skipped
+Shard 1656 / 1700 skipped
+Shard 1657 / 1700 skipped
+Shard 1658 / 1700 skipped
+Shard 1659 / 1700 skipped
+Shard 1660 / 1700 skipped
+Shard 1661 / 1700 skipped
+Shard 1662 / 1700 skipped
+Shard 1663 / 1700 skipped
+Shard 1664 / 1700 skipped
+Shard 1665 / 1700 skipped
+Shard 1666 / 1700 skipped
+Shard 1667 / 1700 skipped
+Shard 1668 / 1700 skipped
+Shard 1669 / 1700 skipped
+Shard 1670 / 1700 skipped
+Shard 1671 / 1700 skipped
+Shard 1672 / 1700 skipped
+Shard 1673 / 1700 skipped
+Shard 1674 / 1700 skipped
+Shard 1675 / 1700 skipped
+Shard 1676 / 1700 skipped
+Shard 1677 / 1700 skipped
+Shard 1678 / 1700 skipped
+Shard 1679 / 1700 skipped
+Shard 1680 / 1700 skipped
+Shard 1681 / 1700 skipped
+Shard 1682 / 1700 skipped
+Shard 1683 / 1700 skipped
+Shard 1684 / 1700 skipped
+Shard 1685 / 1700 skipped
+Shard 1686 / 1700 skipped
+Shard 1687 / 1700 skipped
+Shard 1688 / 1700 skipped
+Shard 1689 / 1700 skipped
+Shard 1690 / 1700 skipped
+Shard 1691 / 1700 skipped
+Shard 1692 / 1700 skipped
+Shard 1693 / 1700 skipped
+Shard 1694 / 1700 skipped
+Shard 1695 / 1700 skipped
+Shard 1696 / 1700 skipped
+Shard 1697 / 1700 skipped
+Shard 1698 / 1700 skipped
+Shard 1699 / 1700 skipped
+Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_1594
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][ADeepspeed engine successfully initialized at --- RANK 7 --- hosting 16 of 136 trainable parameters
+  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][ADeepspeed engine successfully initialized at --- RANK 2 --- hosting 16 of 136 trainable parameters
+Deepspeed engine successfully initialized at --- RANK 1 --- hosting 16 of 136 trainable parameters
+  0%|          | 0/5198 [00:00<?, ?it/s]  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][ADeepspeed engine successfully initialized at --- RANK 3 --- hosting 16 of 136 trainable parameters
+Deepspeed engine successfully initialized at --- RANK 4 --- hosting 16 of 136 trainable parameters
+  0%|          | 0/5198 [00:00<?, ?it/s]  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][ADeepspeed engine successfully initialized at --- RANK 6 --- hosting 16 of 136 trainable parameters
+Deepspeed engine successfully initialized at --- RANK 5 --- hosting 16 of 136 trainable parameters
+  0%|          | 0/5198 [00:00<?, ?it/s]  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-06-16 11:05:46,024] [INFO] [logging.py:96:log_dist] [Rank 0] step=1, skipped=0, lr=[2.0000000000000003e-06], mom=[(0.9, 0.999)]
+steps: 1 loss: 2.2200 iter time (s): 120.061 samples/sec: 1.066
+
+100%|██████████| 1/1 [02:00<00:00, 120.09s/it][A100%|██████████| 1/1 [02:00<00:00, 120.09s/it]
+ 33%|███▎      | 1701/5198 [02:00<04:06, 14.16it/s]
+100%|██████████| 1/1 [01:58<00:00, 118.14s/it][A100%|██████████| 1/1 [01:58<00:00, 118.14s/it]
+ 33%|███▎      | 1701/5198 [01:58<04:02, 14.40it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:58<00:00, 118.30s/it][A100%|██████████| 1/1 [01:58<00:00, 118.30s/it]
+ 33%|███▎      | 1701/5198 [01:58<04:03, 14.38it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:58<00:00, 118.52s/it][A100%|██████████| 1/1 [01:58<00:00, 118.52s/it]
+ 33%|███▎      | 1701/5198 [01:58<04:03, 14.35it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:58<00:00, 118.56s/it][A100%|██████████| 1/1 [01:58<00:00, 118.56s/it]
+ 33%|███▎      | 1701/5198 [01:58<04:03, 14.35it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:58<00:00, 118.67s/it][A100%|██████████| 1/1 [01:58<00:00, 118.67s/it]
+ 33%|███▎      | 1701/5198 [01:58<04:03, 14.33it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:58<00:00, 118.71s/it][A100%|██████████| 1/1 [01:58<00:00, 118.71s/it]
+ 33%|███▎      | 1701/5198 [01:58<04:04, 14.33it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:00<00:00, 120.81s/it][A100%|██████████| 1/1 [02:00<00:00, 120.81s/it]
+ 33%|███▎      | 1701/5198 [02:01<04:08, 14.06it/s]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_1595
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A 33%|███▎      | 1701/5198 [02:10<04:03, 14.33it/s] 33%|███▎      | 1701/5198 [02:10<04:04, 14.33it/s] 33%|███▎      | 1701/5198 [02:10<04:03, 14.35it/s] 33%|███▎      | 1701/5198 [02:10<04:03, 14.35it/s] 33%|███▎      | 1701/5198 [02:10<04:03, 14.38it/s] 33%|███▎      | 1701/5198 [02:10<04:02, 14.40it/s] 33%|███▎      | 1701/5198 [02:17<04:08, 14.06it/s] 33%|███▎      | 1701/5198 [02:18<04:06, 14.16it/s]

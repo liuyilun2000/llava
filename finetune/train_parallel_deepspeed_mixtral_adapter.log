@@ -1,0 +1,30 @@
+[2024-05-14 14:03:55,553] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-05-14 14:04:02,095] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-05-14 14:04:02,095] [INFO] [runner.py:568:main] cmd = /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None llava/finetune/train_parallel_deepspeed_mixtral_adapter.py --num_stages=8
+[2024-05-14 14:04:05,467] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-05-14 14:04:07,880] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2024-05-14 14:04:07,880] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=8, node_rank=0
+[2024-05-14 14:04:07,880] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2024-05-14 14:04:07,880] [INFO] [launch.py:163:main] dist_world_size=8
+[2024-05-14 14:04:07,880] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+[2024-05-14 14:04:07,889] [INFO] [launch.py:253:main] process 881943 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=0', '--num_stages=8']
+[2024-05-14 14:04:07,897] [INFO] [launch.py:253:main] process 881944 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=1', '--num_stages=8']
+[2024-05-14 14:04:07,910] [INFO] [launch.py:253:main] process 881945 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=2', '--num_stages=8']
+[2024-05-14 14:04:07,924] [INFO] [launch.py:253:main] process 881946 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=3', '--num_stages=8']
+[2024-05-14 14:04:07,937] [INFO] [launch.py:253:main] process 881947 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=4', '--num_stages=8']
+[2024-05-14 14:04:07,949] [INFO] [launch.py:253:main] process 881948 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=5', '--num_stages=8']
+[2024-05-14 14:04:07,959] [INFO] [launch.py:253:main] process 881949 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=6', '--num_stages=8']
+[2024-05-14 14:04:07,971] [INFO] [launch.py:253:main] process 881951 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=7', '--num_stages=8']
+Traceback (most recent call last):
+  File "llava/finetune/train_parallel_deepspeed_mixtral_adapter.py", line 55, in <module>
+    from mixtral_modification.configuration_mixtral import MixtralAdapterConfig
+ModuleNotFoundError: No module named 'mixtral_modification'
+[2024-05-14 14:04:16,982] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881943
+[2024-05-14 14:04:17,102] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881944
+[2024-05-14 14:04:17,102] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881945
+[2024-05-14 14:04:17,149] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881946
+[2024-05-14 14:04:17,193] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881947
+[2024-05-14 14:04:17,236] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881948
+[2024-05-14 14:04:17,305] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881949
+[2024-05-14 14:04:17,348] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 881951
+[2024-05-14 14:04:17,459] [ERROR] [launch.py:322:sigkill_handler] ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/finetune/train_parallel_deepspeed_mixtral_adapter.py', '--local_rank=7', '--num_stages=8'] exits with return code = 1
