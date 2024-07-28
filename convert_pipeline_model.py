@@ -124,7 +124,7 @@ model_name = 'LLaVA-PEFT_adapter_32_64'
 pretrained_model_dir = '/home/vault/b207dd/b207dd11/llava-mixtral/llava-mixtral-pretrained-2/'
 pipeline_model_dir = f'/home/atuin/b207dd/b207dd11/{model_name}_checkpoint/'
 
-checkpoint_name = 'save_step1091'
+checkpoint_name = 'save_step1191'
 #checkpoint_name = 'save_step2582'
 #checkpoint_name = 'global_step1047'
 checkpoint_dir = pipeline_model_dir + checkpoint_name

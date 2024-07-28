@@ -13,7 +13,7 @@ python3 llava/llava_PEFT_init.py
 
 deepspeed llava/train_parallel_deepspeed_mixtral_adapter.py --num_stages=8 \
    --shared_adapter_num=4 --shared_adapter_type=Parallel_Adapter --hidden_dim=32 \
-   --save_model_shard=50  --skip_shard=800  \
+   --save_model_shard=100  --skip_shard=800  \
    --checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_adapter_32_64_4_checkpoint 2>&1 | tee llava/train_parallel_deepspeed_mixtral_adapter_32_64_4.log
 
 echo -e "\a"
