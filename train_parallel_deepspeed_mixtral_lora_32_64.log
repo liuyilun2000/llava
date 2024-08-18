@@ -1,36 +1,2290 @@
-[2024-08-16 00:55:49,092] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:55:57,620] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
-[2024-08-16 00:55:57,621] [INFO] [runner.py:568:main] cmd = /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None llava/train_parallel_deepspeed_mixtral_lora.py --num_stages=8 --lora_r=32 --lora_alpha=64 --save_model_shard=50 --skip_shard=0 --checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint
-[2024-08-16 00:56:00,397] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:01,716] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
-[2024-08-16 00:56:01,716] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=8, node_rank=0
-[2024-08-16 00:56:01,716] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
-[2024-08-16 00:56:01,716] [INFO] [launch.py:163:main] dist_world_size=8
-[2024-08-16 00:56:01,716] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-[2024-08-16 00:56:01,727] [INFO] [launch.py:253:main] process 48826 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=0', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:01,738] [INFO] [launch.py:253:main] process 48827 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=1', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:01,748] [INFO] [launch.py:253:main] process 48828 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=2', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:01,757] [INFO] [launch.py:253:main] process 48829 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=3', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:01,766] [INFO] [launch.py:253:main] process 48830 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=4', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:01,776] [INFO] [launch.py:253:main] process 48831 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=5', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:01,783] [INFO] [launch.py:253:main] process 48832 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=6', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:01,793] [INFO] [launch.py:253:main] process 48833 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=7', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=50', '--skip_shard=0', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
-[2024-08-16 00:56:15,963] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:16,040] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:16,047] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:16,058] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:16,616] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:17,340] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-08-16 00:56:17,340] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-08-16 00:56:17,340] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-08-16 00:56:17,340] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-08-16 00:56:17,340] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-08-16 00:56:21,904] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:21,952] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:22,183] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-08-16 00:56:22,459] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-08-16 00:56:22,459] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
-[2024-08-16 00:56:22,522] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-08-16 00:56:22,761] [INFO] [comm.py:637:init_distributed] cdb=None
-Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:26,  1.38s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:32,  1.69s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:28,  1.50s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:29,  1.53s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:36,  1.90s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:33,  1.76s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:02<00:41,  2.19s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:02<00:43,  2.32s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:35,  1.95s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:30,  1.67s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:32,  1.81s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:31,  1.74s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:29,  1.65s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:33,  1.87s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:34,  1.94s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:29,  1.74s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:31,  1.87s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:05<00:45,  2.55s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:04<00:27,  1.64s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:30,  1.81s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:30,  1.82s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:33,  1.94s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:37,  2.18s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:29,  1.84s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:28,  1.76s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:31,  1.98s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:06<00:28,  1.75s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:31,  1.98s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:32,  2.01s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:07<00:44,  2.63s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:36,  2.27s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:28,  1.91s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:08<00:26,  1.76s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:27,  1.81s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:09<00:34,  2.16s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:29,  1.98s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:28,  1.90s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:10<00:32,  2.20s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:10<00:25,  1.80s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:10<00:25,  1.81s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:27,  1.94s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:11<00:34,  2.27s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:28,  2.01s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:11<00:31,  2.13s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:12<00:31,  2.25s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:12<00:33,  2.37s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:12<00:26,  1.91s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:12<00:29,  2.10s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:12<00:24,  1.89s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:13<00:26,  2.07s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:14<00:28,  2.17s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:14<00:29,  2.28s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:14<00:26,  2.03s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:14<00:23,  1.83s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:14<00:29,  2.24s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:14<00:21,  1.83s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:15<00:23,  1.98s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:15<00:27,  2.09s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:15<00:23,  2.00s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:15<00:25,  2.10s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:25,  2.12s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:24,  2.03s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:27,  2.27s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:17<00:20,  1.90s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:16<00:22,  2.01s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:17<00:22,  2.04s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:17<00:22,  2.05s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:18<00:28,  2.41s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:18<00:21,  1.96s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:19<00:19,  1.94s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:18<00:20,  2.02s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:19<00:24,  2.26s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:19<00:25,  2.36s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:20<00:20,  2.05s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:20<00:21,  2.11s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:20<00:26,  2.42s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:20<00:21,  2.12s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:20<00:18,  2.03s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:21<00:22,  2.28s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:22<00:18,  2.04s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:21<00:19,  2.15s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:22<00:19,  2.15s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:22<00:25,  2.50s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:22<00:16,  2.04s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:23<00:24,  2.44s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:23<00:16,  2.01s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:23<00:20,  2.26s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:24<00:16,  2.05s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:23<00:20,  2.29s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:25<00:18,  2.37s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:25<00:20,  2.27s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:25<00:13,  1.97s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:24<00:14,  2.04s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:25<00:24,  2.68s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:25<00:16,  2.09s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:25<00:13,  1.96s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:25<00:18,  2.33s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:27<00:11,  1.99s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:26<00:12,  2.03s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:27<00:16,  2.34s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:27<00:11,  1.98s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:27<00:18,  2.37s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:27<00:15,  2.25s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:28<00:16,  2.32s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:28<00:22,  2.84s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:28<00:09,  1.91s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:28<00:10,  2.01s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:29<00:13,  2.28s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:30<00:11,  2.29s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:30<00:13,  2.32s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:30<00:13,  2.31s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:30<00:07,  1.90s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:31<00:18,  2.65s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:31<00:10,  2.15s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:31<00:20,  2.88s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:31<00:09,  2.28s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:32<00:08,  2.19s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:32<00:11,  2.25s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:33<00:12,  2.46s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:33<00:06,  2.05s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:34<00:09,  2.34s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:34<00:16,  2.78s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:34<00:06,  2.10s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:34<00:17,  2.88s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:34<00:07,  2.49s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:35<00:09,  2.32s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:35<00:04,  2.14s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:36<00:06,  2.28s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:36<00:04,  2.10s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:36<00:11,  2.76s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:36<00:13,  2.75s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:37<00:14,  2.88s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:37<00:02,  2.10s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:37<00:05,  2.58s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:38<00:00,  1.63s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:38<00:00,  1.91s/it]
-Loading checkpoint shards:  85%|████████▌ | 17/20 [00:38<00:07,  2.59s/it]
+[2024-08-16 23:43:27,032] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:43:33,748] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-08-16 23:43:33,748] [INFO] [runner.py:568:main] cmd = /home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None llava/train_parallel_deepspeed_mixtral_lora.py --num_stages=8 --lora_r=32 --lora_alpha=64 --save_model_shard=10 --skip_shard=800 --checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint
+[2024-08-16 23:43:36,636] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:43:37,996] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2024-08-16 23:43:37,996] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=8, node_rank=0
+[2024-08-16 23:43:37,996] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2024-08-16 23:43:37,996] [INFO] [launch.py:163:main] dist_world_size=8
+[2024-08-16 23:43:37,996] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+[2024-08-16 23:43:38,009] [INFO] [launch.py:253:main] process 143636 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=0', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:38,017] [INFO] [launch.py:253:main] process 143637 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=1', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:38,028] [INFO] [launch.py:253:main] process 143638 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=2', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:38,045] [INFO] [launch.py:253:main] process 143639 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=3', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:38,061] [INFO] [launch.py:253:main] process 143640 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=4', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:38,076] [INFO] [launch.py:253:main] process 143641 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=5', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:38,091] [INFO] [launch.py:253:main] process 143643 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=6', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:38,107] [INFO] [launch.py:253:main] process 143644 spawned with command: ['/home/hpc/b207dd/b207dd11/miniconda3/envs/py38/bin/python', '-u', 'llava/train_parallel_deepspeed_mixtral_lora.py', '--local_rank=7', '--num_stages=8', '--lora_r=32', '--lora_alpha=64', '--save_model_shard=10', '--skip_shard=800', '--checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint']
+[2024-08-16 23:43:45,326] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:43:46,214] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-16 23:43:49,856] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:43:50,130] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:43:50,150] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:43:51,606] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-16 23:43:51,732] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-16 23:43:51,733] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-16 23:43:55,292] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:43:55,842] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-16 23:44:01,671] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:44:02,358] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-16 23:44:02,359] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:23,  1.24s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:22,  1.18s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:00<00:18,  1.05it/s]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:25,  1.36s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:32,  1.69s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:42,  2.39s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:32,  1.82s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:47,  2.64s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:42,  2.38s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:46,  2.57s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:38,  2.27s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:40,  2.37s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:05<00:33,  1.96s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:38,  2.28s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:07<00:43,  2.58s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:31,  1.97s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:33,  2.07s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:07<00:28,  1.77s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:31,  1.95s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:30,  1.93s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:24,  1.65s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:25,  1.72s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:08<00:24,  1.63s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:09<00:28,  1.88s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:10<00:31,  2.09s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:10<00:22,  1.62s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:10<00:22,  1.62s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:23,  1.71s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:24,  1.77s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:11<00:25,  1.81s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:12<00:20,  1.59s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:12<00:21,  1.64s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:12<00:21,  1.65s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:12<00:20,  1.61s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:11<00:21,  1.62s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:14<00:18,  1.57s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:14<00:19,  1.60s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:14<00:19,  1.63s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:13<00:19,  1.63s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:14<00:21,  1.76s/it][2024-08-16 23:44:22,614] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-16 23:44:22,697] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:  45%|████▌     | 9/20 [00:15<00:17,  1.57s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:15<00:17,  1.57s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:15<00:17,  1.59s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:15<00:18,  1.64s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:16<00:20,  1.85s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:17<00:14,  1.47s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:16<00:14,  1.47s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:17<00:14,  1.47s/it][2024-08-16 23:44:24,388] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-16 23:44:24,465] [INFO] [comm.py:637:init_distributed] cdb=None
+Loading checkpoint shards:  50%|█████     | 10/20 [00:16<00:16,  1.67s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:18<00:13,  1.54s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:19<00:14,  1.57s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:18<00:19,  1.92s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:19<00:14,  1.60s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:19<00:16,  1.84s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:20<00:13,  1.65s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:20<00:13,  1.64s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:20<00:13,  1.66s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:20<00:17,  1.95s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:20<00:14,  1.83s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:22<00:10,  1.56s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:21<00:10,  1.57s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:21<00:13,  1.70s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:22<00:11,  1.59s/it]Loading checkpoint shards:   0%|          | 0/20 [00:00<?, ?it/s]Loading checkpoint shards:  70%|███████   | 14/20 [00:23<00:09,  1.57s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:33,  1.78s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:33,  1.78s/it]Loading checkpoint shards:   5%|▌         | 1/20 [00:01<00:30,  1.61s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:23<00:13,  1.94s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:24<00:13,  1.92s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:24<00:11,  1.85s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:24<00:11,  1.89s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:25<00:08,  1.66s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:24<00:11,  1.85s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:03<00:34,  1.92s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:37,  2.09s/it]Loading checkpoint shards:  10%|█         | 2/20 [00:04<00:41,  2.31s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:26<00:09,  1.96s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:26<00:09,  1.95s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:26<00:12,  2.06s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:27<00:06,  1.71s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:26<00:08,  1.78s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:28<00:07,  1.83s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:36,  2.16s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:40,  2.36s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:28<00:07,  1.95s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:28<00:04,  1.66s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:28<00:10,  2.13s/it]Loading checkpoint shards:  15%|█▌        | 3/20 [00:06<00:40,  2.41s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:29<00:08,  2.07s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:30<00:05,  1.85s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:30<00:05,  1.89s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:34,  2.18s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:30<00:03,  1.68s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:08<00:37,  2.34s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:31<00:08,  2.24s/it]Loading checkpoint shards:  20%|██        | 4/20 [00:09<00:40,  2.55s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:10<00:30,  2.00s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:32<00:03,  1.84s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:31<00:06,  2.11s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:32<00:03,  1.93s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:10<00:30,  2.04s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:32<00:01,  1.86s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:34<00:01,  1.84s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:34<00:01,  1.81s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:33<00:00,  1.65s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:33<00:00,  1.69s/it]
+Loading checkpoint shards:  85%|████████▌ | 17/20 [00:33<00:06,  2.30s/it]Loading checkpoint shards:  25%|██▌       | 5/20 [00:11<00:36,  2.40s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:33<00:04,  2.06s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:12<00:28,  2.04s/it]Loading checkpoint shards:  30%|███       | 6/20 [00:12<00:28,  2.06s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:34<00:00,  1.45s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:34<00:00,  1.74s/it]
+Loading checkpoint shards: 100%|██████████| 20/20 [00:35<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:35<00:00,  1.76s/it]
+Loading checkpoint shards:  30%|███       | 6/20 [00:13<00:30,  2.17s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:13<00:24,  1.88s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:35<00:04,  2.18s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:35<00:02,  2.02s/it]Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+Loading checkpoint shards: 100%|██████████| 20/20 [00:36<00:00,  1.69s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:36<00:00,  1.80s/it]
+Loading checkpoint shards:  35%|███▌      | 7/20 [00:15<00:28,  2.23s/it]Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+Loading checkpoint shards:  40%|████      | 8/20 [00:15<00:22,  1.85s/it]Loading checkpoint shards:  35%|███▌      | 7/20 [00:15<00:26,  2.06s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:37<00:02,  2.05s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:22,  1.92s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:38<00:00,  1.63s/it]Loading checkpoint shards: 100%|██████████| 20/20 [00:38<00:00,  1.91s/it]
+Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+Loading checkpoint shards:  45%|████▌     | 9/20 [00:16<00:18,  1.68s/it]Loading checkpoint shards:  40%|████      | 8/20 [00:16<00:21,  1.81s/it]Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+Loading checkpoint shards:  45%|████▌     | 9/20 [00:17<00:18,  1.69s/it]Loading checkpoint shards:  45%|████▌     | 9/20 [00:17<00:17,  1.62s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:18<00:15,  1.56s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:19<00:15,  1.60s/it]Loading checkpoint shards:  50%|█████     | 10/20 [00:18<00:14,  1.46s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:19<00:13,  1.45s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:20<00:13,  1.49s/it]Loading checkpoint shards:  55%|█████▌    | 11/20 [00:20<00:12,  1.34s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:20<00:10,  1.28s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:21<00:09,  1.25s/it]Loading checkpoint shards:  60%|██████    | 12/20 [00:21<00:11,  1.42s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:21<00:08,  1.24s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:22<00:08,  1.18s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:22<00:07,  1.19s/it]Loading checkpoint shards:  65%|██████▌   | 13/20 [00:22<00:09,  1.42s/it]Loading checkpoint shards:  70%|███████   | 14/20 [00:22<00:06,  1.06s/it]Rank 5 initialized with CUDA_MEM (60889497600, 85097971712)
+Deepspeed engine initializing at --- RANK 5 --- ...
+Loading checkpoint shards:  75%|███████▌  | 15/20 [00:23<00:05,  1.17s/it]Rank 1 initialized with CUDA_MEM (60889497600, 85097971712)
+Deepspeed engine initializing at --- RANK 1 --- ...
+Rank 2 initialized with CUDA_MEM (60889497600, 85097971712)
+Deepspeed engine initializing at --- RANK 2 --- ...
+Loading checkpoint shards:  70%|███████   | 14/20 [00:24<00:08,  1.38s/it]Loading checkpoint shards:  75%|███████▌  | 15/20 [00:23<00:05,  1.05s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:24<00:04,  1.02s/it]Rank 6 initialized with CUDA_MEM (60889497600, 85097971712)
+Deepspeed engine initializing at --- RANK 6 --- ...
+Loading checkpoint shards:  75%|███████▌  | 15/20 [00:25<00:06,  1.28s/it]Rank 7 initialized with CUDA_MEM (60363112448, 85097971712)
+Loading checkpoint shards:  85%|████████▌ | 17/20 [00:25<00:02,  1.02it/s]Deepspeed engine initializing at --- RANK 7 --- ...
+Loading checkpoint shards:  80%|████████  | 16/20 [00:25<00:04,  1.07s/it]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Loading checkpoint shards:  85%|████████▌ | 17/20 [00:25<00:03,  1.04s/it]Loading checkpoint shards:  80%|████████  | 16/20 [00:26<00:04,  1.22s/it]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Loading checkpoint shards:  90%|█████████ | 18/20 [00:26<00:02,  1.02s/it]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Loading checkpoint shards:  95%|█████████▌| 19/20 [00:27<00:01,  1.04s/it]Loading checkpoint shards:  85%|████████▌ | 17/20 [00:27<00:03,  1.20s/it]Loading checkpoint shards:  90%|█████████ | 18/20 [00:27<00:02,  1.09s/it]Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Loading checkpoint shards: 100%|██████████| 20/20 [00:27<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:27<00:00,  1.40s/it]
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading checkpoint shards:  90%|█████████ | 18/20 [00:28<00:02,  1.20s/it]Loading checkpoint shards:  95%|█████████▌| 19/20 [00:28<00:01,  1.12s/it]Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+Loading checkpoint shards: 100%|██████████| 20/20 [00:28<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:28<00:00,  1.44s/it]
+Loading checkpoint shards:  95%|█████████▌| 19/20 [00:29<00:01,  1.12s/it]Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+Loading checkpoint shards: 100%|██████████| 20/20 [00:29<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 20/20 [00:29<00:00,  1.49s/it]
+Print trainable params: 55590912 || all params: 47065053184 || trainable%: 0.12
+SEED_LAYERS=False BASE_SEED=1234 SEED_FN=None
+Using topology: {ProcessCoord(pipe=0, data=0): 0, ProcessCoord(pipe=1, data=0): 1, ProcessCoord(pipe=2, data=0): 2, ProcessCoord(pipe=3, data=0): 3, ProcessCoord(pipe=4, data=0): 4, ProcessCoord(pipe=5, data=0): 5, ProcessCoord(pipe=6, data=0): 6, ProcessCoord(pipe=7, data=0): 7}
+[2024-08-16 23:44:59,720] [INFO] [module.py:375:_partition_layers] Partitioning pipeline stages with method type:LanguageModelLayerWrapper
+stage=0 layers=2
+     0: LlavaMultiModalModuleWrapper
+     1: LanguageModelLayerWrapper
+stage=1 layers=1
+     2: LanguageModelLayerWrapper
+stage=2 layers=1
+     3: LanguageModelLayerWrapper
+stage=3 layers=1
+     4: LanguageModelLayerWrapper
+stage=4 layers=1
+     5: LanguageModelLayerWrapper
+stage=5 layers=1
+     6: LanguageModelLayerWrapper
+stage=6 layers=1
+     7: LanguageModelLayerWrapper
+stage=7 layers=2
+     8: LanguageModelLayerWrapper
+     9: LanguageModelFinalWrapper
+  loss: loss_fn
+Rank 4 initialized with CUDA_MEM (60889497600, 85097971712)
+Deepspeed engine initializing at --- RANK 4 --- ...
+Rank 3 initialized with CUDA_MEM (60889497600, 85097971712)
+Deepspeed engine initializing at --- RANK 3 --- ...
+ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 6.5395824909210205 seconds
+Loading extension module fused_adam...
+Time to load fused_adam op: 5.920184850692749 seconds
+[2024-08-16 23:45:02,075] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2024-08-16 23:45:02,079] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 6.555306911468506 seconds
+[2024-08-16 23:45:02,092] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 6.516427516937256 seconds
+[2024-08-16 23:45:02,148] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 4.920486211776733 seconds
+[2024-08-16 23:45:02,157] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Rank 0 initialized with CUDA_MEM (58951729152, 85097971712)
+Deepspeed engine initializing at --- RANK 0 --- ...
+[2024-08-16 23:45:03,634] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.0, git-hash=unknown, git-branch=unknown
+[2024-08-16 23:45:03,917] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+Using /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/hpc/b207dd/b207dd11/.cache/torch_extensions/py38_cu121/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 3.8832907676696777 seconds
+[2024-08-16 23:45:06,093] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 3.30893874168396 seconds
+[2024-08-16 23:45:06,110] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+Loading extension module fused_adam...
+Time to load fused_adam op: 1.2067418098449707 seconds
+[2024-08-16 23:45:06,127] [INFO] [logging.py:96:log_dist] [Rank 0] Using DeepSpeed Optimizer param name adam as basic optimizer
+[2024-08-16 23:45:06,127] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-08-16 23:45:06,140] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedAdam
+[2024-08-16 23:45:06,140] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = adam
+[2024-08-16 23:45:06,140] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = WarmupCosineLR
+[2024-08-16 23:45:06,140] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.runtime.lr_schedules.WarmupCosineLR object at 0x1471c94cdfd0>
+[2024-08-16 23:45:06,140] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[2e-05], mom=[(0.9, 0.999)]
+[2024-08-16 23:45:06,142] [INFO] [config.py:996:print] DeepSpeedEngine configuration:
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   amp_enabled .................. False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   amp_params ................... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   bfloat16_enabled ............. False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   bfloat16_immediate_grad_update  False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   checkpoint_parallel_write_pipeline  False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   checkpoint_tag_validation_enabled  True
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   checkpoint_tag_validation_fail  False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x1471c94cdb20>
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   communication_data_type ...... None
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   curriculum_enabled_legacy .... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   curriculum_params_legacy ..... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   data_efficiency_enabled ...... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   dataloader_drop_last ......... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   disable_allgather ............ False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   dump_state ................... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   dynamic_loss_scale_args ...... None
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_enabled ........... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_gas_boundary_resolution  1
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_layer_num ......... 0
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_max_iter .......... 100
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_stability ......... 1e-06
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_tol ............... 0.01
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   eigenvalue_verbose ........... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   elasticity_enabled ........... False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   fp16_auto_cast ............... None
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   fp16_enabled ................. False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   fp16_master_weights_and_gradients  False
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   global_rank .................. 0
+[2024-08-16 23:45:06,142] [INFO] [config.py:1000:print]   grad_accum_dtype ............. None
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   gradient_accumulation_steps .. 128
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   gradient_clipping ............ 0.0
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   gradient_predivide_factor .... 1.0
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   graph_harvesting ............. False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   initial_dynamic_scale ........ 65536
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   load_universal_checkpoint .... False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   loss_scale ................... 0
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   memory_breakdown ............. False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   mics_hierarchial_params_gather  False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   mics_shard_size .............. -1
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=True, output_path='/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint', job_name='deepspeed_monitor_logs') enabled=True
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   optimizer_legacy_fusion ...... False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   optimizer_name ............... adam
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   optimizer_params ............. {'lr': 2e-05}
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True, 'use_reentrant': False}
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   pld_enabled .................. False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   pld_params ................... False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   prescale_gradients ........... False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   scheduler_name ............... WarmupCosineLR
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   scheduler_params ............. {'total_num_steps': 5718, 'warmup_min_ratio': 0.1, 'warmup_num_steps': 171.54}
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   seq_parallel_communication_data_type  torch.float32
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   sparse_attention ............. None
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   sparse_gradients_enabled ..... False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   steps_per_print .............. 1
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   train_batch_size ............. 128
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   train_micro_batch_size_per_gpu  1
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   use_data_before_expert_parallel_  False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   use_node_local_storage ....... False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   wall_clock_breakdown ......... False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   weight_quantization_config ... None
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   world_size ................... 1
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   zero_allow_untested_optimizer  False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   zero_enabled ................. False
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   zero_force_ds_cpu_optimizer .. True
+[2024-08-16 23:45:06,143] [INFO] [config.py:1000:print]   zero_optimization_stage ...... 0
+[2024-08-16 23:45:06,143] [INFO] [config.py:986:print_user_config]   json = {
+    "train_batch_size": 128, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 128, 
+    "steps_per_print": 1, 
+    "optimizer": {
+        "type": "Adam", 
+        "params": {
+            "lr": 2e-05
+        }
+    }, 
+    "scheduler": {
+        "type": "WarmupCosineLR", 
+        "params": {
+            "total_num_steps": 5.718000e+03, 
+            "warmup_min_ratio": 0.1, 
+            "warmup_num_steps": 171.54
+        }
+    }, 
+    "pipeline": {
+        "use_reentrant": false
+    }, 
+    "csv_monitor": {
+        "enabled": true, 
+        "output_path": "/home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint", 
+        "job_name": "deepspeed_monitor_logs"
+    }
+}
+[2024-08-16 23:45:06,143] [INFO] [engine.py:101:__init__] CONFIG: micro_batches=128 micro_batch_size=1
+[2024-08-16 23:45:06,143] [INFO] [engine.py:141:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2024-08-16 23:45:08,782] [INFO] [engine.py:160:__init__] RANK=2 STAGE=2 LAYERS=1 [3, 4) STAGE_PARAMS=1703936 (1.704M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+[2024-08-16 23:45:08,782] [INFO] [engine.py:160:__init__] RANK=3 STAGE=3 LAYERS=1 [4, 5) STAGE_PARAMS=1703936 (1.704M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+[2024-08-16 23:45:08,782] [INFO] [engine.py:160:__init__] RANK=4 STAGE=4 LAYERS=1 [5, 6) STAGE_PARAMS=1703936 (1.704M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+[2024-08-16 23:45:08,782] [INFO] [engine.py:160:__init__] RANK=5 STAGE=5 LAYERS=1 [6, 7) STAGE_PARAMS=1703936 (1.704M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+[2024-08-16 23:45:08,782] [INFO] [engine.py:160:__init__] RANK=6 STAGE=6 LAYERS=1 [7, 8) STAGE_PARAMS=1703936 (1.704M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+[2024-08-16 23:45:08,782] [INFO] [engine.py:160:__init__] RANK=7 STAGE=7 LAYERS=2 [8, 10) STAGE_PARAMS=1703936 (1.704M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+[2024-08-16 23:45:08,782] [INFO] [engine.py:160:__init__] RANK=0 STAGE=0 LAYERS=2 [0, 2) STAGE_PARAMS=43663360 (43.663M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+[2024-08-16 23:45:08,783] [INFO] [engine.py:160:__init__] RANK=1 STAGE=1 LAYERS=1 [2, 3) STAGE_PARAMS=1703936 (1.704M) TOTAL_PARAMS=55590912 (55.591M) UNIQUE_PARAMS=55590912 (55.591M)
+Deepspeed engine successfully initialized at --- RANK 0 --- hosting 24 of 136 trainable parameters
+Loading latest model checkpoint at shard 800
+[2024-08-16 23:45:10,124] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:10,210] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:10,211] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:10,269] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:10,269] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_00-model_states.pt...
+Deepspeed engine successfully initialized at --- RANK 7 --- hosting 16 of 136 trainable parameters
+[2024-08-16 23:45:10,388] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:10,468] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:10,469] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_07_model_states.pt...
+[2024-08-16 23:45:10,476] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_07_model_states.pt.
+[2024-08-16 23:45:10,476] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_08-model_states.pt...
+[2024-08-16 23:45:10,601] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_00-model_states.pt.
+[2024-08-16 23:45:10,603] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_00-model_states.pt...
+[2024-08-16 23:45:10,884] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_00-model_states.pt.
+[2024-08-16 23:45:11,105] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_01-model_states.pt...
+Deepspeed engine successfully initialized at --- RANK 2 --- hosting 16 of 136 trainable parameters
+Deepspeed engine successfully initialized at --- RANK 1 --- hosting 16 of 136 trainable parameters
+[2024-08-16 23:45:11,362] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:11,363] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:11,435] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:11,435] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_01_model_states.pt...
+[2024-08-16 23:45:11,440] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_01_model_states.pt.
+[2024-08-16 23:45:11,441] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_02-model_states.pt...
+Deepspeed engine successfully initialized at --- RANK 4 --- hosting 16 of 136 trainable parameters
+Deepspeed engine successfully initialized at --- RANK 3 --- hosting 16 of 136 trainable parameters
+[2024-08-16 23:45:11,463] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:11,463] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:11,468] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:11,468] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_02_model_states.pt...
+[2024-08-16 23:45:11,473] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_02_model_states.pt.
+[2024-08-16 23:45:11,474] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_03-model_states.pt...
+Deepspeed engine successfully initialized at --- RANK 6 --- hosting 16 of 136 trainable parameters
+Deepspeed engine successfully initialized at --- RANK 5 --- hosting 16 of 136 trainable parameters
+[2024-08-16 23:45:11,516] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:11,516] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt...
+[2024-08-16 23:45:11,564] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:11,564] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_04_model_states.pt...
+[2024-08-16 23:45:11,567] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:11,567] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_03_model_states.pt...
+[2024-08-16 23:45:11,571] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_04_model_states.pt.
+[2024-08-16 23:45:11,571] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_05-model_states.pt...
+[2024-08-16 23:45:11,573] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_03_model_states.pt.
+[2024-08-16 23:45:11,574] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_04-model_states.pt...
+[2024-08-16 23:45:11,600] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:11,600] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_06_model_states.pt...
+[2024-08-16 23:45:11,606] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_06_model_states.pt.
+[2024-08-16 23:45:11,606] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_00_model_states.pt.
+[2024-08-16 23:45:11,607] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_05_model_states.pt...
+[2024-08-16 23:45:11,607] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_07-model_states.pt...
+[2024-08-16 23:45:11,612] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/mp_rank_05_model_states.pt.
+[2024-08-16 23:45:11,613] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_06-model_states.pt...
+[2024-08-16 23:45:15,530] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_02-model_states.pt.
+[2024-08-16 23:45:15,655] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_08-model_states.pt.
+[2024-08-16 23:45:15,696] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_02-model_states.pt...
+[2024-08-16 23:45:15,699] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_08-model_states.pt...
+[2024-08-16 23:45:20,318] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_02-model_states.pt.
+[2024-08-16 23:45:21,498] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_08-model_states.pt.
+  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:45:23,660] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_09-model_states.pt...
+[2024-08-16 23:45:23,806] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_09-model_states.pt.
+[2024-08-16 23:45:23,807] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_09-model_states.pt...
+[2024-08-16 23:45:23,971] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_09-model_states.pt.
+  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:46:15,009] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_07-model_states.pt.
+[2024-08-16 23:46:15,381] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_07-model_states.pt...
+[2024-08-16 23:46:19,986] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_01-model_states.pt.
+[2024-08-16 23:46:20,378] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_05-model_states.pt.
+[2024-08-16 23:46:20,591] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_01-model_states.pt...
+[2024-08-16 23:46:20,679] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_06-model_states.pt.
+[2024-08-16 23:46:21,241] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_05-model_states.pt...
+[2024-08-16 23:46:21,262] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_06-model_states.pt...
+[2024-08-16 23:46:21,971] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_07-model_states.pt.
+[2024-08-16 23:46:21,972] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_03-model_states.pt.
+[2024-08-16 23:46:23,324] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_03-model_states.pt...
+[2024-08-16 23:46:23,458] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_04-model_states.pt.
+  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:46:24,245] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_04-model_states.pt...
+[2024-08-16 23:46:29,668] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_06-model_states.pt.
+  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:46:35,819] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_03-model_states.pt.
+[2024-08-16 23:46:37,559] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_01-model_states.pt.
+[2024-08-16 23:46:38,298] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_05-model_states.pt.
+[2024-08-16 23:46:40,192] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step794/layer_04-model_states.pt.
+  0%|          | 0/5198 [00:00<?, ?it/s]Shard 0 / 800 skipped
+Shard 1 / 800 skipped
+Shard 2 / 800 skipped
+Shard 3 / 800 skipped
+Shard 4 / 800 skipped
+Shard 5 / 800 skipped
+Shard 6 / 800 skipped
+Shard 7 / 800 skipped
+Shard 8 / 800 skipped
+Shard 9 / 800 skipped
+Shard 10 / 800 skipped
+Shard 11 / 800 skipped
+Shard 12 / 800 skipped
+Shard 13 / 800 skipped
+Shard 14 / 800 skipped
+Shard 15 / 800 skipped
+Shard 16 / 800 skipped
+Shard 17 / 800 skipped
+Shard 18 / 800 skipped
+Shard 19 / 800 skipped
+Shard 20 / 800 skipped
+Shard 21 / 800 skipped
+Shard 22 / 800 skipped
+Shard 23 / 800 skipped
+Shard 24 / 800 skipped
+Shard 25 / 800 skipped
+Shard 26 / 800 skipped
+Shard 27 / 800 skipped
+Shard 28 / 800 skipped
+Shard 29 / 800 skipped
+Shard 30 / 800 skipped
+Shard 31 / 800 skipped
+Shard 32 / 800 skipped
+Shard 33 / 800 skipped
+Shard 34 / 800 skipped
+Shard 35 / 800 skipped
+Shard 36 / 800 skipped
+Shard 37 / 800 skipped
+Shard 38 / 800 skipped
+Shard 39 / 800 skipped
+Shard 40 / 800 skipped
+Shard 41 / 800 skipped
+Shard 42 / 800 skipped
+Shard 43 / 800 skipped
+Shard 44 / 800 skipped
+Shard 45 / 800 skipped
+Shard 46 / 800 skipped
+Shard 47 / 800 skipped
+Shard 48 / 800 skipped
+Shard 49 / 800 skipped
+Shard 50 / 800 skipped
+Shard 51 / 800 skipped
+Shard 52 / 800 skipped
+Shard 53 / 800 skipped
+Shard 54 / 800 skipped
+Shard 55 / 800 skipped
+Shard 56 / 800 skipped
+Shard 57 / 800 skipped
+Shard 58 / 800 skipped
+Shard 59 / 800 skipped
+Shard 60 / 800 skipped
+Shard 61 / 800 skipped
+Shard 62 / 800 skipped
+Shard 63 / 800 skipped
+Shard 64 / 800 skipped
+Shard 65 / 800 skipped
+Shard 66 / 800 skipped
+Shard 67 / 800 skipped
+Shard 68 / 800 skipped
+Shard 69 / 800 skipped
+Shard 70 / 800 skipped
+Shard 71 / 800 skipped
+Shard 72 / 800 skipped
+Shard 73 / 800 skipped
+Shard 74 / 800 skipped
+Shard 75 / 800 skipped
+Shard 76 / 800 skipped
+Shard 77 / 800 skipped
+Shard 78 / 800 skipped
+Shard 79 / 800 skipped
+Shard 80 / 800 skipped
+Shard 81 / 800 skipped
+Shard 82 / 800 skipped
+Shard 83 / 800 skipped
+Shard 84 / 800 skipped
+Shard 85 / 800 skipped
+Shard 86 / 800 skipped
+Shard 87 / 800 skipped
+Shard 88 / 800 skipped
+Shard 89 / 800 skipped
+Shard 90 / 800 skipped
+Shard 91 / 800 skipped
+Shard 92 / 800 skipped
+Shard 93 / 800 skipped
+Shard 94 / 800 skipped
+Shard 95 / 800 skipped
+Shard 96 / 800 skipped
+Shard 97 / 800 skipped
+Shard 98 / 800 skipped
+Shard 99 / 800 skipped
+Shard 100 / 800 skipped
+Shard 101 / 800 skipped
+Shard 102 / 800 skipped
+Shard 103 / 800 skipped
+Shard 104 / 800 skipped
+Shard 105 / 800 skipped
+Shard 106 / 800 skipped
+Shard 107 / 800 skipped
+Shard 108 / 800 skipped
+Shard 109 / 800 skipped
+Shard 110 / 800 skipped
+Shard 111 / 800 skipped
+Shard 112 / 800 skipped
+Shard 113 / 800 skipped
+Shard 114 / 800 skipped
+Shard 115 / 800 skipped
+Shard 116 / 800 skipped
+Shard 117 / 800 skipped
+Shard 118 / 800 skipped
+Shard 119 / 800 skipped
+Shard 120 / 800 skipped
+Shard 121 / 800 skipped
+Shard 122 / 800 skipped
+Shard 123 / 800 skipped
+Shard 124 / 800 skipped
+Shard 125 / 800 skipped
+Shard 126 / 800 skipped
+Shard 127 / 800 skipped
+Shard 128 / 800 skipped
+Shard 129 / 800 skipped
+Shard 130 / 800 skipped
+Shard 131 / 800 skipped
+Shard 132 / 800 skipped
+Shard 133 / 800 skipped
+Shard 134 / 800 skipped
+Shard 135 / 800 skipped
+Shard 136 / 800 skipped
+Shard 137 / 800 skipped
+Shard 138 / 800 skipped
+Shard 139 / 800 skipped
+Shard 140 / 800 skipped
+Shard 141 / 800 skipped
+Shard 142 / 800 skipped
+Shard 143 / 800 skipped
+Shard 144 / 800 skipped
+Shard 145 / 800 skipped
+Shard 146 / 800 skipped
+Shard 147 / 800 skipped
+Shard 148 / 800 skipped
+Shard 149 / 800 skipped
+Shard 150 / 800 skipped
+Shard 151 / 800 skipped
+Shard 152 / 800 skipped
+Shard 153 / 800 skipped
+Shard 154 / 800 skipped
+Shard 155 / 800 skipped
+Shard 156 / 800 skipped
+Shard 157 / 800 skipped
+Shard 158 / 800 skipped
+Shard 159 / 800 skipped
+Shard 160 / 800 skipped
+Shard 161 / 800 skipped
+Shard 162 / 800 skipped
+Shard 163 / 800 skipped
+Shard 164 / 800 skipped
+Shard 165 / 800 skipped
+Shard 166 / 800 skipped
+Shard 167 / 800 skipped
+Shard 168 / 800 skipped
+Shard 169 / 800 skipped
+Shard 170 / 800 skipped
+Shard 171 / 800 skipped
+Shard 172 / 800 skipped
+Shard 173 / 800 skipped
+Shard 174 / 800 skipped
+Shard 175 / 800 skipped
+Shard 176 / 800 skipped
+Shard 177 / 800 skipped
+Shard 178 / 800 skipped
+Shard 179 / 800 skipped
+Shard 180 / 800 skipped
+Shard 181 / 800 skipped
+Shard 182 / 800 skipped
+Shard 183 / 800 skipped
+Shard 184 / 800 skipped
+Shard 185 / 800 skipped
+Shard 186 / 800 skipped
+Shard 187 / 800 skipped
+Shard 188 / 800 skipped
+Shard 189 / 800 skipped
+Shard 190 / 800 skipped
+Shard 191 / 800 skipped
+Shard 192 / 800 skipped
+Shard 193 / 800 skipped
+Shard 194 / 800 skipped
+Shard 195 / 800 skipped
+Shard 196 / 800 skipped
+Shard 197 / 800 skipped
+Shard 198 / 800 skipped
+Shard 199 / 800 skipped
+Shard 200 / 800 skipped
+Shard 201 / 800 skipped
+Shard 202 / 800 skipped
+Shard 203 / 800 skipped
+Shard 204 / 800 skipped
+Shard 205 / 800 skipped
+Shard 206 / 800 skipped
+Shard 207 / 800 skipped
+Shard 208 / 800 skipped
+Shard 209 / 800 skipped
+Shard 210 / 800 skipped
+Shard 211 / 800 skipped
+Shard 212 / 800 skipped
+Shard 213 / 800 skipped
+Shard 214 / 800 skipped
+Shard 215 / 800 skipped
+Shard 216 / 800 skipped
+Shard 217 / 800 skipped
+Shard 218 / 800 skipped
+Shard 219 / 800 skipped
+Shard 220 / 800 skipped
+Shard 221 / 800 skipped
+Shard 222 / 800 skipped
+Shard 223 / 800 skipped
+Shard 224 / 800 skipped
+Shard 225 / 800 skipped
+Shard 226 / 800 skipped
+Shard 227 / 800 skipped
+Shard 228 / 800 skipped
+Shard 229 / 800 skipped
+Shard 230 / 800 skipped
+Shard 231 / 800 skipped
+Shard 232 / 800 skipped
+Shard 233 / 800 skipped
+Shard 234 / 800 skipped
+Shard 235 / 800 skipped
+Shard 236 / 800 skipped
+Shard 237 / 800 skipped
+Shard 238 / 800 skipped
+Shard 239 / 800 skipped
+Shard 240 / 800 skipped
+Shard 241 / 800 skipped
+Shard 242 / 800 skipped
+Shard 243 / 800 skipped
+Shard 244 / 800 skipped
+Shard 245 / 800 skipped
+Shard 246 / 800 skipped
+Shard 247 / 800 skipped
+Shard 248 / 800 skipped
+Shard 249 / 800 skipped
+Shard 250 / 800 skipped
+Shard 251 / 800 skipped
+Shard 252 / 800 skipped
+Shard 253 / 800 skipped
+Shard 254 / 800 skipped
+Shard 255 / 800 skipped
+Shard 256 / 800 skipped
+Shard 257 / 800 skipped
+Shard 258 / 800 skipped
+Shard 259 / 800 skipped
+Shard 260 / 800 skipped
+Shard 261 / 800 skipped
+Shard 262 / 800 skipped
+Shard 263 / 800 skipped
+Shard 264 / 800 skipped
+Shard 265 / 800 skipped
+Shard 266 / 800 skipped
+Shard 267 / 800 skipped
+Shard 268 / 800 skipped
+Shard 269 / 800 skipped
+Shard 270 / 800 skipped
+Shard 271 / 800 skipped
+Shard 272 / 800 skipped
+Shard 273 / 800 skipped
+Shard 274 / 800 skipped
+Shard 275 / 800 skipped
+Shard 276 / 800 skipped
+Shard 277 / 800 skipped
+Shard 278 / 800 skipped
+Shard 279 / 800 skipped
+Shard 280 / 800 skipped
+Shard 281 / 800 skipped
+Shard 282 / 800 skipped
+Shard 283 / 800 skipped
+Shard 284 / 800 skipped
+Shard 285 / 800 skipped
+Shard 286 / 800 skipped
+Shard 287 / 800 skipped
+Shard 288 / 800 skipped
+Shard 289 / 800 skipped
+Shard 290 / 800 skipped
+Shard 291 / 800 skipped
+Shard 292 / 800 skipped
+Shard 293 / 800 skipped
+Shard 294 / 800 skipped
+Shard 295 / 800 skipped
+Shard 296 / 800 skipped
+Shard 297 / 800 skipped
+Shard 298 / 800 skipped
+Shard 299 / 800 skipped
+Shard 300 / 800 skipped
+Shard 301 / 800 skipped
+Shard 302 / 800 skipped
+Shard 303 / 800 skipped
+Shard 304 / 800 skipped
+Shard 305 / 800 skipped
+Shard 306 / 800 skipped
+Shard 307 / 800 skipped
+Shard 308 / 800 skipped
+Shard 309 / 800 skipped
+Shard 310 / 800 skipped
+Shard 311 / 800 skipped
+Shard 312 / 800 skipped
+Shard 313 / 800 skipped
+Shard 314 / 800 skipped
+Shard 315 / 800 skipped
+Shard 316 / 800 skipped
+Shard 317 / 800 skipped
+Shard 318 / 800 skipped
+Shard 319 / 800 skipped
+Shard 320 / 800 skipped
+Shard 321 / 800 skipped
+Shard 322 / 800 skipped
+Shard 323 / 800 skipped
+Shard 324 / 800 skipped
+Shard 325 / 800 skipped
+Shard 326 / 800 skipped
+Shard 327 / 800 skipped
+Shard 328 / 800 skipped
+Shard 329 / 800 skipped
+Shard 330 / 800 skipped
+Shard 331 / 800 skipped
+Shard 332 / 800 skipped
+Shard 333 / 800 skipped
+Shard 334 / 800 skipped
+Shard 335 / 800 skipped
+Shard 336 / 800 skipped
+Shard 337 / 800 skipped
+Shard 338 / 800 skipped
+Shard 339 / 800 skipped
+Shard 340 / 800 skipped
+Shard 341 / 800 skipped
+Shard 342 / 800 skipped
+Shard 343 / 800 skipped
+Shard 344 / 800 skipped
+Shard 345 / 800 skipped
+Shard 346 / 800 skipped
+Shard 347 / 800 skipped
+Shard 348 / 800 skipped
+Shard 349 / 800 skipped
+Shard 350 / 800 skipped
+Shard 351 / 800 skipped
+Shard 352 / 800 skipped
+Shard 353 / 800 skipped
+Shard 354 / 800 skipped
+Shard 355 / 800 skipped
+Shard 356 / 800 skipped
+Shard 357 / 800 skipped
+Shard 358 / 800 skipped
+Shard 359 / 800 skipped
+Shard 360 / 800 skipped
+Shard 361 / 800 skipped
+Shard 362 / 800 skipped
+Shard 363 / 800 skipped
+Shard 364 / 800 skipped
+Shard 365 / 800 skipped
+Shard 366 / 800 skipped
+Shard 367 / 800 skipped
+Shard 368 / 800 skipped
+Shard 369 / 800 skipped
+Shard 370 / 800 skipped
+Shard 371 / 800 skipped
+Shard 372 / 800 skipped
+Shard 373 / 800 skipped
+Shard 374 / 800 skipped
+Shard 375 / 800 skipped
+Shard 376 / 800 skipped
+Shard 377 / 800 skipped
+Shard 378 / 800 skipped
+Shard 379 / 800 skipped
+Shard 380 / 800 skipped
+Shard 381 / 800 skipped
+Shard 382 / 800 skipped
+Shard 383 / 800 skipped
+Shard 384 / 800 skipped
+Shard 385 / 800 skipped
+Shard 386 / 800 skipped
+Shard 387 / 800 skipped
+Shard 388 / 800 skipped
+Shard 389 / 800 skipped
+Shard 390 / 800 skipped
+Shard 391 / 800 skipped
+Shard 392 / 800 skipped
+Shard 393 / 800 skipped
+Shard 394 / 800 skipped
+Shard 395 / 800 skipped
+Shard 396 / 800 skipped
+Shard 397 / 800 skipped
+Shard 398 / 800 skipped
+Shard 399 / 800 skipped
+Shard 400 / 800 skipped
+Shard 401 / 800 skipped
+Shard 402 / 800 skipped
+Shard 403 / 800 skipped
+Shard 404 / 800 skipped
+Shard 405 / 800 skipped
+Shard 406 / 800 skipped
+Shard 407 / 800 skipped
+Shard 408 / 800 skipped
+Shard 409 / 800 skipped
+Shard 410 / 800 skipped
+Shard 411 / 800 skipped
+Shard 412 / 800 skipped
+Shard 413 / 800 skipped
+Shard 414 / 800 skipped
+Shard 415 / 800 skipped
+Shard 416 / 800 skipped
+Shard 417 / 800 skipped
+Shard 418 / 800 skipped
+Shard 419 / 800 skipped
+Shard 420 / 800 skipped
+Shard 421 / 800 skipped
+Shard 422 / 800 skipped
+Shard 423 / 800 skipped
+Shard 424 / 800 skipped
+Shard 425 / 800 skipped
+Shard 426 / 800 skipped
+Shard 427 / 800 skipped
+Shard 428 / 800 skipped
+Shard 429 / 800 skipped
+Shard 430 / 800 skipped
+Shard 431 / 800 skipped
+Shard 432 / 800 skipped
+Shard 433 / 800 skipped
+Shard 434 / 800 skipped
+Shard 435 / 800 skipped
+Shard 436 / 800 skipped
+Shard 437 / 800 skipped
+Shard 438 / 800 skipped
+Shard 439 / 800 skipped
+Shard 440 / 800 skipped
+Shard 441 / 800 skipped
+Shard 442 / 800 skipped
+Shard 443 / 800 skipped
+Shard 444 / 800 skipped
+Shard 445 / 800 skipped
+Shard 446 / 800 skipped
+Shard 447 / 800 skipped
+Shard 448 / 800 skipped
+Shard 449 / 800 skipped
+Shard 450 / 800 skipped
+Shard 451 / 800 skipped
+Shard 452 / 800 skipped
+Shard 453 / 800 skipped
+Shard 454 / 800 skipped
+Shard 455 / 800 skipped
+Shard 456 / 800 skipped
+Shard 457 / 800 skipped
+Shard 458 / 800 skipped
+Shard 459 / 800 skipped
+Shard 460 / 800 skipped
+Shard 461 / 800 skipped
+Shard 462 / 800 skipped
+Shard 463 / 800 skipped
+Shard 464 / 800 skipped
+Shard 465 / 800 skipped
+Shard 466 / 800 skipped
+Shard 467 / 800 skipped
+Shard 468 / 800 skipped
+Shard 469 / 800 skipped
+Shard 470 / 800 skipped
+Shard 471 / 800 skipped
+Shard 472 / 800 skipped
+Shard 473 / 800 skipped
+Shard 474 / 800 skipped
+Shard 475 / 800 skipped
+Shard 476 / 800 skipped
+Shard 477 / 800 skipped
+Shard 478 / 800 skipped
+Shard 479 / 800 skipped
+Shard 480 / 800 skipped
+Shard 481 / 800 skipped
+Shard 482 / 800 skipped
+Shard 483 / 800 skipped
+Shard 484 / 800 skipped
+Shard 485 / 800 skipped
+Shard 486 / 800 skipped
+Shard 487 / 800 skipped
+Shard 488 / 800 skipped
+Shard 489 / 800 skipped
+Shard 490 / 800 skipped
+Shard 491 / 800 skipped
+Shard 492 / 800 skipped
+Shard 493 / 800 skipped
+Shard 494 / 800 skipped
+Shard 495 / 800 skipped
+Shard 496 / 800 skipped
+Shard 497 / 800 skipped
+Shard 498 / 800 skipped
+Shard 499 / 800 skipped
+Shard 500 / 800 skipped
+Shard 501 / 800 skipped
+Shard 502 / 800 skipped
+Shard 503 / 800 skipped
+Shard 504 / 800 skipped
+Shard 505 / 800 skipped
+Shard 506 / 800 skipped
+Shard 507 / 800 skipped
+Shard 508 / 800 skipped
+Shard 509 / 800 skipped
+Shard 510 / 800 skipped
+Shard 511 / 800 skipped
+Shard 512 / 800 skipped
+Shard 513 / 800 skipped
+Shard 514 / 800 skipped
+Shard 515 / 800 skipped
+Shard 516 / 800 skipped
+Shard 517 / 800 skipped
+Shard 518 / 800 skipped
+Shard 519 / 800 skipped
+Shard 520 / 800 skipped
+Shard 521 / 800 skipped
+Shard 522 / 800 skipped
+Shard 523 / 800 skipped
+Shard 524 / 800 skipped
+Shard 525 / 800 skipped
+Shard 526 / 800 skipped
+Shard 527 / 800 skipped
+Shard 528 / 800 skipped
+Shard 529 / 800 skipped
+Shard 530 / 800 skipped
+Shard 531 / 800 skipped
+Shard 532 / 800 skipped
+Shard 533 / 800 skipped
+Shard 534 / 800 skipped
+Shard 535 / 800 skipped
+Shard 536 / 800 skipped
+Shard 537 / 800 skipped
+Shard 538 / 800 skipped
+Shard 539 / 800 skipped
+Shard 540 / 800 skipped
+Shard 541 / 800 skipped
+Shard 542 / 800 skipped
+Shard 543 / 800 skipped
+Shard 544 / 800 skipped
+Shard 545 / 800 skipped
+Shard 546 / 800 skipped
+Shard 547 / 800 skipped
+Shard 548 / 800 skipped
+Shard 549 / 800 skipped
+Shard 550 / 800 skipped
+Shard 551 / 800 skipped
+Shard 552 / 800 skipped
+Shard 553 / 800 skipped
+Shard 554 / 800 skipped
+Shard 555 / 800 skipped
+Shard 556 / 800 skipped
+Shard 557 / 800 skipped
+Shard 558 / 800 skipped
+Shard 559 / 800 skipped
+Shard 560 / 800 skipped
+Shard 561 / 800 skipped
+Shard 562 / 800 skipped
+Shard 563 / 800 skipped
+Shard 564 / 800 skipped
+Shard 565 / 800 skipped
+Shard 566 / 800 skipped
+Shard 567 / 800 skipped
+Shard 568 / 800 skipped
+Shard 569 / 800 skipped
+Shard 570 / 800 skipped
+Shard 571 / 800 skipped
+Shard 572 / 800 skipped
+Shard 573 / 800 skipped
+Shard 574 / 800 skipped
+Shard 575 / 800 skipped
+Shard 576 / 800 skipped
+Shard 577 / 800 skipped
+Shard 578 / 800 skipped
+Shard 579 / 800 skipped
+Shard 580 / 800 skipped
+Shard 581 / 800 skipped
+Shard 582 / 800 skipped
+Shard 583 / 800 skipped
+Shard 584 / 800 skipped
+Shard 585 / 800 skipped
+Shard 586 / 800 skipped
+Shard 587 / 800 skipped
+Shard 588 / 800 skipped
+Shard 589 / 800 skipped
+Shard 590 / 800 skipped
+Shard 591 / 800 skipped
+Shard 592 / 800 skipped
+Shard 593 / 800 skipped
+Shard 594 / 800 skipped
+Shard 595 / 800 skipped
+Shard 596 / 800 skipped
+Shard 597 / 800 skipped
+Shard 598 / 800 skipped
+Shard 599 / 800 skipped
+Shard 600 / 800 skipped
+Shard 601 / 800 skipped
+Shard 602 / 800 skipped
+Shard 603 / 800 skipped
+Shard 604 / 800 skipped
+Shard 605 / 800 skipped
+Shard 606 / 800 skipped
+Shard 607 / 800 skipped
+Shard 608 / 800 skipped
+Shard 609 / 800 skipped
+Shard 610 / 800 skipped
+Shard 611 / 800 skipped
+Shard 612 / 800 skipped
+Shard 613 / 800 skipped
+Shard 614 / 800 skipped
+Shard 615 / 800 skipped
+Shard 616 / 800 skipped
+Shard 617 / 800 skipped
+Shard 618 / 800 skipped
+Shard 619 / 800 skipped
+Shard 620 / 800 skipped
+Shard 621 / 800 skipped
+Shard 622 / 800 skipped
+Shard 623 / 800 skipped
+Shard 624 / 800 skipped
+Shard 625 / 800 skipped
+Shard 626 / 800 skipped
+Shard 627 / 800 skipped
+Shard 628 / 800 skipped
+Shard 629 / 800 skipped
+Shard 630 / 800 skipped
+Shard 631 / 800 skipped
+Shard 632 / 800 skipped
+Shard 633 / 800 skipped
+Shard 634 / 800 skipped
+Shard 635 / 800 skipped
+Shard 636 / 800 skipped
+Shard 637 / 800 skipped
+Shard 638 / 800 skipped
+Shard 639 / 800 skipped
+Shard 640 / 800 skipped
+Shard 641 / 800 skipped
+Shard 642 / 800 skipped
+Shard 643 / 800 skipped
+Shard 644 / 800 skipped
+Shard 645 / 800 skipped
+Shard 646 / 800 skipped
+Shard 647 / 800 skipped
+Shard 648 / 800 skipped
+Shard 649 / 800 skipped
+Shard 650 / 800 skipped
+Shard 651 / 800 skipped
+Shard 652 / 800 skipped
+Shard 653 / 800 skipped
+Shard 654 / 800 skipped
+Shard 655 / 800 skipped
+Shard 656 / 800 skipped
+Shard 657 / 800 skipped
+Shard 658 / 800 skipped
+Shard 659 / 800 skipped
+Shard 660 / 800 skipped
+Shard 661 / 800 skipped
+Shard 662 / 800 skipped
+Shard 663 / 800 skipped
+Shard 664 / 800 skipped
+Shard 665 / 800 skipped
+Shard 666 / 800 skipped
+Shard 667 / 800 skipped
+Shard 668 / 800 skipped
+Shard 669 / 800 skipped
+Shard 670 / 800 skipped
+Shard 671 / 800 skipped
+Shard 672 / 800 skipped
+Shard 673 / 800 skipped
+Shard 674 / 800 skipped
+Shard 675 / 800 skipped
+Shard 676 / 800 skipped
+Shard 677 / 800 skipped
+Shard 678 / 800 skipped
+Shard 679 / 800 skipped
+Shard 680 / 800 skipped
+Shard 681 / 800 skipped
+Shard 682 / 800 skipped
+Shard 683 / 800 skipped
+Shard 684 / 800 skipped
+Shard 685 / 800 skipped
+Shard 686 / 800 skipped
+Shard 687 / 800 skipped
+Shard 688 / 800 skipped
+Shard 689 / 800 skipped
+Shard 690 / 800 skipped
+Shard 691 / 800 skipped
+Shard 692 / 800 skipped
+Shard 693 / 800 skipped
+Shard 694 / 800 skipped
+Shard 695 / 800 skipped
+Shard 696 / 800 skipped
+Shard 697 / 800 skipped
+Shard 698 / 800 skipped
+Shard 699 / 800 skipped
+Shard 700 / 800 skipped
+Shard 701 / 800 skipped
+Shard 702 / 800 skipped
+Shard 703 / 800 skipped
+Shard 704 / 800 skipped
+Shard 705 / 800 skipped
+Shard 706 / 800 skipped
+Shard 707 / 800 skipped
+Shard 708 / 800 skipped
+Shard 709 / 800 skipped
+Shard 710 / 800 skipped
+Shard 711 / 800 skipped
+Shard 712 / 800 skipped
+Shard 713 / 800 skipped
+Shard 714 / 800 skipped
+Shard 715 / 800 skipped
+Shard 716 / 800 skipped
+Shard 717 / 800 skipped
+Shard 718 / 800 skipped
+Shard 719 / 800 skipped
+Shard 720 / 800 skipped
+Shard 721 / 800 skipped
+Shard 722 / 800 skipped
+Shard 723 / 800 skipped
+Shard 724 / 800 skipped
+Shard 725 / 800 skipped
+Shard 726 / 800 skipped
+Shard 727 / 800 skipped
+Shard 728 / 800 skipped
+Shard 729 / 800 skipped
+Shard 730 / 800 skipped
+Shard 731 / 800 skipped
+Shard 732 / 800 skipped
+Shard 733 / 800 skipped
+Shard 734 / 800 skipped
+Shard 735 / 800 skipped
+Shard 736 / 800 skipped
+Shard 737 / 800 skipped
+Shard 738 / 800 skipped
+Shard 739 / 800 skipped
+Shard 740 / 800 skipped
+Shard 741 / 800 skipped
+Shard 742 / 800 skipped
+Shard 743 / 800 skipped
+Shard 744 / 800 skipped
+Shard 745 / 800 skipped
+Shard 746 / 800 skipped
+Shard 747 / 800 skipped
+Shard 748 / 800 skipped
+Shard 749 / 800 skipped
+Shard 750 / 800 skipped
+Shard 751 / 800 skipped
+Shard 752 / 800 skipped
+Shard 753 / 800 skipped
+Shard 754 / 800 skipped
+Shard 755 / 800 skipped
+Shard 756 / 800 skipped
+Shard 757 / 800 skipped
+Shard 758 / 800 skipped
+Shard 759 / 800 skipped
+Shard 760 / 800 skipped
+Shard 761 / 800 skipped
+Shard 762 / 800 skipped
+Shard 763 / 800 skipped
+Shard 764 / 800 skipped
+Shard 765 / 800 skipped
+Shard 766 / 800 skipped
+Shard 767 / 800 skipped
+Shard 768 / 800 skipped
+Shard 769 / 800 skipped
+Shard 770 / 800 skipped
+Shard 771 / 800 skipped
+Shard 772 / 800 skipped
+Shard 773 / 800 skipped
+Shard 774 / 800 skipped
+Shard 775 / 800 skipped
+Shard 776 / 800 skipped
+Shard 777 / 800 skipped
+Shard 778 / 800 skipped
+Shard 779 / 800 skipped
+Shard 780 / 800 skipped
+Shard 781 / 800 skipped
+Shard 782 / 800 skipped
+Shard 783 / 800 skipped
+Shard 784 / 800 skipped
+Shard 785 / 800 skipped
+Shard 786 / 800 skipped
+Shard 787 / 800 skipped
+Shard 788 / 800 skipped
+Shard 789 / 800 skipped
+Shard 790 / 800 skipped
+Shard 791 / 800 skipped
+Shard 792 / 800 skipped
+Shard 793 / 800 skipped
+Shard 794 / 800 skipped
+Shard 795 / 800 skipped
+Shard 796 / 800 skipped
+Shard 797 / 800 skipped
+Shard 798 / 800 skipped
+Shard 799 / 800 skipped
+Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_750
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A  0%|          | 0/5198 [00:00<?, ?it/s]  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A  0%|          | 0/5198 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:48:09,157] [INFO] [logging.py:96:log_dist] [Rank 0] step=795, skipped=0, lr=[1.938298773011568e-05], mom=[(0.9, 0.999)]
+steps: 795 loss: 0.6870 iter time (s): 90.594 samples/sec: 1.413
+
+100%|██████████| 1/1 [02:48<00:00, 168.00s/it][A100%|██████████| 1/1 [02:48<00:00, 168.00s/it]
+ 15%|█▌        | 801/5198 [02:48<15:22,  4.77it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:48<00:00, 108.39s/it][A100%|██████████| 1/1 [01:48<00:00, 108.39s/it]
+ 15%|█▌        | 801/5198 [01:48<09:55,  7.39it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:41<00:00, 101.23s/it][A100%|██████████| 1/1 [01:41<00:00, 101.23s/it]
+ 15%|█▌        | 801/5198 [01:41<09:15,  7.91it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.54s/it][A100%|██████████| 1/1 [01:30<00:00, 90.54s/it]
+ 15%|█▌        | 801/5198 [01:30<08:17,  8.85it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.39s/it][A100%|██████████| 1/1 [01:29<00:00, 89.39s/it]
+ 15%|█▌        | 801/5198 [01:29<08:11,  8.95it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.58s/it][A100%|██████████| 1/1 [01:30<00:00, 90.58s/it]
+ 15%|█▌        | 801/5198 [01:30<08:18,  8.83it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:51<00:00, 171.01s/it][A100%|██████████| 1/1 [02:51<00:00, 171.02s/it]
+ 15%|█▌        | 801/5198 [02:51<15:38,  4.68it/s]
+100%|██████████| 1/1 [01:31<00:00, 91.42s/it][A100%|██████████| 1/1 [01:31<00:00, 91.42s/it]
+ 15%|█▌        | 801/5198 [01:31<08:21,  8.76it/s]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_751
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:50<00:00, 110.88s/it][A100%|██████████| 1/1 [01:50<00:00, 110.88s/it]
+ 15%|█▌        | 802/5198 [04:38<29:48,  2.46it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:50:05,460] [INFO] [logging.py:96:log_dist] [Rank 0] step=796, skipped=0, lr=[1.938102752109457e-05], mom=[(0.9, 0.999)]
+steps: 796 loss: 0.6570 iter time (s): 112.714 samples/sec: 1.136
+
+100%|██████████| 1/1 [01:53<00:00, 113.45s/it][A100%|██████████| 1/1 [01:53<00:00, 113.45s/it]
+ 15%|█▌        | 802/5198 [03:41<24:41,  2.97it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.52s/it][A100%|██████████| 1/1 [01:53<00:00, 113.52s/it]
+ 15%|█▌        | 802/5198 [03:34<24:03,  3.05it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.47s/it][A100%|██████████| 1/1 [01:53<00:00, 113.47s/it]
+ 15%|█▌        | 802/5198 [03:24<23:04,  3.18it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.51s/it][A100%|██████████| 1/1 [01:53<00:00, 113.51s/it]
+ 15%|█▌        | 802/5198 [03:22<22:58,  3.19it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.54s/it][A100%|██████████| 1/1 [01:53<00:00, 113.54s/it]
+ 15%|█▌        | 802/5198 [03:24<23:05,  3.17it/s]
+100%|██████████| 1/1 [01:53<00:00, 113.38s/it][A100%|██████████| 1/1 [01:53<00:00, 113.38s/it]
+ 15%|█▌        | 802/5198 [04:44<30:25,  2.41it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.53s/it][A100%|██████████| 1/1 [01:53<00:00, 113.53s/it]
+ 15%|█▌        | 802/5198 [03:24<23:09,  3.16it/s]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_752
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:34<00:00, 94.55s/it][A100%|██████████| 1/1 [01:34<00:00, 94.55s/it]
+ 15%|█▌        | 803/5198 [06:13<47:17,  1.55it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:51:39,703] [INFO] [logging.py:96:log_dist] [Rank 0] step=797, skipped=0, lr=[1.9379064302727794e-05], mom=[(0.9, 0.999)]
+steps: 797 loss: 0.6540 iter time (s): 93.421 samples/sec: 1.370
+
+100%|██████████| 1/1 [01:34<00:00, 94.23s/it][A100%|██████████| 1/1 [01:34<00:00, 94.23s/it]
+ 15%|█▌        | 803/5198 [05:16<42:08,  1.74it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:34<00:00, 94.10s/it][A100%|██████████| 1/1 [01:34<00:00, 94.10s/it]
+ 15%|█▌        | 803/5198 [05:08<41:28,  1.77it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:34<00:00, 94.22s/it][A100%|██████████| 1/1 [01:34<00:00, 94.22s/it]
+ 15%|█▌        | 803/5198 [04:58<40:30,  1.81it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:34<00:00, 94.25s/it][A100%|██████████| 1/1 [01:34<00:00, 94.25s/it]
+ 15%|█▌        | 803/5198 [04:57<40:25,  1.81it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:34<00:00, 94.18s/it][A100%|██████████| 1/1 [01:34<00:00, 94.18s/it]
+ 15%|█▌        | 803/5198 [04:58<40:32,  1.81it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:34<00:00, 94.24s/it][A100%|██████████| 1/1 [01:34<00:00, 94.24s/it]
+ 15%|█▌        | 803/5198 [06:18<47:51,  1.53it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:34<00:00, 94.24s/it][A100%|██████████| 1/1 [01:34<00:00, 94.24s/it]
+ 15%|█▌        | 803/5198 [04:59<40:36,  1.80it/s]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_753
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.97s/it][A100%|██████████| 1/1 [01:20<00:00, 80.97s/it]
+ 15%|█▌        | 804/5198 [07:34<1:08:31,  1.07it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:53:00,267] [INFO] [logging.py:96:log_dist] [Rank 0] step=798, skipped=0, lr=[1.9377098075645195e-05], mom=[(0.9, 0.999)]
+steps: 798 loss: 0.6483 iter time (s): 79.744 samples/sec: 1.605
+
+100%|██████████| 1/1 [01:20<00:00, 80.48s/it][A100%|██████████| 1/1 [01:20<00:00, 80.48s/it]
+ 15%|█▌        | 804/5198 [06:36<1:03:15,  1.16it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.64s/it][A100%|██████████| 1/1 [01:20<00:00, 80.64s/it]
+ 15%|█▌        | 804/5198 [06:29<1:02:38,  1.17it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.50s/it][A100%|██████████| 1/1 [01:20<00:00, 80.50s/it]
+ 15%|█▌        | 804/5198 [06:18<1:01:39,  1.19it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.54s/it][A100%|██████████| 1/1 [01:20<00:00, 80.54s/it]
+ 15%|█▌        | 804/5198 [06:17<1:01:34,  1.19it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.56s/it][A100%|██████████| 1/1 [01:20<00:00, 80.56s/it]
+ 15%|█▌        | 804/5198 [06:19<1:01:41,  1.19it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.53s/it][A100%|██████████| 1/1 [01:20<00:00, 80.53s/it]
+ 15%|█▌        | 804/5198 [07:39<1:08:57,  1.06it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.52s/it][A100%|██████████| 1/1 [01:20<00:00, 80.52s/it]
+ 15%|█▌        | 804/5198 [06:19<1:01:44,  1.19it/s]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_754
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.19s/it][A100%|██████████| 1/1 [01:38<00:00, 98.19s/it]
+ 15%|█▌        | 805/5198 [09:12<1:45:03,  1.43s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:54:39,034] [INFO] [logging.py:96:log_dist] [Rank 0] step=799, skipped=0, lr=[1.9375128840477593e-05], mom=[(0.9, 0.999)]
+steps: 799 loss: 0.6639 iter time (s): 97.985 samples/sec: 1.306
+
+100%|██████████| 1/1 [01:38<00:00, 98.94s/it][A100%|██████████| 1/1 [01:38<00:00, 98.94s/it]
+ 15%|█▌        | 805/5198 [08:15<1:40:06,  1.37s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.82s/it][A100%|██████████| 1/1 [01:38<00:00, 98.82s/it]
+ 15%|█▌        | 805/5198 [08:08<1:39:26,  1.36s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.84s/it][A100%|██████████| 1/1 [01:38<00:00, 98.84s/it]
+ 15%|█▌        | 805/5198 [07:57<1:38:27,  1.34s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.79s/it][A100%|██████████| 1/1 [01:38<00:00, 98.79s/it]
+ 15%|█▌        | 805/5198 [07:56<1:38:21,  1.34s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.76s/it][A100%|██████████| 1/1 [01:38<00:00, 98.76s/it]
+ 15%|█▌        | 805/5198 [09:18<1:45:42,  1.44s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.82s/it][A100%|██████████| 1/1 [01:38<00:00, 98.82s/it]
+ 15%|█▌        | 805/5198 [07:57<1:38:29,  1.35s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.81s/it][A100%|██████████| 1/1 [01:38<00:00, 98.81s/it]
+ 15%|█▌        | 805/5198 [07:58<1:38:32,  1.35s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_755
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:23<00:00, 83.26s/it][A100%|██████████| 1/1 [01:23<00:00, 83.26s/it]
+ 16%|█▌        | 806/5198 [10:35<2:28:38,  2.03s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:56:01,798] [INFO] [logging.py:96:log_dist] [Rank 0] step=800, skipped=0, lr=[1.9373156597856765e-05], mom=[(0.9, 0.999)]
+steps: 800 loss: 0.7145 iter time (s): 81.935 samples/sec: 1.562
+
+100%|██████████| 1/1 [01:22<00:00, 82.73s/it][A100%|██████████| 1/1 [01:22<00:00, 82.73s/it]
+ 16%|█▌        | 806/5198 [09:31<2:22:46,  1.95s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.89s/it][A100%|██████████| 1/1 [01:22<00:00, 82.89s/it]
+ 16%|█▌        | 806/5198 [09:38<2:23:31,  1.96s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.93s/it][A100%|██████████| 1/1 [01:22<00:00, 82.93s/it]
+ 16%|█▌        | 806/5198 [09:20<2:21:54,  1.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.89s/it][A100%|██████████| 1/1 [01:22<00:00, 82.89s/it]
+ 16%|█▌        | 806/5198 [09:20<2:21:54,  1.94s/it]
+100%|██████████| 1/1 [01:22<00:00, 82.94s/it][A100%|██████████| 1/1 [01:22<00:00, 82.95s/it]
+ 16%|█▌        | 806/5198 [09:19<2:21:49,  1.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 83.00s/it][A100%|██████████| 1/1 [01:22<00:00, 83.00s/it]
+ 16%|█▌        | 806/5198 [10:41<2:29:08,  2.04s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:23<00:00, 83.82s/it][A100%|██████████| 1/1 [01:23<00:00, 83.82s/it]
+ 16%|█▌        | 806/5198 [09:22<2:22:27,  1.95s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_756
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.76s/it][A100%|██████████| 1/1 [01:29<00:00, 89.76s/it]
+ 16%|█▌        | 807/5198 [12:05<3:34:40,  2.93s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:57:31,806] [INFO] [logging.py:96:log_dist] [Rank 0] step=801, skipped=0, lr=[1.9371181348415456e-05], mom=[(0.9, 0.999)]
+steps: 801 loss: 0.6085 iter time (s): 88.115 samples/sec: 1.453
+
+100%|██████████| 1/1 [01:29<00:00, 89.76s/it][A100%|██████████| 1/1 [01:29<00:00, 89.77s/it]
+ 16%|█▌        | 807/5198 [11:08<3:29:37,  2.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.96s/it][A100%|██████████| 1/1 [01:29<00:00, 89.96s/it]
+ 16%|█▌        | 807/5198 [11:01<3:29:01,  2.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.77s/it][A100%|██████████| 1/1 [01:29<00:00, 89.77s/it]
+ 16%|█▌        | 807/5198 [10:50<3:28:01,  2.84s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.69s/it][A100%|██████████| 1/1 [01:29<00:00, 89.69s/it]
+ 16%|█▌        | 807/5198 [10:49<3:27:53,  2.84s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.71s/it][A100%|██████████| 1/1 [01:29<00:00, 89.71s/it]
+ 16%|█▌        | 807/5198 [12:10<3:35:08,  2.94s/it]
+100%|██████████| 1/1 [01:29<00:00, 89.79s/it][A100%|██████████| 1/1 [01:29<00:00, 89.79s/it]
+ 16%|█▌        | 807/5198 [10:50<3:28:03,  2.84s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.89s/it][A100%|██████████| 1/1 [01:28<00:00, 88.89s/it]
+ 16%|█▌        | 807/5198 [10:51<3:27:54,  2.84s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_757
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.54s/it][A100%|██████████| 1/1 [01:22<00:00, 82.54s/it]
+ 16%|█▌        | 808/5198 [13:28<4:59:00,  4.09s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-16 23:58:54,161] [INFO] [logging.py:96:log_dist] [Rank 0] step=802, skipped=0, lr=[1.9369203092787376e-05], mom=[(0.9, 0.999)]
+steps: 802 loss: 0.6417 iter time (s): 81.578 samples/sec: 1.569
+
+100%|██████████| 1/1 [01:22<00:00, 82.32s/it][A100%|██████████| 1/1 [01:22<00:00, 82.32s/it]
+ 16%|█▌        | 808/5198 [12:30<4:53:48,  4.02s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.29s/it][A100%|██████████| 1/1 [01:22<00:00, 82.29s/it]
+ 16%|█▌        | 808/5198 [12:23<4:53:10,  4.01s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.31s/it][A100%|██████████| 1/1 [01:22<00:00, 82.31s/it]
+ 16%|█▌        | 808/5198 [12:12<4:52:13,  3.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.36s/it][A100%|██████████| 1/1 [01:22<00:00, 82.36s/it]
+ 16%|█▌        | 808/5198 [12:11<4:52:08,  3.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.33s/it][A100%|██████████| 1/1 [01:22<00:00, 82.33s/it]
+ 16%|█▌        | 808/5198 [13:33<4:59:14,  4.09s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.34s/it][A100%|██████████| 1/1 [01:22<00:00, 82.34s/it]
+ 16%|█▌        | 808/5198 [12:12<4:52:16,  3.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.31s/it][A100%|██████████| 1/1 [01:22<00:00, 82.32s/it]
+ 16%|█▌        | 808/5198 [12:13<4:52:06,  3.99s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_758
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.50s/it][A100%|██████████| 1/1 [01:42<00:00, 102.50s/it]
+ 16%|█▌        | 809/5198 [15:10<7:24:55,  6.08s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:00:37,192] [INFO] [logging.py:96:log_dist] [Rank 0] step=803, skipped=0, lr=[1.9367221831607197e-05], mom=[(0.9, 0.999)]
+steps: 803 loss: 0.6362 iter time (s): 102.288 samples/sec: 1.251
+
+100%|██████████| 1/1 [01:43<00:00, 103.08s/it][A100%|██████████| 1/1 [01:43<00:00, 103.09s/it]
+ 16%|█▌        | 809/5198 [14:13<7:20:41,  6.02s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:43<00:00, 103.16s/it][A100%|██████████| 1/1 [01:43<00:00, 103.16s/it]
+ 16%|█▌        | 809/5198 [14:06<7:20:11,  6.02s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:43<00:00, 103.15s/it][A100%|██████████| 1/1 [01:43<00:00, 103.15s/it]
+ 16%|█▌        | 809/5198 [13:55<7:19:15,  6.00s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:43<00:00, 103.16s/it][A100%|██████████| 1/1 [01:43<00:00, 103.16s/it]
+ 16%|█▌        | 809/5198 [13:54<7:19:09,  6.00s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:43<00:00, 103.10s/it][A100%|██████████| 1/1 [01:43<00:00, 103.10s/it]
+ 16%|█▌        | 809/5198 [13:56<7:19:13,  6.00s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:43<00:00, 103.16s/it][A100%|██████████| 1/1 [01:43<00:00, 103.16s/it]
+ 16%|█▌        | 809/5198 [15:16<7:26:08,  6.10s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:43<00:00, 103.14s/it][A100%|██████████| 1/1 [01:43<00:00, 103.14s/it]
+ 16%|█▌        | 809/5198 [13:56<7:19:06,  6.00s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_759
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:25<00:00, 85.14s/it][A100%|██████████| 1/1 [01:25<00:00, 85.14s/it]
+[2024-08-17 00:02:01,804] [INFO] [logging.py:96:log_dist] [Rank 0] step=804, skipped=0, lr=[1.936523756551056e-05], mom=[(0.9, 0.999)]
+steps: 804 loss: 0.6806 iter time (s): 83.754 samples/sec: 1.528
+
+100%|██████████| 1/1 [01:24<00:00, 84.69s/it][A100%|██████████| 1/1 [01:24<00:00, 84.69s/it]
+
+100%|██████████| 1/1 [01:24<00:00, 84.74s/it][A100%|██████████| 1/1 [01:24<00:00, 84.74s/it]
+
+100%|██████████| 1/1 [01:24<00:00, 84.71s/it][A100%|██████████| 1/1 [01:24<00:00, 84.71s/it]
+
+100%|██████████| 1/1 [01:24<00:00, 84.71s/it][A100%|██████████| 1/1 [01:24<00:00, 84.71s/it]
+
+100%|██████████| 1/1 [01:24<00:00, 84.65s/it][A100%|██████████| 1/1 [01:24<00:00, 84.65s/it]
+
+100%|██████████| 1/1 [01:25<00:00, 85.43s/it][A100%|██████████| 1/1 [01:25<00:00, 85.43s/it]
+
+100%|██████████| 1/1 [01:25<00:00, 85.67s/it][A100%|██████████| 1/1 [01:25<00:00, 85.67s/it]
+Checkpointing at shard 809
+[2024-08-17 00:02:06,345] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step804 is about to be saved!
+[2024-08-17 00:02:07,010] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_00-model_states.pt...
+[2024-08-17 00:02:09,203] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_00-model_states.pt.
+[2024-08-17 00:02:12,203] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_03-model_states.pt...
+[2024-08-17 00:02:13,844] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_08-model_states.pt...
+[2024-08-17 00:02:14,161] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_04-model_states.pt...
+[2024-08-17 00:02:14,631] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_07-model_states.pt...
+[2024-08-17 00:02:15,795] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_05-model_states.pt...
+[2024-08-17 00:02:18,661] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_06-model_states.pt...
+[2024-08-17 00:02:18,703] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_02-model_states.pt...
+[2024-08-17 00:02:20,537] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_01-model_states.pt...
+[2024-08-17 00:03:55,218] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_05-model_states.pt.
+[2024-08-17 00:03:55,222] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_07-model_states.pt.
+[2024-08-17 00:03:55,667] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_06_model_states.pt...
+[2024-08-17 00:03:55,745] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_06_model_states.pt.
+[2024-08-17 00:03:55,745] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+[2024-08-17 00:03:56,015] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_04_model_states.pt...
+[2024-08-17 00:03:56,065] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_04_model_states.pt.
+[2024-08-17 00:03:56,065] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+[2024-08-17 00:03:56,819] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_03-model_states.pt.
+[2024-08-17 00:03:57,315] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_02_model_states.pt...
+[2024-08-17 00:03:57,357] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_02_model_states.pt.
+[2024-08-17 00:03:57,357] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+[2024-08-17 00:03:57,491] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_04-model_states.pt.
+[2024-08-17 00:03:58,083] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_02-model_states.pt.
+[2024-08-17 00:03:58,090] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_01-model_states.pt.
+[2024-08-17 00:03:58,094] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_08-model_states.pt.
+[2024-08-17 00:03:58,654] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_09-model_states.pt...
+[2024-08-17 00:03:59,153] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_00_model_states.pt
+[2024-08-17 00:03:59,153] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_00_model_states.pt...
+[2024-08-17 00:03:59,202] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_09-model_states.pt.
+[2024-08-17 00:03:59,224] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_07_model_states.pt...
+[2024-08-17 00:03:59,251] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_03_model_states.pt...
+[2024-08-17 00:03:59,265] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_07_model_states.pt.
+[2024-08-17 00:03:59,265] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+[2024-08-17 00:03:59,284] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_03_model_states.pt.
+[2024-08-17 00:03:59,284] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+[2024-08-17 00:03:59,564] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_00_model_states.pt.
+[2024-08-17 00:03:59,565] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+[2024-08-17 00:04:00,255] [INFO] [logging.py:96:log_dist] [Rank 1] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_01_model_states.pt
+[2024-08-17 00:04:00,255] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_01_model_states.pt...
+[2024-08-17 00:04:00,291] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_01_model_states.pt.
+[2024-08-17 00:04:00,291] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+[2024-08-17 00:04:05,151] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/layer_06-model_states.pt.
+[2024-08-17 00:04:05,993] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_05_model_states.pt...
+[2024-08-17 00:04:06,018] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step804/mp_rank_05_model_states.pt.
+[2024-08-17 00:04:06,018] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step804 is ready now!
+Checkpoint saved using --- 122.30226755142212 seconds ---
+ 16%|█▌        | 810/5198 [18:41<14:27:08, 11.86s/it] 16%|█▌        | 810/5198 [17:23<14:15:21, 11.70s/it] 16%|█▌        | 810/5198 [17:42<14:17:21, 11.72s/it] 16%|█▌        | 810/5198 [17:24<14:14:50, 11.69s/it] 16%|█▌        | 810/5198 [17:34<14:16:35, 11.71s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_760
+ 16%|█▌        | 810/5198 [17:24<14:15:04, 11.69s/it] 16%|█▌        | 810/5198 [17:22<14:15:04, 11.69s/it] 16%|█▌        | 810/5198 [18:44<14:21:42, 11.78s/it]Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:26<00:00, 86.13s/it][A100%|██████████| 1/1 [01:26<00:00, 86.13s/it]
+ 16%|█▌        | 811/5198 [20:08<17:57:24, 14.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:05:34,277] [INFO] [logging.py:96:log_dist] [Rank 0] step=805, skipped=0, lr=[1.9363250295134063e-05], mom=[(0.9, 0.999)]
+steps: 805 loss: 0.7014 iter time (s): 88.075 samples/sec: 1.453
+
+100%|██████████| 1/1 [01:28<00:00, 88.42s/it][A100%|██████████| 1/1 [01:28<00:00, 88.42s/it]
+ 16%|█▌        | 811/5198 [19:10<17:54:27, 14.70s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.57s/it][A100%|██████████| 1/1 [01:28<00:00, 88.57s/it]
+ 16%|█▌        | 811/5198 [19:03<17:54:09, 14.69s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.67s/it][A100%|██████████| 1/1 [01:28<00:00, 88.67s/it]
+ 16%|█▌        | 811/5198 [18:52<17:53:15, 14.68s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.83s/it][A100%|██████████| 1/1 [01:28<00:00, 88.83s/it]
+ 16%|█▌        | 811/5198 [18:53<17:53:25, 14.68s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.84s/it][A100%|██████████| 1/1 [01:28<00:00, 88.84s/it]
+ 16%|█▌        | 811/5198 [18:51<17:53:27, 14.68s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.88s/it][A100%|██████████| 1/1 [01:28<00:00, 88.88s/it]
+ 16%|█▌        | 811/5198 [20:13<17:59:55, 14.77s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.90s/it][A100%|██████████| 1/1 [01:28<00:00, 88.90s/it]
+ 16%|█▌        | 811/5198 [18:53<17:53:24, 14.68s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_761
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:11<00:00, 131.21s/it][A100%|██████████| 1/1 [02:11<00:00, 131.21s/it]
+ 16%|█▌        | 812/5198 [22:19<25:23:13, 20.84s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:07:46,876] [INFO] [logging.py:96:log_dist] [Rank 0] step=806, skipped=0, lr=[1.9361260021115272e-05], mom=[(0.9, 0.999)]
+steps: 806 loss: 0.6710 iter time (s): 131.756 samples/sec: 0.971
+
+100%|██████████| 1/1 [02:12<00:00, 132.61s/it][A100%|██████████| 1/1 [02:12<00:00, 132.61s/it]
+ 16%|█▌        | 812/5198 [21:23<25:25:25, 20.87s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:12<00:00, 132.53s/it][A100%|██████████| 1/1 [02:12<00:00, 132.54s/it]
+ 16%|█▌        | 812/5198 [21:16<25:24:49, 20.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:12<00:00, 132.59s/it][A100%|██████████| 1/1 [02:12<00:00, 132.59s/it]
+ 16%|█▌        | 812/5198 [21:05<25:24:11, 20.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:12<00:00, 132.45s/it][A100%|██████████| 1/1 [02:12<00:00, 132.45s/it]
+ 16%|█▌        | 812/5198 [21:04<25:23:49, 20.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:12<00:00, 132.59s/it][A100%|██████████| 1/1 [02:12<00:00, 132.59s/it]
+ 16%|█▌        | 812/5198 [21:05<25:24:20, 20.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:12<00:00, 132.56s/it][A100%|██████████| 1/1 [02:12<00:00, 132.56s/it]
+ 16%|█▌        | 812/5198 [22:25<25:30:22, 20.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:12<00:00, 132.55s/it][A100%|██████████| 1/1 [02:12<00:00, 132.55s/it]
+ 16%|█▌        | 812/5198 [21:06<25:24:10, 20.85s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_762
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:59<00:00, 119.94s/it][A100%|██████████| 1/1 [01:59<00:00, 119.94s/it]
+ 16%|█▌        | 813/5198 [24:19<33:47:36, 27.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:09:46,626] [INFO] [logging.py:96:log_dist] [Rank 0] step=807, skipped=0, lr=[1.9359266744092718e-05], mom=[(0.9, 0.999)]
+steps: 807 loss: 0.6435 iter time (s): 118.956 samples/sec: 1.076
+
+100%|██████████| 1/1 [01:59<00:00, 119.87s/it][A100%|██████████| 1/1 [01:59<00:00, 119.88s/it]
+ 16%|█▌        | 813/5198 [23:23<33:48:31, 27.76s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:59<00:00, 119.84s/it][A100%|██████████| 1/1 [01:59<00:00, 119.84s/it]
+ 16%|█▌        | 813/5198 [23:15<33:47:46, 27.75s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:59<00:00, 119.83s/it][A100%|██████████| 1/1 [01:59<00:00, 119.83s/it]
+ 16%|█▌        | 813/5198 [23:05<33:47:07, 27.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:59<00:00, 119.85s/it][A100%|██████████| 1/1 [01:59<00:00, 119.85s/it]
+ 16%|█▌        | 813/5198 [23:04<33:46:53, 27.73s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:59<00:00, 119.80s/it][A100%|██████████| 1/1 [01:59<00:00, 119.80s/it]
+ 16%|█▌        | 813/5198 [23:05<33:47:07, 27.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:59<00:00, 119.86s/it][A100%|██████████| 1/1 [01:59<00:00, 119.86s/it]
+ 16%|█▌        | 813/5198 [24:25<33:53:02, 27.82s/it]
+100%|██████████| 1/1 [01:59<00:00, 119.85s/it][A100%|██████████| 1/1 [01:59<00:00, 119.85s/it]
+ 16%|█▌        | 813/5198 [23:06<33:47:11, 27.74s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_763
+
+  0%|          | 0/1 [00:00<?, ?it/s][ATraining on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:21<00:00, 81.69s/it][A100%|██████████| 1/1 [01:21<00:00, 81.69s/it]
+ 16%|█▌        | 814/5198 [25:41<39:44:10, 32.63s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:11:07,282] [INFO] [logging.py:96:log_dist] [Rank 0] step=808, skipped=0, lr=[1.9357270464705897e-05], mom=[(0.9, 0.999)]
+steps: 808 loss: 0.6932 iter time (s): 79.754 samples/sec: 1.605
+
+100%|██████████| 1/1 [01:20<00:00, 80.55s/it][A100%|██████████| 1/1 [01:20<00:00, 80.56s/it]
+ 16%|█▌        | 814/5198 [24:43<39:36:51, 32.53s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.64s/it][A100%|██████████| 1/1 [01:20<00:00, 80.64s/it]
+ 16%|█▌        | 814/5198 [24:36<39:36:45, 32.53s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.60s/it][A100%|██████████| 1/1 [01:20<00:00, 80.60s/it]
+ 16%|█▌        | 814/5198 [24:25<39:35:52, 32.52s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.70s/it][A100%|██████████| 1/1 [01:20<00:00, 80.70s/it]
+ 16%|█▌        | 814/5198 [24:24<39:36:22, 32.52s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.64s/it][A100%|██████████| 1/1 [01:20<00:00, 80.64s/it]
+ 16%|█▌        | 814/5198 [24:26<39:36:08, 32.52s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.60s/it][A100%|██████████| 1/1 [01:20<00:00, 80.60s/it]
+ 16%|█▌        | 814/5198 [25:46<39:41:16, 32.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:20<00:00, 80.63s/it][A100%|██████████| 1/1 [01:20<00:00, 80.63s/it]
+ 16%|█▌        | 814/5198 [24:26<39:36:08, 32.52s/it]Shard 814 in [76, 158, 182, 418, 421, 752, 814, 842, 991, 1266, 1366, 1425, 1464, 1574, 1728, 2166, 2441, 2563, 2739, 2854, 2894, 3089, 3181, 3395, 3576, 3831, 4300, 4589, 4947, 4950]: file /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_764 skipped to avoid exceeding cuda memory
+Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_plain_texts/shard_50
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:52<00:00, 112.17s/it][A100%|██████████| 1/1 [01:52<00:00, 112.17s/it]
+ 16%|█▌        | 816/5198 [27:33<45:35:39, 37.46s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:13:00,354] [INFO] [logging.py:96:log_dist] [Rank 0] step=809, skipped=0, lr=[1.935527118359526e-05], mom=[(0.9, 0.999)]
+steps: 809 loss: 0.8383 iter time (s): 112.422 samples/sec: 1.139
+
+100%|██████████| 1/1 [01:53<00:00, 113.25s/it][A100%|██████████| 1/1 [01:53<00:00, 113.25s/it]
+ 16%|█▌        | 816/5198 [26:37<45:37:01, 37.48s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.42s/it][A100%|██████████| 1/1 [01:53<00:00, 113.42s/it]
+ 16%|█▌        | 816/5198 [26:30<45:38:12, 37.49s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.41s/it][A100%|██████████| 1/1 [01:53<00:00, 113.42s/it]
+ 16%|█▌        | 816/5198 [26:19<45:37:30, 37.48s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.45s/it][A100%|██████████| 1/1 [01:53<00:00, 113.45s/it]
+ 16%|█▌        | 816/5198 [26:18<45:38:10, 37.49s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.45s/it][A100%|██████████| 1/1 [01:53<00:00, 113.45s/it]
+ 16%|█▌        | 816/5198 [26:19<45:37:58, 37.49s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.48s/it][A100%|██████████| 1/1 [01:53<00:00, 113.48s/it]
+ 16%|█▌        | 816/5198 [27:39<45:42:16, 37.55s/it]
+100%|██████████| 1/1 [01:53<00:00, 113.46s/it][A100%|██████████| 1/1 [01:53<00:00, 113.46s/it]
+ 16%|█▌        | 816/5198 [26:20<45:38:00, 37.49s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_765
+
+  0%|          | 0/1 [00:00<?, ?it/s][ATraining on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:46<00:00, 106.65s/it][A100%|██████████| 1/1 [01:46<00:00, 106.65s/it]
+ 16%|█▌        | 817/5198 [29:20<56:22:43, 46.33s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:14:47,148] [INFO] [logging.py:96:log_dist] [Rank 0] step=810, skipped=0, lr=[1.9353268901402226e-05], mom=[(0.9, 0.999)]
+steps: 810 loss: 0.6804 iter time (s): 105.536 samples/sec: 1.213
+
+100%|██████████| 1/1 [01:46<00:00, 106.51s/it][A100%|██████████| 1/1 [01:46<00:00, 106.51s/it]
+ 16%|█▌        | 817/5198 [28:23<56:21:01, 46.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:46<00:00, 106.40s/it][A100%|██████████| 1/1 [01:46<00:00, 106.40s/it]
+ 16%|█▌        | 817/5198 [28:16<56:20:59, 46.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:46<00:00, 106.44s/it][A100%|██████████| 1/1 [01:46<00:00, 106.44s/it]
+ 16%|█▌        | 817/5198 [28:05<56:20:47, 46.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:46<00:00, 106.37s/it][A100%|██████████| 1/1 [01:46<00:00, 106.37s/it]
+ 16%|█▌        | 817/5198 [28:04<56:20:43, 46.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:46<00:00, 106.40s/it][A100%|██████████| 1/1 [01:46<00:00, 106.40s/it]
+ 16%|█▌        | 817/5198 [28:05<56:20:47, 46.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:46<00:00, 106.33s/it][A100%|██████████| 1/1 [01:46<00:00, 106.34s/it]
+ 16%|█▌        | 817/5198 [28:06<56:20:13, 46.29s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_766
+
+100%|██████████| 1/1 [01:46<00:00, 106.34s/it][A100%|██████████| 1/1 [01:46<00:00, 106.34s/it]
+ 16%|█▌        | 817/5198 [29:26<56:24:02, 46.35s/it]Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.83s/it][A100%|██████████| 1/1 [01:53<00:00, 113.83s/it]
+ 16%|█▌        | 818/5198 [31:14<69:04:34, 56.78s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:16:41,360] [INFO] [logging.py:96:log_dist] [Rank 0] step=811, skipped=0, lr=[1.9351263618769177e-05], mom=[(0.9, 0.999)]
+steps: 811 loss: 0.6952 iter time (s): 113.396 samples/sec: 1.129
+
+100%|██████████| 1/1 [01:54<00:00, 114.25s/it][A100%|██████████| 1/1 [01:54<00:00, 114.25s/it]
+ 16%|█▌        | 818/5198 [30:17<69:06:28, 56.80s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:54<00:00, 114.24s/it][A100%|██████████| 1/1 [01:54<00:00, 114.24s/it]
+ 16%|█▌        | 818/5198 [30:10<69:06:15, 56.80s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:54<00:00, 114.18s/it][A100%|██████████| 1/1 [01:54<00:00, 114.18s/it]
+ 16%|█▌        | 818/5198 [29:59<69:05:25, 56.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:54<00:00, 114.21s/it][A100%|██████████| 1/1 [01:54<00:00, 114.21s/it]
+ 16%|█▌        | 818/5198 [29:58<69:05:44, 56.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:54<00:00, 114.20s/it][A100%|██████████| 1/1 [01:54<00:00, 114.20s/it]
+ 16%|█▌        | 818/5198 [30:00<69:05:39, 56.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:54<00:00, 114.22s/it][A100%|██████████| 1/1 [01:54<00:00, 114.22s/it]
+ 16%|█▌        | 818/5198 [31:20<69:08:37, 56.83s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:54<00:00, 114.25s/it][A100%|██████████| 1/1 [01:54<00:00, 114.25s/it]
+ 16%|█▌        | 818/5198 [30:00<69:05:43, 56.79s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_767
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:45<00:00, 105.43s/it][A100%|██████████| 1/1 [01:45<00:00, 105.43s/it]
+ 16%|█▌        | 819/5198 [33:00<79:47:10, 65.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:18:26,566] [INFO] [logging.py:96:log_dist] [Rank 0] step=812, skipped=0, lr=[1.9349255336339455e-05], mom=[(0.9, 0.999)]
+steps: 812 loss: 0.6172 iter time (s): 104.352 samples/sec: 1.227
+
+100%|██████████| 1/1 [01:45<00:00, 105.18s/it][A100%|██████████| 1/1 [01:45<00:00, 105.18s/it]
+ 16%|█▌        | 819/5198 [32:02<79:43:57, 65.55s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:45<00:00, 105.20s/it][A100%|██████████| 1/1 [01:45<00:00, 105.20s/it]
+ 16%|█▌        | 819/5198 [31:55<79:44:01, 65.55s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:45<00:00, 105.19s/it][A100%|██████████| 1/1 [01:45<00:00, 105.19s/it]
+ 16%|█▌        | 819/5198 [31:45<79:43:17, 65.54s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:45<00:00, 105.12s/it][A100%|██████████| 1/1 [01:45<00:00, 105.12s/it]
+ 16%|█▌        | 819/5198 [31:44<79:42:31, 65.53s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:45<00:00, 105.17s/it][A100%|██████████| 1/1 [01:45<00:00, 105.17s/it]
+ 16%|█▌        | 819/5198 [31:45<79:43:08, 65.54s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:45<00:00, 105.19s/it][A100%|██████████| 1/1 [01:45<00:00, 105.19s/it]
+ 16%|█▌        | 819/5198 [33:05<79:45:46, 65.57s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:45<00:00, 105.18s/it][A100%|██████████| 1/1 [01:45<00:00, 105.18s/it]
+ 16%|█▌        | 819/5198 [31:46<79:43:12, 65.54s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_768
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.51s/it][A100%|██████████| 1/1 [01:28<00:00, 88.51s/it]
+[2024-08-17 00:19:54,791] [INFO] [logging.py:96:log_dist] [Rank 0] step=813, skipped=0, lr=[1.9347244054757374e-05], mom=[(0.9, 0.999)]
+steps: 813 loss: 0.6401 iter time (s): 87.393 samples/sec: 1.465
+
+100%|██████████| 1/1 [01:28<00:00, 88.23s/it][A100%|██████████| 1/1 [01:28<00:00, 88.23s/it]
+
+100%|██████████| 1/1 [01:28<00:00, 88.16s/it][A100%|██████████| 1/1 [01:28<00:00, 88.16s/it]
+
+100%|██████████| 1/1 [01:28<00:00, 88.21s/it][A100%|██████████| 1/1 [01:28<00:00, 88.21s/it]
+
+100%|██████████| 1/1 [01:28<00:00, 88.26s/it][A100%|██████████| 1/1 [01:28<00:00, 88.26s/it]
+
+100%|██████████| 1/1 [01:28<00:00, 88.21s/it][A100%|██████████| 1/1 [01:28<00:00, 88.21s/it]
+
+100%|██████████| 1/1 [01:28<00:00, 88.20s/it][A100%|██████████| 1/1 [01:28<00:00, 88.20s/it]
+
+100%|██████████| 1/1 [01:28<00:00, 88.23s/it][A100%|██████████| 1/1 [01:28<00:00, 88.23s/it]
+Checkpointing at shard 819
+[2024-08-17 00:19:55,618] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step813 is about to be saved!
+[2024-08-17 00:19:56,855] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_00-model_states.pt...
+[2024-08-17 00:19:59,014] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_00-model_states.pt.
+[2024-08-17 00:20:00,746] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_08-model_states.pt...
+[2024-08-17 00:20:01,579] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_03-model_states.pt...
+[2024-08-17 00:20:01,936] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_07-model_states.pt...
+[2024-08-17 00:20:03,437] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_04-model_states.pt...
+[2024-08-17 00:20:06,867] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_05-model_states.pt...
+[2024-08-17 00:20:06,886] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_06-model_states.pt...
+[2024-08-17 00:20:08,329] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_02-model_states.pt...
+[2024-08-17 00:20:10,199] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_01-model_states.pt...
+[2024-08-17 00:21:37,441] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_01-model_states.pt.
+[2024-08-17 00:21:37,682] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_00_model_states.pt
+[2024-08-17 00:21:37,682] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_00_model_states.pt...
+[2024-08-17 00:21:37,852] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_06-model_states.pt.
+[2024-08-17 00:21:38,360] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_00_model_states.pt.
+[2024-08-17 00:21:38,361] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+[2024-08-17 00:21:38,461] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_08-model_states.pt.
+[2024-08-17 00:21:38,495] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_04-model_states.pt.
+[2024-08-17 00:21:38,518] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_07-model_states.pt.
+[2024-08-17 00:21:38,559] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_03-model_states.pt.
+[2024-08-17 00:21:38,756] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_05_model_states.pt...
+[2024-08-17 00:21:38,807] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_05_model_states.pt.
+[2024-08-17 00:21:38,807] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+[2024-08-17 00:21:39,087] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_02_model_states.pt...
+[2024-08-17 00:21:39,102] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_09-model_states.pt...
+[2024-08-17 00:21:39,110] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_02_model_states.pt.
+[2024-08-17 00:21:39,110] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+[2024-08-17 00:21:39,323] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_06_model_states.pt...
+[2024-08-17 00:21:39,347] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_06_model_states.pt.
+[2024-08-17 00:21:39,347] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+[2024-08-17 00:21:39,514] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_03_model_states.pt...
+[2024-08-17 00:21:39,559] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_03_model_states.pt.
+[2024-08-17 00:21:39,559] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+[2024-08-17 00:21:39,702] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_09-model_states.pt.
+[2024-08-17 00:21:39,734] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_07_model_states.pt...
+[2024-08-17 00:21:39,758] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_07_model_states.pt.
+[2024-08-17 00:21:39,758] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+[2024-08-17 00:21:42,303] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_05-model_states.pt.
+[2024-08-17 00:21:43,053] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_04_model_states.pt...
+[2024-08-17 00:21:43,144] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_04_model_states.pt.
+[2024-08-17 00:21:43,144] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+[2024-08-17 00:21:46,466] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/layer_02-model_states.pt.
+[2024-08-17 00:21:47,424] [INFO] [logging.py:96:log_dist] [Rank 1] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_01_model_states.pt
+[2024-08-17 00:21:47,424] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_01_model_states.pt...
+[2024-08-17 00:21:47,447] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step813/mp_rank_01_model_states.pt.
+[2024-08-17 00:21:47,447] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step813 is ready now!
+ 16%|█▌        | 820/5198 [35:04<113:18:15, 93.17s/it]Checkpoint saved using --- 111.83066534996033 seconds ---
+ 16%|█▌        | 820/5198 [35:05<113:19:57, 93.19s/it] 16%|█▌        | 820/5198 [35:05<113:17:37, 93.16s/it] 16%|█▌        | 820/5198 [36:23<114:07:39, 93.85s/it] 16%|█▌        | 820/5198 [36:25<113:18:58, 93.18s/it] 16%|█▌        | 820/5198 [35:23<113:24:23, 93.25s/it] 16%|█▌        | 820/5198 [35:16<113:21:48, 93.22s/it] 16%|█▌        | 820/5198 [35:06<113:16:47, 93.15s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_769
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:22<00:00, 82.94s/it][A100%|██████████| 1/1 [01:22<00:00, 82.94s/it]
+ 16%|█▌        | 821/5198 [37:46<111:08:23, 91.41s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:23:12,403] [INFO] [logging.py:96:log_dist] [Rank 0] step=814, skipped=0, lr=[1.93452297746682e-05], mom=[(0.9, 0.999)]
+steps: 814 loss: 0.6920 iter time (s): 84.786 samples/sec: 1.510
+
+100%|██████████| 1/1 [01:25<00:00, 85.16s/it][A100%|██████████| 1/1 [01:25<00:00, 85.16s/it]
+ 16%|█▌        | 821/5198 [36:48<111:11:34, 91.45s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:25<00:00, 85.25s/it][A100%|██████████| 1/1 [01:25<00:00, 85.25s/it]
+ 16%|█▌        | 821/5198 [36:41<111:11:07, 91.45s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:25<00:00, 85.42s/it][A100%|██████████| 1/1 [01:25<00:00, 85.42s/it]
+ 16%|█▌        | 821/5198 [36:30<111:12:27, 91.47s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:25<00:00, 85.52s/it][A100%|██████████| 1/1 [01:25<00:00, 85.52s/it]
+ 16%|█▌        | 821/5198 [36:29<111:12:50, 91.47s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:25<00:00, 85.57s/it][A100%|██████████| 1/1 [01:25<00:00, 85.57s/it]
+ 16%|█▌        | 821/5198 [36:31<111:13:16, 91.48s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:25<00:00, 85.63s/it][A100%|██████████| 1/1 [01:25<00:00, 85.63s/it]
+ 16%|█▌        | 821/5198 [37:51<111:15:05, 91.50s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:25<00:00, 85.64s/it][A100%|██████████| 1/1 [01:25<00:00, 85.64s/it]
+ 16%|█▌        | 821/5198 [36:31<111:13:44, 91.48s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_770
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.11s/it][A100%|██████████| 1/1 [01:42<00:00, 102.11s/it]
+ 16%|█▌        | 822/5198 [39:28<114:20:19, 94.06s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:24:55,149] [INFO] [logging.py:96:log_dist] [Rank 0] step=815, skipped=0, lr=[1.9343212496718163e-05], mom=[(0.9, 0.999)]
+steps: 815 loss: 0.6832 iter time (s): 101.878 samples/sec: 1.256
+
+100%|██████████| 1/1 [01:42<00:00, 102.80s/it][A100%|██████████| 1/1 [01:42<00:00, 102.80s/it]
+ 16%|█▌        | 822/5198 [38:31<114:32:47, 94.23s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.80s/it][A100%|██████████| 1/1 [01:42<00:00, 102.80s/it]
+ 16%|█▌        | 822/5198 [38:24<114:32:16, 94.23s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.72s/it][A100%|██████████| 1/1 [01:42<00:00, 102.72s/it]
+ 16%|█▌        | 822/5198 [38:13<114:31:51, 94.22s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.76s/it][A100%|██████████| 1/1 [01:42<00:00, 102.76s/it]
+ 16%|█▌        | 822/5198 [38:12<114:32:49, 94.23s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.77s/it][A100%|██████████| 1/1 [01:42<00:00, 102.77s/it]
+ 16%|█▌        | 822/5198 [38:14<114:33:25, 94.24s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.76s/it][A100%|██████████| 1/1 [01:42<00:00, 102.76s/it]
+ 16%|█▌        | 822/5198 [39:34<114:34:31, 94.26s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:42<00:00, 102.76s/it][A100%|██████████| 1/1 [01:42<00:00, 102.76s/it]
+ 16%|█▌        | 822/5198 [38:14<114:33:35, 94.24s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_771
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.29s/it][A100%|██████████| 1/1 [01:29<00:00, 89.29s/it]
+ 16%|█▌        | 823/5198 [40:58<112:51:07, 92.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:26:24,145] [INFO] [logging.py:96:log_dist] [Rank 0] step=816, skipped=0, lr=[1.9341192221554456e-05], mom=[(0.9, 0.999)]
+steps: 816 loss: 0.6991 iter time (s): 88.108 samples/sec: 1.453
+
+100%|██████████| 1/1 [01:28<00:00, 88.89s/it][A100%|██████████| 1/1 [01:28<00:00, 88.89s/it]
+ 16%|█▌        | 823/5198 [40:00<112:50:25, 92.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.93s/it][A100%|██████████| 1/1 [01:28<00:00, 88.93s/it]
+ 16%|█▌        | 823/5198 [39:53<112:50:49, 92.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.90s/it][A100%|██████████| 1/1 [01:28<00:00, 88.90s/it]
+ 16%|█▌        | 823/5198 [39:42<112:49:56, 92.84s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.86s/it][A100%|██████████| 1/1 [01:28<00:00, 88.87s/it]
+ 16%|█▌        | 823/5198 [39:41<112:49:58, 92.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.86s/it][A100%|██████████| 1/1 [01:28<00:00, 88.86s/it]
+ 16%|█▌        | 823/5198 [39:42<112:50:24, 92.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.90s/it][A100%|██████████| 1/1 [01:28<00:00, 88.90s/it]
+ 16%|█▌        | 823/5198 [41:03<112:51:50, 92.87s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.88s/it][A100%|██████████| 1/1 [01:28<00:00, 88.88s/it]
+ 16%|█▌        | 823/5198 [39:43<112:50:51, 92.86s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_772
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:38<00:00, 98.77s/it][A100%|██████████| 1/1 [01:38<00:00, 98.77s/it]
+ 16%|█▌        | 824/5198 [42:37<114:48:40, 94.49s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:28:03,394] [INFO] [logging.py:96:log_dist] [Rank 0] step=817, skipped=0, lr=[1.9339168949825232e-05], mom=[(0.9, 0.999)]
+steps: 817 loss: 0.6643 iter time (s): 98.465 samples/sec: 1.300
+
+100%|██████████| 1/1 [01:39<00:00, 99.23s/it][A100%|██████████| 1/1 [01:39<00:00, 99.23s/it]
+ 16%|█▌        | 824/5198 [41:39<114:54:36, 94.58s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:39<00:00, 99.27s/it][A100%|██████████| 1/1 [01:39<00:00, 99.27s/it]
+ 16%|█▌        | 824/5198 [41:32<114:55:37, 94.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:39<00:00, 99.31s/it][A100%|██████████| 1/1 [01:39<00:00, 99.31s/it]
+ 16%|█▌        | 824/5198 [41:21<114:55:46, 94.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:39<00:00, 99.24s/it][A100%|██████████| 1/1 [01:39<00:00, 99.24s/it]
+ 16%|█▌        | 824/5198 [41:20<114:54:36, 94.58s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:39<00:00, 99.25s/it][A100%|██████████| 1/1 [01:39<00:00, 99.25s/it]
+ 16%|█▌        | 824/5198 [41:22<114:55:03, 94.58s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:39<00:00, 99.23s/it][A100%|██████████| 1/1 [01:39<00:00, 99.23s/it]
+ 16%|█▌        | 824/5198 [42:42<114:55:32, 94.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:39<00:00, 99.24s/it][A100%|██████████| 1/1 [01:39<00:00, 99.24s/it]
+ 16%|█▌        | 824/5198 [41:22<114:55:05, 94.58s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_773
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:52<00:00, 112.65s/it][A100%|██████████| 1/1 [01:52<00:00, 112.65s/it]
+ 16%|█▌        | 825/5198 [44:29<120:58:31, 99.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:29:56,601] [INFO] [logging.py:96:log_dist] [Rank 0] step=818, skipped=0, lr=[1.9337142682179614e-05], mom=[(0.9, 0.999)]
+steps: 818 loss: 0.6533 iter time (s): 112.425 samples/sec: 1.139
+
+100%|██████████| 1/1 [01:53<00:00, 113.26s/it][A100%|██████████| 1/1 [01:53<00:00, 113.26s/it]
+ 16%|█▌        | 825/5198 [43:33<121:12:20, 99.78s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.17s/it][A100%|██████████| 1/1 [01:53<00:00, 113.17s/it]
+ 16%|█▌        | 825/5198 [43:25<121:11:16, 99.77s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.21s/it][A100%|██████████| 1/1 [01:53<00:00, 113.21s/it]
+ 16%|█▌        | 825/5198 [43:15<121:12:11, 99.78s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.29s/it][A100%|██████████| 1/1 [01:53<00:00, 113.29s/it]
+ 16%|█▌        | 825/5198 [43:14<121:13:04, 99.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.27s/it][A100%|██████████| 1/1 [01:53<00:00, 113.27s/it]
+ 16%|█▌        | 825/5198 [43:15<121:12:51, 99.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.27s/it][A100%|██████████| 1/1 [01:53<00:00, 113.27s/it]
+ 16%|█▌        | 825/5198 [44:35<121:13:07, 99.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:53<00:00, 113.26s/it][A100%|██████████| 1/1 [01:53<00:00, 113.26s/it]
+ 16%|█▌        | 825/5198 [43:16<121:12:37, 99.78s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_774
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:36<00:00, 96.47s/it][A100%|██████████| 1/1 [01:36<00:00, 96.47s/it]
+ 16%|█▌        | 826/5198 [46:06<119:55:01, 98.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:31:32,718] [INFO] [logging.py:96:log_dist] [Rank 0] step=819, skipped=0, lr=[1.933511341926767e-05], mom=[(0.9, 0.999)]
+steps: 819 loss: 0.6713 iter time (s): 95.278 samples/sec: 1.343
+
+100%|██████████| 1/1 [01:36<00:00, 96.11s/it][A100%|██████████| 1/1 [01:36<00:00, 96.11s/it]
+ 16%|█▌        | 826/5198 [45:09<119:54:51, 98.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:36<00:00, 96.11s/it][A100%|██████████| 1/1 [01:36<00:00, 96.11s/it]
+ 16%|█▌        | 826/5198 [45:01<119:54:02, 98.73s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:36<00:00, 96.09s/it][A100%|██████████| 1/1 [01:36<00:00, 96.09s/it]
+ 16%|█▌        | 826/5198 [44:51<119:54:13, 98.73s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:36<00:00, 96.01s/it][A100%|██████████| 1/1 [01:36<00:00, 96.01s/it]
+ 16%|█▌        | 826/5198 [44:50<119:53:14, 98.72s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:36<00:00, 96.06s/it][A100%|██████████| 1/1 [01:36<00:00, 96.06s/it]
+ 16%|█▌        | 826/5198 [44:51<119:54:08, 98.73s/it]
+100%|██████████| 1/1 [01:36<00:00, 96.04s/it][A100%|██████████| 1/1 [01:36<00:00, 96.04s/it]
+ 16%|█▌        | 826/5198 [46:11<119:53:50, 98.73s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:36<00:00, 96.06s/it][A100%|██████████| 1/1 [01:36<00:00, 96.06s/it]
+ 16%|█▌        | 826/5198 [44:52<119:53:47, 98.73s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_775
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.26s/it][A100%|██████████| 1/1 [01:29<00:00, 89.26s/it]
+ 16%|█▌        | 827/5198 [47:35<116:36:47, 96.04s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:33:01,920] [INFO] [logging.py:96:log_dist] [Rank 0] step=820, skipped=0, lr=[1.9333081161740437e-05], mom=[(0.9, 0.999)]
+steps: 820 loss: 0.6846 iter time (s): 88.418 samples/sec: 1.448
+
+100%|██████████| 1/1 [01:29<00:00, 89.23s/it][A100%|██████████| 1/1 [01:29<00:00, 89.23s/it]
+ 16%|█▌        | 827/5198 [46:38<116:33:12, 95.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.26s/it][A100%|██████████| 1/1 [01:29<00:00, 89.26s/it]
+ 16%|█▌        | 827/5198 [46:31<116:33:05, 95.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.42s/it][A100%|██████████| 1/1 [01:29<00:00, 89.42s/it]
+ 16%|█▌        | 827/5198 [46:20<116:36:47, 96.04s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.59s/it][A100%|██████████| 1/1 [01:29<00:00, 89.59s/it]
+ 16%|█▌        | 827/5198 [46:19<116:39:28, 96.08s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.52s/it][A100%|██████████| 1/1 [01:29<00:00, 89.52s/it]
+ 16%|█▌        | 827/5198 [46:21<116:38:47, 96.07s/it]
+100%|██████████| 1/1 [01:29<00:00, 89.52s/it][A100%|██████████| 1/1 [01:29<00:00, 89.52s/it]
+ 16%|█▌        | 827/5198 [47:41<116:38:36, 96.07s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.94s/it][A100%|██████████| 1/1 [01:29<00:00, 89.94s/it]
+ 16%|█▌        | 827/5198 [46:22<116:47:23, 96.19s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_776
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:32<00:00, 92.29s/it][A100%|██████████| 1/1 [01:32<00:00, 92.29s/it]
+ 16%|█▌        | 828/5198 [49:08<115:18:23, 94.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:34:34,419] [INFO] [logging.py:96:log_dist] [Rank 0] step=821, skipped=0, lr=[1.9331045910249925e-05], mom=[(0.9, 0.999)]
+steps: 821 loss: 0.6490 iter time (s): 90.959 samples/sec: 1.407
+
+100%|██████████| 1/1 [01:32<00:00, 92.37s/it][A100%|██████████| 1/1 [01:32<00:00, 92.37s/it]
+ 16%|█▌        | 828/5198 [48:10<115:14:42, 94.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:32<00:00, 92.43s/it][A100%|██████████| 1/1 [01:32<00:00, 92.43s/it]
+ 16%|█▌        | 828/5198 [48:03<115:15:44, 94.95s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:32<00:00, 92.27s/it][A100%|██████████| 1/1 [01:32<00:00, 92.27s/it]
+ 16%|█▌        | 828/5198 [47:52<115:15:01, 94.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:32<00:00, 92.13s/it][A100%|██████████| 1/1 [01:32<00:00, 92.13s/it]
+ 16%|█▌        | 828/5198 [47:51<115:14:01, 94.93s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:32<00:00, 92.13s/it][A100%|██████████| 1/1 [01:32<00:00, 92.13s/it]
+ 16%|█▌        | 828/5198 [47:53<115:13:33, 94.92s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:32<00:00, 92.20s/it][A100%|██████████| 1/1 [01:32<00:00, 92.20s/it]
+ 16%|█▌        | 828/5198 [49:13<115:14:49, 94.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:31<00:00, 91.77s/it][A100%|██████████| 1/1 [01:31<00:00, 91.77s/it]
+ 16%|█▌        | 828/5198 [47:53<115:11:56, 94.90s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_777
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:41<00:00, 101.03s/it][A100%|██████████| 1/1 [01:41<00:00, 101.03s/it]
+ 16%|█▌        | 829/5198 [50:49<117:29:12, 96.81s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:36:15,859] [INFO] [logging.py:96:log_dist] [Rank 0] step=822, skipped=0, lr=[1.9329007665449083e-05], mom=[(0.9, 0.999)]
+steps: 822 loss: 0.7059 iter time (s): 100.621 samples/sec: 1.272
+
+100%|██████████| 1/1 [01:41<00:00, 101.56s/it][A100%|██████████| 1/1 [01:41<00:00, 101.56s/it]
+ 16%|█▌        | 829/5198 [49:52<117:35:17, 96.89s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:41<00:00, 101.44s/it][A100%|██████████| 1/1 [01:41<00:00, 101.44s/it]
+ 16%|█▌        | 829/5198 [49:45<117:33:20, 96.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:41<00:00, 101.49s/it][A100%|██████████| 1/1 [01:41<00:00, 101.49s/it]
+ 16%|█▌        | 829/5198 [49:34<117:33:59, 96.87s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:41<00:00, 101.48s/it][A100%|██████████| 1/1 [01:41<00:00, 101.48s/it]
+ 16%|█▌        | 829/5198 [49:33<117:33:06, 96.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:41<00:00, 101.53s/it][A100%|██████████| 1/1 [01:41<00:00, 101.53s/it]
+ 16%|█▌        | 829/5198 [49:34<117:33:55, 96.87s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:41<00:00, 101.50s/it][A100%|██████████| 1/1 [01:41<00:00, 101.50s/it]
+ 16%|█▌        | 829/5198 [50:55<117:34:00, 96.87s/it]
+100%|██████████| 1/1 [01:41<00:00, 101.48s/it][A100%|██████████| 1/1 [01:41<00:00, 101.48s/it]
+ 16%|█▌        | 829/5198 [49:35<117:31:32, 96.84s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_778
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:46<00:00, 106.93s/it][A100%|██████████| 1/1 [01:46<00:00, 106.93s/it]
+[2024-08-17 00:38:03,085] [INFO] [logging.py:96:log_dist] [Rank 0] step=823, skipped=0, lr=[1.9326966427991833e-05], mom=[(0.9, 0.999)]
+steps: 823 loss: 0.6879 iter time (s): 106.370 samples/sec: 1.203
+
+100%|██████████| 1/1 [01:47<00:00, 107.11s/it][A100%|██████████| 1/1 [01:47<00:00, 107.12s/it]
+
+100%|██████████| 1/1 [01:47<00:00, 107.33s/it][A100%|██████████| 1/1 [01:47<00:00, 107.33s/it]
+
+100%|██████████| 1/1 [01:47<00:00, 107.28s/it][A100%|██████████| 1/1 [01:47<00:00, 107.28s/it]
+
+100%|██████████| 1/1 [01:47<00:00, 107.30s/it][A100%|██████████| 1/1 [01:47<00:00, 107.30s/it]
+
+100%|██████████| 1/1 [01:47<00:00, 107.24s/it][A100%|██████████| 1/1 [01:47<00:00, 107.24s/it]
+
+100%|██████████| 1/1 [01:47<00:00, 107.22s/it][A100%|██████████| 1/1 [01:47<00:00, 107.22s/it]
+
+100%|██████████| 1/1 [01:47<00:00, 107.25s/it][A100%|██████████| 1/1 [01:47<00:00, 107.25s/it]
+Checkpointing at shard 829
+[2024-08-17 00:38:03,954] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step823 is about to be saved!
+[2024-08-17 00:38:05,133] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_00-model_states.pt...
+[2024-08-17 00:38:07,322] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_00-model_states.pt.
+[2024-08-17 00:38:09,948] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_03-model_states.pt...
+[2024-08-17 00:38:10,412] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_08-model_states.pt...
+[2024-08-17 00:38:11,570] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_04-model_states.pt...
+[2024-08-17 00:38:13,469] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_07-model_states.pt...
+[2024-08-17 00:38:13,691] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_06-model_states.pt...
+[2024-08-17 00:38:15,015] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_05-model_states.pt...
+[2024-08-17 00:38:16,216] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_02-model_states.pt...
+[2024-08-17 00:38:18,383] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_01-model_states.pt...
+[2024-08-17 00:39:35,589] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_06-model_states.pt.
+[2024-08-17 00:39:36,200] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_05_model_states.pt...
+[2024-08-17 00:39:36,311] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_05_model_states.pt.
+[2024-08-17 00:39:36,311] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+[2024-08-17 00:39:36,824] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_08-model_states.pt.
+[2024-08-17 00:39:36,892] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_03-model_states.pt.
+[2024-08-17 00:39:36,913] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_05-model_states.pt.
+[2024-08-17 00:39:36,947] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_07-model_states.pt.
+[2024-08-17 00:39:37,340] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_09-model_states.pt...
+[2024-08-17 00:39:37,400] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_02_model_states.pt...
+[2024-08-17 00:39:37,437] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_02_model_states.pt.
+[2024-08-17 00:39:37,437] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+[2024-08-17 00:39:38,312] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_09-model_states.pt.
+[2024-08-17 00:39:38,330] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_07_model_states.pt...
+[2024-08-17 00:39:38,385] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_07_model_states.pt.
+[2024-08-17 00:39:38,385] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+[2024-08-17 00:39:39,113] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_04_model_states.pt...
+[2024-08-17 00:39:39,170] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_04_model_states.pt.
+[2024-08-17 00:39:39,170] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+[2024-08-17 00:39:39,270] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_06_model_states.pt...
+[2024-08-17 00:39:39,347] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_06_model_states.pt.
+[2024-08-17 00:39:39,347] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+[2024-08-17 00:39:39,364] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_04-model_states.pt.
+[2024-08-17 00:39:40,354] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_03_model_states.pt...
+[2024-08-17 00:39:40,393] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_03_model_states.pt.
+[2024-08-17 00:39:40,394] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+[2024-08-17 00:39:53,328] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_02-model_states.pt.
+[2024-08-17 00:39:54,061] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/layer_01-model_states.pt.
+[2024-08-17 00:39:54,624] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_00_model_states.pt
+[2024-08-17 00:39:54,624] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_00_model_states.pt...
+[2024-08-17 00:39:54,929] [INFO] [logging.py:96:log_dist] [Rank 1] Saving model checkpoint: /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_01_model_states.pt
+[2024-08-17 00:39:54,929] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_01_model_states.pt...
+[2024-08-17 00:39:54,981] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_01_model_states.pt.
+[2024-08-17 00:39:54,981] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+[2024-08-17 00:39:55,099] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/atuin/b207dd/b207dd11/LLaVA-PEFT_lora_32_64_checkpoint/global_step823/mp_rank_00_model_states.pt.
+[2024-08-17 00:39:55,099] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step823 is ready now!
+Checkpoint saved using --- 111.14775037765503 seconds ---
+ 16%|█▌        | 830/5198 [53:13<161:10:40, 132.84s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_779
+ 16%|█▌        | 830/5198 [53:13<161:16:39, 132.92s/it] 16%|█▌        | 830/5198 [53:11<161:14:36, 132.89s/it] 16%|█▌        | 830/5198 [54:33<161:12:26, 132.86s/it] 16%|█▌        | 830/5198 [54:31<162:16:57, 133.75s/it] 16%|█▌        | 830/5198 [53:23<161:20:06, 132.97s/it] 16%|█▌        | 830/5198 [53:31<161:21:55, 132.99s/it] 16%|█▌        | 830/5198 [53:13<161:13:09, 132.87s/it]Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:19<00:00, 79.07s/it][A100%|██████████| 1/1 [01:19<00:00, 79.07s/it]
+ 16%|█▌        | 831/5198 [55:50<142:35:20, 117.55s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:41:16,095] [INFO] [logging.py:96:log_dist] [Rank 0] step=824, skipped=0, lr=[1.932492219853306e-05], mom=[(0.9, 0.999)]
+steps: 824 loss: 0.6758 iter time (s): 80.805 samples/sec: 1.584
+
+100%|██████████| 1/1 [01:21<00:00, 81.19s/it][A100%|██████████| 1/1 [01:21<00:00, 81.19s/it]
+ 16%|█▌        | 831/5198 [54:52<142:42:36, 117.65s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:21<00:00, 81.28s/it][A100%|██████████| 1/1 [01:21<00:00, 81.28s/it]
+ 16%|█▌        | 831/5198 [54:45<142:43:05, 117.65s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:21<00:00, 81.43s/it][A100%|██████████| 1/1 [01:21<00:00, 81.44s/it]
+ 16%|█▌        | 831/5198 [54:34<142:44:14, 117.67s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:21<00:00, 81.46s/it][A100%|██████████| 1/1 [01:21<00:00, 81.46s/it]
+ 16%|█▌        | 831/5198 [54:33<142:43:17, 117.65s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:21<00:00, 81.53s/it][A100%|██████████| 1/1 [01:21<00:00, 81.53s/it]
+ 16%|█▌        | 831/5198 [54:34<142:43:53, 117.66s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:21<00:00, 81.56s/it][A100%|██████████| 1/1 [01:21<00:00, 81.56s/it]
+ 16%|█▌        | 831/5198 [55:55<142:43:57, 117.66s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:21<00:00, 81.57s/it][A100%|██████████| 1/1 [01:21<00:00, 81.58s/it]
+ 16%|█▌        | 831/5198 [54:35<142:43:03, 117.65s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_plain_texts/shard_51
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:59<00:00, 119.49s/it][A100%|██████████| 1/1 [01:59<00:00, 119.49s/it]
+ 16%|█▌        | 832/5198 [57:49<143:18:14, 118.16s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:43:16,572] [INFO] [logging.py:96:log_dist] [Rank 0] step=825, skipped=0, lr=[1.9322874977728593e-05], mom=[(0.9, 0.999)]
+steps: 825 loss: 0.8473 iter time (s): 119.962 samples/sec: 1.067
+
+100%|██████████| 1/1 [02:00<00:00, 120.72s/it][A100%|██████████| 1/1 [02:00<00:00, 120.72s/it]
+ 16%|█▌        | 832/5198 [56:53<143:47:39, 118.57s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:00<00:00, 120.73s/it][A100%|██████████| 1/1 [02:00<00:00, 120.73s/it]
+ 16%|█▌        | 832/5198 [56:46<143:48:01, 118.57s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:00<00:00, 120.71s/it][A100%|██████████| 1/1 [02:00<00:00, 120.71s/it]
+ 16%|█▌        | 832/5198 [56:35<143:48:21, 118.58s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:00<00:00, 120.74s/it][A100%|██████████| 1/1 [02:00<00:00, 120.74s/it]
+ 16%|█▌        | 832/5198 [56:34<143:48:21, 118.58s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:00<00:00, 120.76s/it][A100%|██████████| 1/1 [02:00<00:00, 120.76s/it]
+ 16%|█▌        | 832/5198 [56:35<143:49:21, 118.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [02:00<00:00, 120.78s/it][A100%|██████████| 1/1 [02:00<00:00, 120.78s/it]
+ 16%|█▌        | 832/5198 [57:55<143:49:38, 118.59s/it]
+100%|██████████| 1/1 [02:00<00:00, 120.76s/it][A100%|██████████| 1/1 [02:00<00:00, 120.76s/it]
+ 16%|█▌        | 832/5198 [56:36<143:48:42, 118.58s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_780
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:29<00:00, 89.25s/it][A100%|██████████| 1/1 [01:29<00:00, 89.25s/it]
+ 16%|█▌        | 833/5198 [59:19<132:50:57, 109.57s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:44:45,281] [INFO] [logging.py:96:log_dist] [Rank 0] step=826, skipped=0, lr=[1.932082476623524e-05], mom=[(0.9, 0.999)]
+steps: 826 loss: 0.6585 iter time (s): 87.652 samples/sec: 1.460
+
+100%|██████████| 1/1 [01:28<00:00, 88.44s/it][A100%|██████████| 1/1 [01:28<00:00, 88.44s/it]
+ 16%|█▌        | 833/5198 [58:21<132:51:23, 109.57s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.42s/it][A100%|██████████| 1/1 [01:28<00:00, 88.43s/it]
+ 16%|█▌        | 833/5198 [58:14<132:51:11, 109.57s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.47s/it][A100%|██████████| 1/1 [01:28<00:00, 88.48s/it]
+ 16%|█▌        | 833/5198 [58:03<132:52:31, 109.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.56s/it][A100%|██████████| 1/1 [01:28<00:00, 88.56s/it]
+ 16%|█▌        | 833/5198 [58:02<132:54:27, 109.61s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.50s/it][A100%|██████████| 1/1 [01:28<00:00, 88.50s/it]
+ 16%|█▌        | 833/5198 [58:04<132:53:51, 109.61s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.49s/it][A100%|██████████| 1/1 [01:28<00:00, 88.49s/it]
+ 16%|█▌        | 833/5198 [58:04<132:53:07, 109.60s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_781
+
+100%|██████████| 1/1 [01:28<00:00, 88.49s/it][A100%|██████████| 1/1 [01:28<00:00, 88.49s/it]
+ 16%|█▌        | 833/5198 [59:24<132:53:51, 109.61s/it]Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.71s/it][A100%|██████████| 1/1 [01:28<00:00, 88.71s/it]
+ 16%|█▌        | 834/5198 [1:00:48<125:19:24, 103.38s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:46:14,194] [INFO] [logging.py:96:log_dist] [Rank 0] step=827, skipped=0, lr=[1.9318771564710753e-05], mom=[(0.9, 0.999)]
+steps: 827 loss: 0.6521 iter time (s): 88.054 samples/sec: 1.454
+
+100%|██████████| 1/1 [01:28<00:00, 88.82s/it][A100%|██████████| 1/1 [01:28<00:00, 88.83s/it]
+ 16%|█▌        | 834/5198 [59:50<125:18:27, 103.37s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.85s/it][A100%|██████████| 1/1 [01:28<00:00, 88.86s/it]
+ 16%|█▌        | 834/5198 [59:43<125:18:55, 103.38s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.85s/it][A100%|██████████| 1/1 [01:28<00:00, 88.85s/it]
+ 16%|█▌        | 834/5198 [59:32<125:19:53, 103.39s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.77s/it][A100%|██████████| 1/1 [01:28<00:00, 88.77s/it]
+ 16%|█▌        | 834/5198 [59:31<125:19:20, 103.38s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.83s/it][A100%|██████████| 1/1 [01:28<00:00, 88.83s/it]
+ 16%|█▌        | 834/5198 [59:32<125:20:25, 103.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.84s/it][A100%|██████████| 1/1 [01:28<00:00, 88.84s/it]
+ 16%|█▌        | 834/5198 [1:00:53<125:20:22, 103.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:28<00:00, 88.85s/it][A100%|██████████| 1/1 [01:28<00:00, 88.85s/it]
+ 16%|█▌        | 834/5198 [59:33<125:20:10, 103.39s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_782
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.62s/it][A100%|██████████| 1/1 [01:30<00:00, 90.62s/it]
+ 16%|█▌        | 835/5198 [1:02:18<120:44:02, 99.62s/it] 
+  0%|          | 0/1 [00:00<?, ?it/s][A[2024-08-17 00:47:45,074] [INFO] [logging.py:96:log_dist] [Rank 0] step=828, skipped=0, lr=[1.931671537381386e-05], mom=[(0.9, 0.999)]
+steps: 828 loss: 0.6783 iter time (s): 90.078 samples/sec: 1.421
+
+100%|██████████| 1/1 [01:30<00:00, 90.96s/it][A100%|██████████| 1/1 [01:30<00:00, 90.96s/it]
+ 16%|█▌        | 835/5198 [1:01:21<120:46:54, 99.66s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.96s/it][A100%|██████████| 1/1 [01:30<00:00, 90.96s/it]
+ 16%|█▌        | 835/5198 [1:01:14<120:47:06, 99.66s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.86s/it][A100%|██████████| 1/1 [01:30<00:00, 90.86s/it]
+ 16%|█▌        | 835/5198 [1:01:03<120:45:35, 99.64s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.94s/it][A100%|██████████| 1/1 [01:30<00:00, 90.94s/it]
+ 16%|█▌        | 835/5198 [1:01:02<120:46:49, 99.66s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.88s/it][A100%|██████████| 1/1 [01:30<00:00, 90.88s/it]
+ 16%|█▌        | 835/5198 [1:01:03<120:46:32, 99.65s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.89s/it][A100%|██████████| 1/1 [01:30<00:00, 90.89s/it]
+ 16%|█▌        | 835/5198 [1:02:24<120:46:28, 99.65s/it] 
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [01:30<00:00, 90.91s/it][A100%|██████████| 1/1 [01:30<00:00, 90.91s/it]
+ 16%|█▌        | 835/5198 [1:01:04<120:46:45, 99.66s/it]Loading dataset from /home/atuin/b207dd/b207dd11/LLaVA-PEFT_processed_dataset_with_images/shard_783
+Training on 128 of 128 sentences.
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
