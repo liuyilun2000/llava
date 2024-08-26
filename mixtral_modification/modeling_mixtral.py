@@ -1544,8 +1544,9 @@ class MixtralAdapterForCausalLM(MixtralPreTrainedModel):
             output_router_logits=output_router_logits,
             return_dict=return_dict,
         )
-
+        
         hidden_states = outputs[0]
+        
         logits = self.lm_head(hidden_states)
         logits = logits.float()
 

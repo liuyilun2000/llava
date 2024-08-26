@@ -14,7 +14,8 @@ python3 llava/llava_PEFT_init.py
 deepspeed llava/train_parallel_deepspeed_mixtral_adapter_r.py --num_stages=8 \
    --shared_routing_adapter_num_experts=4 --shared_routing_adapter_num_experts_per_tok=1 \
    --shared_routing_adapter_type=Parallel_Adapter --hidden_dim=32 \
-   --save_model_shard=10  --skip_shard=0  \
+   --save_model_shard=40  --skip_shard=840  \
+   --bf16=True  --lr=5e-5\
    --checkpoint_dir=/home/atuin/b207dd/b207dd11/LLaVA-PEFT_adapter_32_64_4_top1_checkpoint \
    2>&1 | tee llava/train_parallel_deepspeed_mixtral_adapter_32_64_4_top1.log
 

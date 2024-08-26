@@ -92,7 +92,7 @@ new_model.language_model = new_language_model#mixtral_model
 
 #prompt = "<image>\nUSER: What's the content of the image?\nASSISTANT:"
 prompt = '<image>Describe the image concisely.'
-image_path = "/home/hpc/b207dd/b207dd11/llava/australia.jpg"
+image_path = "/home/hpc/b207dd/b207dd11/llava/img/australia.jpg"
 image = Image.open(image_path)
 
 

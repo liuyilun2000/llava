@@ -35,8 +35,8 @@ TRANSFORMERS_CACHE_DIR = "/home/atuin/b207dd/b207dd11/cache/huggingface/transfor
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen1.5-MoE-A2.7B", cache_dir=TRANSFORMERS_CACHE_DIR)
-model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen1.5-MoE-A2.7B", cache_dir=TRANSFORMERS_CACHE_DIR)
+#tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen1.5-MoE-A2.7B", cache_dir=TRANSFORMERS_CACHE_DIR)
+#model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen1.5-MoE-A2.7B", cache_dir=TRANSFORMERS_CACHE_DIR)
 
 DATASETS_CACHE_DIR = "/home/vault/b207dd/b207dd11/cache/huggingface/datasets"
 WORK_DIR = '/home/atuin/b207dd/b207dd11/'
@@ -47,13 +47,19 @@ mistral_name = "mistralai/Mistral-7B-v0.1"
 mixtral_name = "mistralai/Mixtral-8x7B-v0.1"
 
 
+pretrained_model_dir = '/home/vault/b207dd/b207dd11/llava-mixtral/llava-mixtral-pretrained-2/'
+model_processor = AutoProcessor.from_pretrained(pretrained_model_dir)
 
+bf16_dir = '/home/atuin/b207dd/b207dd11/llava-mixtral-pretrained-bf16-test/'
+model.save_pretrained(bf16_dir)
+
+
+'''
 bakllava_processor = AutoProcessor.from_pretrained(
     bakllava_name, 
     cache_dir=TRANSFORMERS_CACHE_DIR
 )
 
-'''
 #llava_model = LlavaForConditionalGeneration.from_pretrained(llava_name, cache_dir=TRANSFORMERS_CACHE_DIR)
 bakllava_model = LlavaForConditionalGeneration.from_pretrained(
     bakllava_name, 
@@ -70,11 +76,13 @@ mixtral_model = AutoModelForCausalLM.from_pretrained(
     mixtral_name, 
     torch_dtype=torch.bfloat16,
     #torch_dtype="auto",
-    cache_dir=TRANSFORMERS_CACHE_DIR
-)#, device_map="auto")
+    cache_dir=TRANSFORMERS_CACHE_DIR,
+    device_map="cpu"
+)
 
 mixtral_tokenizer = AutoTokenizer.from_pretrained(mixtral_name, cache_dir=TRANSFORMERS_CACHE_DIR)
 #mistral_tokenizer = AutoTokenizer.from_pretrained(mistral_name, cache_dir=TRANSFORMERS_CACHE_DIR)
+
 
 
 
@@ -311,15 +319,15 @@ prompt = '<image>Describe the image concisely.'
 prompt = '<image>Render a clear and concise summary of the photo.'
 prompt = '<image>What is this?'
 prompt = "<image>\nUSER: What's the content of the image?\nASSISTANT:"
-image_path = "/home/hpc/b207dd/b207dd11/llava/australia.jpg"
+image_path = "/home/hpc/b207dd/b207dd11/llava/img/australia.jpg"
 image = Image.open(image_path)
 
 device = model.device
-inputs = bakllava_processor(text=prompt, images=image, return_tensors="pt")
+inputs = model_processor(text=prompt, images=image, return_tensors="pt")
 for k,v in inputs.items():
     v = v.to(device)
 
-generate_ids = model.generate(**inputs, max_new_tokens=20)
+generate_ids = model.generate(**inputs, max_new_tokens=2)
 bakllava_processor.batch_decode(generate_ids)#, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 
 

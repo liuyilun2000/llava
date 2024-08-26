@@ -275,15 +275,15 @@ def loss_fn(outputs, labels_original):
         int(num_experts_per_tok),
         attention_mask,
     )
-    loss += float(router_aux_loss_coef) * aux_loss.to(loss.device)  # make sure to reside in the same device
     shared_routing_adapter_aux_loss = load_balancing_loss_func(
         tuple(torch.unbind(all_shared_routing_adapter_router_logits)),
         int(shared_routing_adapter_num_experts),
         int(shared_routing_adapter_num_experts_per_tok),
         attention_mask,
     )
-    #print(loss, aux_loss, shared_routing_adapter_aux_loss)
-    loss += float(shared_routing_adapter_router_aux_loss_coef) * shared_routing_adapter_aux_loss.to(loss.device)  # make sure to reside in the same device
+    #print(f"loss {loss}, aux_loss {aux_loss}, shared_routing_adapter_aux_loss {shared_routing_adapter_aux_loss}")
+    loss += float(router_aux_loss_coef) * aux_loss.to(loss.device)  # make sure loss residing in the same device
+    loss += float(shared_routing_adapter_router_aux_loss_coef) * shared_routing_adapter_aux_loss.to(loss.device) 
 
     return loss
     

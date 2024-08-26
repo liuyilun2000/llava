@@ -19,12 +19,13 @@ NUM_TEXT_SHARDS = 32
 NUM_DATASET_SHARDS = NUM_IMAGE_SHARDS + NUM_TEXT_SHARDS
 MAP_BATCH_SIZE = 1280
 
-cuda_mem_exceed_shard_skip_list = [
+cuda_mem_exceed_shard_skip_list = [842]
+'''
     8, 
     76, 158, 182, 242, 293, 363, 418, 421, 664, 752, 814, 842, 991, 1266, 1366, 
     1425, 1464, 1574, 1728, 2166, 2441, 2563, 2739, 2854, 
     2894, 3089, 3181, 3395, 3576, 3831, 4300, 4589, 4947, 4950] 
-
+'''
 
 llava_name = "llava-hf/llava-1.5-7b-hf"
 bakllava_name = "llava-hf/bakLlava-v1-hf"
@@ -106,6 +107,7 @@ def set_args():
     parser.add_argument("--multi_modal_projector_pretraining", type=bool, default=True, help="")
     #parser.add_argument("--model_name_or_path", type=str, help="", required=True)
     parser.add_argument("--num_train_epochs", type=int, default=1, help="")
+    parser.add_argument("--lr", type=float, default=2e-5, help="")
     #
     parser.add_argument("--shared_adapter_type", type=str, default="", help="")
     parser.add_argument("--shared_adapter_num", type=int, default=0, help="")
@@ -117,6 +119,8 @@ def set_args():
     parser.add_argument("--lora_r", type=int, default=0, help="")
     parser.add_argument("--lora_alpha", type=int, default=0, help="")
     parser.add_argument("--hidden_dim", type=int, default=0, help="")
+    #
+    parser.add_argument("--bf16", type=bool, default=False, help="")
     #
     parser.add_argument("--dataloader_batch_size", type=int, default=1, help="")
     parser.add_argument("--train_batch_size", type=int, default=128, help="")
@@ -234,7 +238,7 @@ def main():
         pretrained_model_dir,
         config=llava_config,
         device_map="cpu",
-        torch_dtype="auto"
+        torch_dtype=torch.bfloat16 if args.bf16 else "auto"
     )
     
 
@@ -300,7 +304,7 @@ def main():
         "optimizer": {
             "type": "Adam",
             "params": {
-                "lr": 2e-5,#1e-3,
+                "lr": args.lr,#2e-5,#1e-3,
             }
         },
         "scheduler": {
