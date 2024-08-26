@@ -168,7 +168,7 @@ model = LlavaForConditionalGeneration.from_pretrained(
 )
 
 
-
+'''
 
 trainable_param_names = ['lora_A', 'lora_B', 'adapter_w1', 'adapter_w2']
 
@@ -233,6 +233,7 @@ print(mm_count, adapter_count)
 
 
 
+'''
 
 
 ### lora load
