@@ -116,7 +116,8 @@ print("Results have been written to", output_json_file_path)
 MODEL_NAME = model_name + '_' + checkpoint_name
 
 #MODEL_NAME = 'LLaVA_PEFT_lora_128_256'
-MODEL_NAME = 'LLaVA-PEFT_adapter_lora_32_64_save_step1091'
+#MODEL_NAME = 'LLaVA-PEFT_adapter_lora_32_64_save_step1091'
+MODEL_NAME = 'LLaVA-PEFT_adapter_32_64_4_top1_save_step1119'
 output_json_file_path = f'/home/atuin/b207dd/b207dd11/eval/ScienceQA/results_{MODEL_NAME}.json'
 
 with open(output_json_file_path, 'r') as file:
